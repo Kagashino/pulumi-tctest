@@ -12,27 +12,28 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package xyz
+package tencentcloud
 
 import (
 	"fmt"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"path/filepath"
 
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	shim "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim"
-	shimv2 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v2"
-	"github.com/pulumi/pulumi-xyz/provider/pkg/version"
+	shimv1 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v1"
+	"github.com/Kagashino/tctest/provider/pkg/version"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
-	"github.com/terraform-providers/terraform-provider-xyz/xyz"
+	"github.com/tencentcloudstack/terraform-provider-tencentcloud/tencentcloud"
 )
 
 // all of the token components used below.
 const (
 	// This variable controls the default name of the package in the package
 	// registries for nodejs and python:
-	mainPkg = "xyz"
+	mainPkg = "tencentcloud"
 	// modules:
-	mainMod = "index" // the xyz module
+	mainMod = "index" // the tencentcloud module
 )
 
 // preConfigureCallback is called before the providerConfigure function of the underlying provider.
@@ -45,40 +46,22 @@ func preConfigureCallback(vars resource.PropertyMap, c shim.ResourceConfig) erro
 
 // Provider returns additional overlaid schema and metadata associated with the provider..
 func Provider() tfbridge.ProviderInfo {
+	tcProvider := tencentcloud.Provider().(*schema.Provider)
 	// Instantiate the Terraform provider
-	p := shimv2.NewProvider(xyz.Provider())
+	p := shimv1.NewProvider(tcProvider)
 
-	// Create a Pulumi provider mapping
 	prov := tfbridge.ProviderInfo{
 		P:    p,
-		Name: "xyz",
-		// DisplayName is a way to be able to change the casing of the provider
-		// name when being displayed on the Pulumi registry
-		DisplayName: "",
-		// The default publisher for all packages is Pulumi.
-		// Change this to your personal name (or a company name) that you
-		// would like to be shown in the Pulumi Registry if this package is published
-		// there.
-		Publisher: "Pulumi",
-		// LogoURL is optional but useful to help identify your package in the Pulumi Registry
-		// if this package is published there.
-		//
-		// You may host a logo on a domain you control or add an SVG logo for your package
-		// in your repository and use the raw content URL for that file as your logo URL.
+		Name: "tencentcloud",
+		DisplayName: "Tencentcloud",
+		Publisher: "Kagashino",
 		LogoURL: "",
-		// PluginDownloadURL is an optional URL used to download the Provider
-		// for use in Pulumi programs
-		// e.g https://github.com/org/pulumi-provider-name/releases/
 		PluginDownloadURL: "",
-		Description:       "A Pulumi package for creating and managing xyz cloud resources.",
-		// category/cloud tag helps with categorizing the package in the Pulumi Registry.
-		// For all available categories, see `Keywords` in
-		// https://www.pulumi.com/docs/guides/pulumi-packages/schema/#package.
-		Keywords:   []string{"pulumi", "xyz", "category/cloud"},
+		Description:       "A Pulumi package for creating and managing tencentcloud cloud resources.",
+		Keywords:   []string{"pulumi", "tencentcloud", "category/cloud"},
 		License:    "Apache-2.0",
 		Homepage:   "https://www.pulumi.com",
-		Repository: "https://github.com/pulumi/pulumi-xyz",
-		// The GitHub Org for the provider - defaults to `terraform-providers`
+		Repository: "github.com/kagashino/tctest",
 		GitHubOrg: "",
 		Config:    map[string]*tfbridge.SchemaInfo{
 			// Add any required configuration here, or remove the example below if
@@ -89,29 +72,31 @@ func Provider() tfbridge.ProviderInfo {
 			// 		EnvVars: []string{"AWS_REGION", "AWS_DEFAULT_REGION"},
 			// 	},
 			// },
+			"region": {
+				Default: &tfbridge.DefaultInfo{
+					EnvVars: []string{"TENCENTCLOUD_REGION"},
+				},
+			},
+			"secret_id": {
+				Default: &tfbridge.DefaultInfo{
+					EnvVars: []string{"TENCENTCLOUD_REGION"},
+				},
+			},
+			"secret_key": {
+				Default: &tfbridge.DefaultInfo{
+					EnvVars: []string{"TENCENTCLOUD_REGION"},
+				},
+			},
+			"security_token": {
+				Default: &tfbridge.DefaultInfo{
+					EnvVars: []string{"TENCENTCLOUD_SECURITY_TOKEN"},
+				},
+			},
 		},
 		PreConfigureCallback: preConfigureCallback,
-		Resources:            map[string]*tfbridge.ResourceInfo{
-			// Map each resource in the Terraform provider to a Pulumi type. Two examples
-			// are below - the single line form is the common case. The multi-line form is
-			// needed only if you wish to override types or other default options.
-			//
-			// "aws_iam_role": {Tok: tfbridge.MakeResource(mainPkg, mainMod, "IamRole")}
-			//
-			// "aws_acm_certificate": {
-			// 	Tok: tfbridge.MakeResource(mainPkg, mainMod, "Certificate"),
-			// 	Fields: map[string]*tfbridge.SchemaInfo{
-			// 		"tags": {Type: tfbridge.MakeType(mainPkg, "Tags")},
-			// 	},
-			// },
-		},
-		DataSources: map[string]*tfbridge.DataSourceInfo{
-			// Map each resource in the Terraform provider to a Pulumi function. An example
-			// is below.
-			// "aws_ami": {Tok: tfbridge.MakeDataSource(mainPkg, mainMod, "getAmi")},
-		},
+		Resources:            ResourceInfo,
+		DataSources:          DataSourceInfo,
 		JavaScript: &tfbridge.JavaScriptInfo{
-			// List any npm dependencies and their versions
 			Dependencies: map[string]string{
 				"@pulumi/pulumi": "^3.0.0",
 			},
@@ -119,13 +104,8 @@ func Provider() tfbridge.ProviderInfo {
 				"@types/node": "^10.0.0", // so we can access strongly typed node definitions.
 				"@types/mime": "^2.0.0",
 			},
-			// See the documentation for tfbridge.OverlayInfo for how to lay out this
-			// section, or refer to the AWS provider. Delete this section if there are
-			// no overlay files.
-			//Overlay: &tfbridge.OverlayInfo{},
 		},
 		Python: &tfbridge.PythonInfo{
-			// List any Python dependencies and their version ranges
 			Requires: map[string]string{
 				"pulumi": ">=3.0.0,<4.0.0",
 			},
