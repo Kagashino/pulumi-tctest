@@ -1,9 +1,9 @@
 PROJECT_NAME := tencentcloud Package
 
 SHELL            := /bin/bash
-PACK             := tencentcloud
-ORG              := pulumi
-PROJECT          := github.com/${ORG}/pulumi-${PACK}
+PACK             := tctest
+ORG              := Kagashino
+PROJECT          := github.com/${ORG}/${PACK}
 NODE_MODULE_NAME := @pulumi/${PACK}
 TF_NAME          := ${PACK}
 PROVIDER_PATH    := provider

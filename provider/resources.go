@@ -16,13 +16,12 @@ package tencentcloud
 
 import (
 	"fmt"
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"path/filepath"
 
+	"github.com/Kagashino/tctest/provider/pkg/version"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 	shim "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim"
-	shimv1 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v1"
-	"github.com/Kagashino/tctest/provider/pkg/version"
+	shimv2 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v2"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/resource"
 	"github.com/tencentcloudstack/terraform-provider-tencentcloud/tencentcloud"
 )
@@ -46,24 +45,24 @@ func preConfigureCallback(vars resource.PropertyMap, c shim.ResourceConfig) erro
 
 // Provider returns additional overlaid schema and metadata associated with the provider..
 func Provider() tfbridge.ProviderInfo {
-	tcProvider := tencentcloud.Provider().(*schema.Provider)
+	tcProvider := tencentcloud.Provider()
 	// Instantiate the Terraform provider
-	p := shimv1.NewProvider(tcProvider)
+	p := shimv2.NewProvider(tcProvider)
 
 	prov := tfbridge.ProviderInfo{
-		P:    p,
-		Name: "tencentcloud",
-		DisplayName: "Tencentcloud",
-		Publisher: "Kagashino",
-		LogoURL: "",
+		P:                 p,
+		Name:              "tencentcloud",
+		DisplayName:       "Tencentcloud",
+		Publisher:         "Kagashino",
+		LogoURL:           "",
 		PluginDownloadURL: "",
 		Description:       "A Pulumi package for creating and managing tencentcloud cloud resources.",
-		Keywords:   []string{"pulumi", "tencentcloud", "category/cloud"},
-		License:    "Apache-2.0",
-		Homepage:   "https://www.pulumi.com",
-		Repository: "github.com/kagashino/tctest",
-		GitHubOrg: "",
-		Config:    map[string]*tfbridge.SchemaInfo{
+		Keywords:          []string{"pulumi", "tencentcloud", "category/cloud"},
+		License:           "Apache-2.0",
+		Homepage:          "https://www.pulumi.com",
+		Repository:        "https://github.com/Kagashino/tctest",
+		GitHubOrg:         "",
+		Config: map[string]*tfbridge.SchemaInfo{
 			// Add any required configuration here, or remove the example below if
 			// no additional points are required.
 			// "region": {
@@ -79,12 +78,12 @@ func Provider() tfbridge.ProviderInfo {
 			},
 			"secret_id": {
 				Default: &tfbridge.DefaultInfo{
-					EnvVars: []string{"TENCENTCLOUD_REGION"},
+					EnvVars: []string{"TENCENTCLOUD_SECRET_ID"},
 				},
 			},
 			"secret_key": {
 				Default: &tfbridge.DefaultInfo{
-					EnvVars: []string{"TENCENTCLOUD_REGION"},
+					EnvVars: []string{"TENCENTCLOUD_SECRET_KEY"},
 				},
 			},
 			"security_token": {
