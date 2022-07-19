@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class TCRVPCAttachments
     {
         public static Task<TCRVPCAttachmentsResult> InvokeAsync(TCRVPCAttachmentsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TCRVPCAttachmentsResult>("tencentcloud:Cloud/tCRVPCAttachments:TCRVPCAttachments", args ?? new TCRVPCAttachmentsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TCRVPCAttachmentsResult>("tctest:Cloud/tCRVPCAttachments:TCRVPCAttachments", args ?? new TCRVPCAttachmentsArgs(), options.WithDefaults());
 
         public static Output<TCRVPCAttachmentsResult> Invoke(TCRVPCAttachmentsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TCRVPCAttachmentsResult>("tencentcloud:Cloud/tCRVPCAttachments:TCRVPCAttachments", args ?? new TCRVPCAttachmentsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TCRVPCAttachmentsResult>("tctest:Cloud/tCRVPCAttachments:TCRVPCAttachments", args ?? new TCRVPCAttachmentsInvokeArgs(), options.WithDefaults());
     }
 
 

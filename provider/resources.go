@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package tencentcloud
+package tctest
 
 import (
 	"fmt"
@@ -30,9 +30,9 @@ import (
 const (
 	// This variable controls the default name of the package in the package
 	// registries for nodejs and python:
-	mainPkg = "tencentcloud"
+	mainPkg = "tctest"
 	// modules:
-	mainMod = "index" // the tencentcloud module
+	mainMod = "index" // the tctest module
 )
 
 // preConfigureCallback is called before the providerConfigure function of the underlying provider.
@@ -51,16 +51,16 @@ func Provider() tfbridge.ProviderInfo {
 
 	prov := tfbridge.ProviderInfo{
 		P:                 p,
-		Name:              "tencentcloud",
-		DisplayName:       "Tencentcloud",
+		Name:              "tctest",
+		DisplayName:       "TC Test",
 		Publisher:         "Kagashino",
 		LogoURL:           "",
 		PluginDownloadURL: "",
-		Description:       "A Pulumi package for creating and managing tencentcloud cloud resources.",
-		Keywords:          []string{"pulumi", "tencentcloud", "category/cloud"},
+		Description:       "A Pulumi package for creating and managing testing tencent cloud resources.",
+		Keywords:          []string{"pulumi", "tctest", "category/cloud"},
 		License:           "Apache-2.0",
 		Homepage:          "https://www.pulumi.com",
-		Repository:        "https://github.com/Kagashino/tctest",
+		Repository:        "https://github.com/Kagashino/pulumi-tctest",
 		GitHubOrg:         "",
 		Config: map[string]*tfbridge.SchemaInfo{
 			// Add any required configuration here, or remove the example below if

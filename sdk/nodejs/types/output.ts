@@ -66,15 +66,6 @@ export namespace Address {
 
 }
 
-export namespace Alb {
-    export interface ServerAttachmentBackend {
-        instanceId: string;
-        port: number;
-        weight: number;
-    }
-
-}
-
 export namespace Api {
     export interface AvailabilityRegionsRegion {
         description: string;

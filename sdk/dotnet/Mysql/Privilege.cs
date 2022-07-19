@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
-    [TencentcloudResourceType("tencentcloud:Mysql/privilege:Privilege")]
+    [TctestResourceType("tctest:Mysql/privilege:Privilege")]
     public partial class Privilege : Pulumi.CustomResource
     {
         /// <summary>
@@ -65,12 +65,12 @@ namespace Pulumi.Tencentcloud.Mysql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Privilege(string name, PrivilegeArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/privilege:Privilege", name, args ?? new PrivilegeArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mysql/privilege:Privilege", name, args ?? new PrivilegeArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Privilege(string name, Input<string> id, PrivilegeState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/privilege:Privilege", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mysql/privilege:Privilege", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -12,7 +12,7 @@ export function apigatewayUsagePlans(args?: ApigatewayUsagePlansArgs, opts?: pul
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", {
         "resultOutputFile": args.resultOutputFile,
         "usagePlanId": args.usagePlanId,
         "usagePlanName": args.usagePlanName,

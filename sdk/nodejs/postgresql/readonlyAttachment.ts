@@ -19,7 +19,7 @@ export class ReadonlyAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Postgresql/readonlyAttachment:ReadonlyAttachment';
+    public static readonly __pulumiType = 'tctest:Postgresql/readonlyAttachment:ReadonlyAttachment';
 
     /**
      * Returns true if the given object is an instance of ReadonlyAttachment.  This is designed to work even

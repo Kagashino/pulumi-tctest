@@ -19,7 +19,7 @@ export class UserPolicyAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/userPolicyAttachment:UserPolicyAttachment';
+    public static readonly __pulumiType = 'tctest:Cam/userPolicyAttachment:UserPolicyAttachment';
 
     /**
      * Returns true if the given object is an instance of UserPolicyAttachment.  This is designed to work even

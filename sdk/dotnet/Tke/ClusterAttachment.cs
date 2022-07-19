@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
-    [TencentcloudResourceType("tencentcloud:Tke/clusterAttachment:ClusterAttachment")]
+    [TctestResourceType("tctest:Tke/clusterAttachment:ClusterAttachment")]
     public partial class ClusterAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -91,12 +91,12 @@ namespace Pulumi.Tencentcloud.Tke
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ClusterAttachment(string name, ClusterAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/clusterAttachment:ClusterAttachment", name, args ?? new ClusterAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tke/clusterAttachment:ClusterAttachment", name, args ?? new ClusterAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ClusterAttachment(string name, Input<string> id, ClusterAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/clusterAttachment:ClusterAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tke/clusterAttachment:ClusterAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

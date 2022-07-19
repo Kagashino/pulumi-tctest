@@ -19,7 +19,7 @@ export class BucketPolicy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cos/bucketPolicy:BucketPolicy';
+    public static readonly __pulumiType = 'tctest:Cos/bucketPolicy:BucketPolicy';
 
     /**
      * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even

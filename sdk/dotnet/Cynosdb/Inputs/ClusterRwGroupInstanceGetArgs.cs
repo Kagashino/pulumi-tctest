@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cynosdb.Inputs
+namespace Pulumi.Tctest.Cynosdb.Inputs
 {
 
     public sealed class ClusterRwGroupInstanceGetArgs : Pulumi.ResourceArgs

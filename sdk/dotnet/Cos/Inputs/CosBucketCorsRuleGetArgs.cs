@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cos.Inputs
+namespace Pulumi.Tctest.Cos.Inputs
 {
 
     public sealed class CosBucketCorsRuleGetArgs : Pulumi.ResourceArgs

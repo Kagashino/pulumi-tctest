@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcaplus
+namespace Pulumi.Tctest.Tcaplus
 {
     public static class TableGroups
     {
         public static Task<TableGroupsResult> InvokeAsync(TableGroupsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TableGroupsResult>("tencentcloud:Tcaplus/tableGroups:TableGroups", args ?? new TableGroupsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TableGroupsResult>("tctest:Tcaplus/tableGroups:TableGroups", args ?? new TableGroupsArgs(), options.WithDefaults());
 
         public static Output<TableGroupsResult> Invoke(TableGroupsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TableGroupsResult>("tencentcloud:Tcaplus/tableGroups:TableGroups", args ?? new TableGroupsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TableGroupsResult>("tctest:Tcaplus/tableGroups:TableGroups", args ?? new TableGroupsInvokeArgs(), options.WithDefaults());
     }
 
 

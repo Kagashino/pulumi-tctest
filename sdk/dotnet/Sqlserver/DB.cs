@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
-    [TencentcloudResourceType("tencentcloud:Sqlserver/dB:DB")]
+    [TctestResourceType("tctest:Sqlserver/dB:DB")]
     public partial class DB : Pulumi.CustomResource
     {
         /// <summary>
@@ -60,12 +60,12 @@ namespace Pulumi.Tencentcloud.Sqlserver
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public DB(string name, DBArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/dB:DB", name, args ?? new DBArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Sqlserver/dB:DB", name, args ?? new DBArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private DB(string name, Input<string> id, DBState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/dB:DB", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Sqlserver/dB:DB", name, state, MakeResourceOptions(options, id))
         {
         }
 

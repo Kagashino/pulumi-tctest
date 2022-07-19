@@ -11,7 +11,7 @@ export function redirections(args: RedirectionsArgs, opts?: pulumi.InvokeOptions
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/redirections:Redirections", {
+    return pulumi.runtime.invoke("tctest:Clb/redirections:Redirections", {
         "clbId": args.clbId,
         "resultOutputFile": args.resultOutputFile,
         "sourceListenerId": args.sourceListenerId,

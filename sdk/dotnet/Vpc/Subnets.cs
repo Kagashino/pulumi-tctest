@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
     public static class Subnets
     {
         public static Task<SubnetsResult> InvokeAsync(SubnetsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SubnetsResult>("tencentcloud:Vpc/subnets:Subnets", args ?? new SubnetsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SubnetsResult>("tctest:Vpc/subnets:Subnets", args ?? new SubnetsArgs(), options.WithDefaults());
 
         public static Output<SubnetsResult> Invoke(SubnetsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SubnetsResult>("tencentcloud:Vpc/subnets:Subnets", args ?? new SubnetsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SubnetsResult>("tctest:Vpc/subnets:Subnets", args ?? new SubnetsInvokeArgs(), options.WithDefaults());
     }
 
 

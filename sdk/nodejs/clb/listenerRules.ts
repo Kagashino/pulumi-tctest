@@ -11,7 +11,7 @@ export function listenerRules(args: ListenerRulesArgs, opts?: pulumi.InvokeOptio
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/listenerRules:ListenerRules", {
+    return pulumi.runtime.invoke("tctest:Clb/listenerRules:ListenerRules", {
         "clbId": args.clbId,
         "domain": args.domain,
         "listenerId": args.listenerId,

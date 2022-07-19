@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/superPlayerConfig:SuperPlayerConfig")]
+    [TctestResourceType("tctest:Vod/superPlayerConfig:SuperPlayerConfig")]
     public partial class SuperPlayerConfig : Pulumi.CustomResource
     {
         /// <summary>
@@ -104,12 +104,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SuperPlayerConfig(string name, SuperPlayerConfigArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/superPlayerConfig:SuperPlayerConfig", name, args ?? new SuperPlayerConfigArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/superPlayerConfig:SuperPlayerConfig", name, args ?? new SuperPlayerConfigArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SuperPlayerConfig(string name, Input<string> id, SuperPlayerConfigState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/superPlayerConfig:SuperPlayerConfig", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/superPlayerConfig:SuperPlayerConfig", name, state, MakeResourceOptions(options, id))
         {
         }
 

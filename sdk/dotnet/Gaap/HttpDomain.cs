@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/httpDomain:HttpDomain")]
+    [TctestResourceType("tctest:Gaap/httpDomain:HttpDomain")]
     public partial class HttpDomain : Pulumi.CustomResource
     {
         /// <summary>
@@ -99,12 +99,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public HttpDomain(string name, HttpDomainArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/httpDomain:HttpDomain", name, args ?? new HttpDomainArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/httpDomain:HttpDomain", name, args ?? new HttpDomainArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private HttpDomain(string name, Input<string> id, HttpDomainState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/httpDomain:HttpDomain", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/httpDomain:HttpDomain", name, state, MakeResourceOptions(options, id))
         {
         }
 

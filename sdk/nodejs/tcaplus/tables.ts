@@ -11,7 +11,7 @@ export function tables(args: TablesArgs, opts?: pulumi.InvokeOptions): Promise<T
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tcaplus/tables:Tables", {
+    return pulumi.runtime.invoke("tctest:Tcaplus/tables:Tables", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
         "tableId": args.tableId,

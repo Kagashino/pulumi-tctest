@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ssm
+namespace Pulumi.Tctest.Ssm
 {
     public static class SecretVersions
     {
         public static Task<SecretVersionsResult> InvokeAsync(SecretVersionsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SecretVersionsResult>("tencentcloud:Ssm/secretVersions:SecretVersions", args ?? new SecretVersionsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SecretVersionsResult>("tctest:Ssm/secretVersions:SecretVersions", args ?? new SecretVersionsArgs(), options.WithDefaults());
 
         public static Output<SecretVersionsResult> Invoke(SecretVersionsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SecretVersionsResult>("tencentcloud:Ssm/secretVersions:SecretVersions", args ?? new SecretVersionsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SecretVersionsResult>("tctest:Ssm/secretVersions:SecretVersions", args ?? new SecretVersionsInvokeArgs(), options.WithDefaults());
     }
 
 

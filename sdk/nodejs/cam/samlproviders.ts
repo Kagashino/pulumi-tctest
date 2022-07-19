@@ -12,7 +12,7 @@ export function samlproviders(args?: SamlprovidersArgs, opts?: pulumi.InvokeOpti
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/sAMLProviders:SAMLProviders", {
+    return pulumi.runtime.invoke("tctest:Cam/sAMLProviders:SAMLProviders", {
         "description": args.description,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

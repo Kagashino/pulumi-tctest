@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ckafka.Inputs
+namespace Pulumi.Tctest.Ckafka.Inputs
 {
 
     public sealed class InstanceTagArgs : Pulumi.ResourceArgs

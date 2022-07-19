@@ -11,7 +11,7 @@ export function keyAlias(args: KeyAliasArgs, opts?: pulumi.InvokeOptions): Promi
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Audit/keyAlias:KeyAlias", {
+    return pulumi.runtime.invoke("tctest:Audit/keyAlias:KeyAlias", {
         "region": args.region,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

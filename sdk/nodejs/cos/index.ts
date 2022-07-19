@@ -20,17 +20,17 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Cos/bucketObject:BucketObject":
+            case "tctest:Cos/bucketObject:BucketObject":
                 return new BucketObject(name, <any>undefined, { urn })
-            case "tencentcloud:Cos/bucketPolicy:BucketPolicy":
+            case "tctest:Cos/bucketPolicy:BucketPolicy":
                 return new BucketPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Cos/cosBucket:CosBucket":
+            case "tctest:Cos/cosBucket:CosBucket":
                 return new CosBucket(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Cos/bucketObject", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cos/bucketPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cos/cosBucket", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cos/bucketObject", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cos/bucketPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cos/cosBucket", _module)

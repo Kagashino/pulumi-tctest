@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ccn
+namespace Pulumi.Tctest.Ccn
 {
     public static class BandwidthLimits
     {
         public static Task<BandwidthLimitsResult> InvokeAsync(BandwidthLimitsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<BandwidthLimitsResult>("tencentcloud:Ccn/bandwidthLimits:BandwidthLimits", args ?? new BandwidthLimitsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<BandwidthLimitsResult>("tctest:Ccn/bandwidthLimits:BandwidthLimits", args ?? new BandwidthLimitsArgs(), options.WithDefaults());
 
         public static Output<BandwidthLimitsResult> Invoke(BandwidthLimitsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<BandwidthLimitsResult>("tencentcloud:Ccn/bandwidthLimits:BandwidthLimits", args ?? new BandwidthLimitsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<BandwidthLimitsResult>("tctest:Ccn/bandwidthLimits:BandwidthLimits", args ?? new BandwidthLimitsInvokeArgs(), options.WithDefaults());
     }
 
 

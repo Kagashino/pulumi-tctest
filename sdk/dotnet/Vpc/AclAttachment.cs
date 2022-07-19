@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
-    [TencentcloudResourceType("tencentcloud:Vpc/aclAttachment:AclAttachment")]
+    [TctestResourceType("tctest:Vpc/aclAttachment:AclAttachment")]
     public partial class AclAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Vpc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AclAttachment(string name, AclAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/aclAttachment:AclAttachment", name, args ?? new AclAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpc/aclAttachment:AclAttachment", name, args ?? new AclAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AclAttachment(string name, Input<string> id, AclAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/aclAttachment:AclAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpc/aclAttachment:AclAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

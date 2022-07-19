@@ -19,7 +19,7 @@ export class StandbyInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Mongodb/standbyInstance:StandbyInstance';
+    public static readonly __pulumiType = 'tctest:Mongodb/standbyInstance:StandbyInstance';
 
     /**
      * Returns true if the given object is an instance of StandbyInstance.  This is designed to work even

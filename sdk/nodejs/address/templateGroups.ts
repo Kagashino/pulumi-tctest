@@ -12,7 +12,7 @@ export function templateGroups(args?: TemplateGroupsArgs, opts?: pulumi.InvokeOp
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Address/templateGroups:TemplateGroups", {
+    return pulumi.runtime.invoke("tctest:Address/templateGroups:TemplateGroups", {
         "id": args.id,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

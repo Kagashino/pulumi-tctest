@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ckafka
+namespace Pulumi.Tctest.Ckafka
 {
     public static class Users
     {
         public static Task<UsersResult> InvokeAsync(UsersArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<UsersResult>("tencentcloud:Ckafka/users:Users", args ?? new UsersArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<UsersResult>("tctest:Ckafka/users:Users", args ?? new UsersArgs(), options.WithDefaults());
 
         public static Output<UsersResult> Invoke(UsersInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<UsersResult>("tencentcloud:Ckafka/users:Users", args ?? new UsersInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<UsersResult>("tctest:Ckafka/users:Users", args ?? new UsersInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
     public static class DdosPolicies
     {
         public static Task<DdosPoliciesResult> InvokeAsync(DdosPoliciesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DdosPoliciesResult>("tencentcloud:Dayu/ddosPolicies:DdosPolicies", args ?? new DdosPoliciesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<DdosPoliciesResult>("tctest:Dayu/ddosPolicies:DdosPolicies", args ?? new DdosPoliciesArgs(), options.WithDefaults());
 
         public static Output<DdosPoliciesResult> Invoke(DdosPoliciesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DdosPoliciesResult>("tencentcloud:Dayu/ddosPolicies:DdosPolicies", args ?? new DdosPoliciesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<DdosPoliciesResult>("tctest:Dayu/ddosPolicies:DdosPolicies", args ?? new DdosPoliciesInvokeArgs(), options.WithDefaults());
     }
 
 

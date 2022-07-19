@@ -1,1 +1,1 @@
-A Pulumi package for creating and managing tencentcloud cloud resources.
+A Pulumi package for creating and managing testing tencent cloud resources.

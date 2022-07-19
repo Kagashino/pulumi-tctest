@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Postgresql/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Postgresql/instances:Instances", {
         "id": args.id,
         "name": args.name,
         "projectId": args.projectId,

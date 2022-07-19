@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/targetGroupAttachment:TargetGroupAttachment")]
+    [TctestResourceType("tctest:Clb/targetGroupAttachment:TargetGroupAttachment")]
     public partial class TargetGroupAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public TargetGroupAttachment(string name, TargetGroupAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/targetGroupAttachment:TargetGroupAttachment", name, args ?? new TargetGroupAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/targetGroupAttachment:TargetGroupAttachment", name, args ?? new TargetGroupAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private TargetGroupAttachment(string name, Input<string> id, TargetGroupAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/targetGroupAttachment:TargetGroupAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/targetGroupAttachment:TargetGroupAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

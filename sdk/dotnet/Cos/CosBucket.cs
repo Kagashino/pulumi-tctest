@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cos
+namespace Pulumi.Tctest.Cos
 {
-    [TencentcloudResourceType("tencentcloud:Cos/cosBucket:CosBucket")]
+    [TctestResourceType("tctest:Cos/cosBucket:CosBucket")]
     public partial class CosBucket : Pulumi.CustomResource
     {
         /// <summary>
@@ -137,12 +137,12 @@ namespace Pulumi.Tencentcloud.Cos
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CosBucket(string name, CosBucketArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cos/cosBucket:CosBucket", name, args ?? new CosBucketArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cos/cosBucket:CosBucket", name, args ?? new CosBucketArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CosBucket(string name, Input<string> id, CosBucketState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cos/cosBucket:CosBucket", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cos/cosBucket:CosBucket", name, state, MakeResourceOptions(options, id))
         {
         }
 

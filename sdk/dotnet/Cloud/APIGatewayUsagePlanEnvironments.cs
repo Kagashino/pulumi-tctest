@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayUsagePlanEnvironments
     {
         public static Task<APIGatewayUsagePlanEnvironmentsResult> InvokeAsync(APIGatewayUsagePlanEnvironmentsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayUsagePlanEnvironmentsResult>("tencentcloud:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", args ?? new APIGatewayUsagePlanEnvironmentsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayUsagePlanEnvironmentsResult>("tctest:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", args ?? new APIGatewayUsagePlanEnvironmentsArgs(), options.WithDefaults());
 
         public static Output<APIGatewayUsagePlanEnvironmentsResult> Invoke(APIGatewayUsagePlanEnvironmentsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayUsagePlanEnvironmentsResult>("tencentcloud:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", args ?? new APIGatewayUsagePlanEnvironmentsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayUsagePlanEnvironmentsResult>("tctest:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", args ?? new APIGatewayUsagePlanEnvironmentsInvokeArgs(), options.WithDefaults());
     }
 
 

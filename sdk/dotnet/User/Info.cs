@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.User
+namespace Pulumi.Tctest.User
 {
     public static class Info
     {
         public static Task<InfoResult> InvokeAsync(InfoArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<InfoResult>("tencentcloud:User/info:Info", args ?? new InfoArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<InfoResult>("tctest:User/info:Info", args ?? new InfoArgs(), options.WithDefaults());
 
         public static Output<InfoResult> Invoke(InfoInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<InfoResult>("tencentcloud:User/info:Info", args ?? new InfoInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<InfoResult>("tctest:User/info:Info", args ?? new InfoInvokeArgs(), options.WithDefaults());
     }
 
 

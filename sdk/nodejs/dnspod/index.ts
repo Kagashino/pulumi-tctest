@@ -16,14 +16,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Dnspod/domainInstance:DomainInstance":
+            case "tctest:Dnspod/domainInstance:DomainInstance":
                 return new DomainInstance(name, <any>undefined, { urn })
-            case "tencentcloud:Dnspod/record:Record":
+            case "tctest:Dnspod/record:Record":
                 return new Record(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Dnspod/domainInstance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dnspod/record", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dnspod/domainInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dnspod/record", _module)

@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Nats/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Nats/instances:Instances", {
         "bandwidth": args.bandwidth,
         "id": args.id,
         "maxConcurrent": args.maxConcurrent,

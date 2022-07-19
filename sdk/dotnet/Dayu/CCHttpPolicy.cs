@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/cCHttpPolicy:CCHttpPolicy")]
+    [TctestResourceType("tctest:Dayu/cCHttpPolicy:CCHttpPolicy")]
     public partial class CCHttpPolicy : Pulumi.CustomResource
     {
         /// <summary>
@@ -90,12 +90,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CCHttpPolicy(string name, CCHttpPolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/cCHttpPolicy:CCHttpPolicy", name, args ?? new CCHttpPolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/cCHttpPolicy:CCHttpPolicy", name, args ?? new CCHttpPolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CCHttpPolicy(string name, Input<string> id, CCHttpPolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/cCHttpPolicy:CCHttpPolicy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/cCHttpPolicy:CCHttpPolicy", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
-    [TencentcloudResourceType("tencentcloud:Monitor/bindingObject:BindingObject")]
+    [TctestResourceType("tctest:Monitor/bindingObject:BindingObject")]
     public partial class BindingObject : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Monitor
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public BindingObject(string name, BindingObjectArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/bindingObject:BindingObject", name, args ?? new BindingObjectArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Monitor/bindingObject:BindingObject", name, args ?? new BindingObjectArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private BindingObject(string name, Input<string> id, BindingObjectState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/bindingObject:BindingObject", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Monitor/bindingObject:BindingObject", name, state, MakeResourceOptions(options, id))
         {
         }
 

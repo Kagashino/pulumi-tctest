@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.PrivateDns
+namespace Pulumi.Tctest.PrivateDns
 {
-    [TencentcloudResourceType("tencentcloud:PrivateDns/zone:Zone")]
+    [TctestResourceType("tctest:PrivateDns/zone:Zone")]
     public partial class Zone : Pulumi.CustomResource
     {
         /// <summary>
@@ -63,12 +63,12 @@ namespace Pulumi.Tencentcloud.PrivateDns
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Zone(string name, ZoneArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:PrivateDns/zone:Zone", name, args ?? new ZoneArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:PrivateDns/zone:Zone", name, args ?? new ZoneArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Zone(string name, Input<string> id, ZoneState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:PrivateDns/zone:Zone", name, state, MakeResourceOptions(options, id))
+            : base("tctest:PrivateDns/zone:Zone", name, state, MakeResourceOptions(options, id))
         {
         }
 

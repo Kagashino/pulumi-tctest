@@ -11,7 +11,7 @@ export function idls(args: IdlsArgs, opts?: pulumi.InvokeOptions): Promise<IdlsR
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tcaplus/idls:Idls", {
+    return pulumi.runtime.invoke("tctest:Tcaplus/idls:Idls", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

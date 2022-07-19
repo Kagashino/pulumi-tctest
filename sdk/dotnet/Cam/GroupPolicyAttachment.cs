@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/groupPolicyAttachment:GroupPolicyAttachment")]
+    [TctestResourceType("tctest:Cam/groupPolicyAttachment:GroupPolicyAttachment")]
     public partial class GroupPolicyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -58,12 +58,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GroupPolicyAttachment(string name, GroupPolicyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/groupPolicyAttachment:GroupPolicyAttachment", name, args ?? new GroupPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/groupPolicyAttachment:GroupPolicyAttachment", name, args ?? new GroupPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GroupPolicyAttachment(string name, Input<string> id, GroupPolicyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/groupPolicyAttachment:GroupPolicyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/groupPolicyAttachment:GroupPolicyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

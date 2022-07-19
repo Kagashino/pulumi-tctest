@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class Layer7Listeners
     {
         public static Task<Layer7ListenersResult> InvokeAsync(Layer7ListenersArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<Layer7ListenersResult>("tencentcloud:Gaap/layer7Listeners:Layer7Listeners", args ?? new Layer7ListenersArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<Layer7ListenersResult>("tctest:Gaap/layer7Listeners:Layer7Listeners", args ?? new Layer7ListenersArgs(), options.WithDefaults());
 
         public static Output<Layer7ListenersResult> Invoke(Layer7ListenersInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<Layer7ListenersResult>("tencentcloud:Gaap/layer7Listeners:Layer7Listeners", args ?? new Layer7ListenersInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<Layer7ListenersResult>("tctest:Gaap/layer7Listeners:Layer7Listeners", args ?? new Layer7ListenersInvokeArgs(), options.WithDefaults());
     }
 
 

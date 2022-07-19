@@ -19,7 +19,7 @@ export class SslServer extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vpn/sslServer:SslServer';
+    public static readonly __pulumiType = 'tctest:Vpn/sslServer:SslServer';
 
     /**
      * Returns true if the given object is an instance of SslServer.  This is designed to work even

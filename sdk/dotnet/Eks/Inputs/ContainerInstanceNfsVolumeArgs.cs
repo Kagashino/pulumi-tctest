@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eks.Inputs
+namespace Pulumi.Tctest.Eks.Inputs
 {
 
     public sealed class ContainerInstanceNfsVolumeArgs : Pulumi.ResourceArgs

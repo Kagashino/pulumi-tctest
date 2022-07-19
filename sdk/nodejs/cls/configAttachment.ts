@@ -19,7 +19,7 @@ export class ConfigAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cls/configAttachment:ConfigAttachment';
+    public static readonly __pulumiType = 'tctest:Cls/configAttachment:ConfigAttachment';
 
     /**
      * Returns true if the given object is an instance of ConfigAttachment.  This is designed to work even

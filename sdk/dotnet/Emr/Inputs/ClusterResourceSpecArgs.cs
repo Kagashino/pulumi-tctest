@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Emr.Inputs
+namespace Pulumi.Tctest.Emr.Inputs
 {
 
     public sealed class ClusterResourceSpecArgs : Pulumi.ResourceArgs

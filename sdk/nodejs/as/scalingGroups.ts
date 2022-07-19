@@ -12,7 +12,7 @@ export function scalingGroups(args?: ScalingGroupsArgs, opts?: pulumi.InvokeOpti
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:As/scalingGroups:ScalingGroups", {
+    return pulumi.runtime.invoke("tctest:As/scalingGroups:ScalingGroups", {
         "configurationId": args.configurationId,
         "resultOutputFile": args.resultOutputFile,
         "scalingGroupId": args.scalingGroupId,

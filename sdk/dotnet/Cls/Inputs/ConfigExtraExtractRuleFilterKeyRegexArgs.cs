@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cls.Inputs
+namespace Pulumi.Tctest.Cls.Inputs
 {
 
     public sealed class ConfigExtraExtractRuleFilterKeyRegexArgs : Pulumi.ResourceArgs

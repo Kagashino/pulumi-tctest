@@ -20,7 +20,7 @@ export class BindingObject extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Monitor/bindingObject:BindingObject';
+    public static readonly __pulumiType = 'tctest:Monitor/bindingObject:BindingObject';
 
     /**
      * Returns true if the given object is an instance of BindingObject.  This is designed to work even

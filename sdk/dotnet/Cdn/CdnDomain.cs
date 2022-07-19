@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cdn
+namespace Pulumi.Tctest.Cdn
 {
-    [TencentcloudResourceType("tencentcloud:Cdn/cdnDomain:CdnDomain")]
+    [TctestResourceType("tctest:Cdn/cdnDomain:CdnDomain")]
     public partial class CdnDomain : Pulumi.CustomResource
     {
         /// <summary>
@@ -115,12 +115,12 @@ namespace Pulumi.Tencentcloud.Cdn
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CdnDomain(string name, CdnDomainArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cdn/cdnDomain:CdnDomain", name, args ?? new CdnDomainArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cdn/cdnDomain:CdnDomain", name, args ?? new CdnDomainArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CdnDomain(string name, Input<string> id, CdnDomainState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cdn/cdnDomain:CdnDomain", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cdn/cdnDomain:CdnDomain", name, state, MakeResourceOptions(options, id))
         {
         }
 

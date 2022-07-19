@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Key
+namespace Pulumi.Tctest.Key
 {
-    [TencentcloudResourceType("tencentcloud:Key/pair:Pair")]
+    [TctestResourceType("tctest:Key/pair:Pair")]
     public partial class Pair : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Key
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Pair(string name, PairArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Key/pair:Pair", name, args ?? new PairArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Key/pair:Pair", name, args ?? new PairArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Pair(string name, Input<string> id, PairState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Key/pair:Pair", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Key/pair:Pair", name, state, MakeResourceOptions(options, id))
         {
         }
 

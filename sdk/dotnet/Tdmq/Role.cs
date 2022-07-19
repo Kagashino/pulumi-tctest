@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tdmq
+namespace Pulumi.Tctest.Tdmq
 {
-    [TencentcloudResourceType("tencentcloud:Tdmq/role:Role")]
+    [TctestResourceType("tctest:Tdmq/role:Role")]
     public partial class Role : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Tdmq
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Role(string name, RoleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/role:Role", name, args ?? new RoleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tdmq/role:Role", name, args ?? new RoleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Role(string name, Input<string> id, RoleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/role:Role", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tdmq/role:Role", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eip
+namespace Pulumi.Tctest.Eip
 {
-    [TencentcloudResourceType("tencentcloud:Eip/association:Association")]
+    [TctestResourceType("tctest:Eip/association:Association")]
     public partial class Association : Pulumi.CustomResource
     {
         /// <summary>
@@ -46,12 +46,12 @@ namespace Pulumi.Tencentcloud.Eip
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Association(string name, AssociationArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Eip/association:Association", name, args ?? new AssociationArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Eip/association:Association", name, args ?? new AssociationArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Association(string name, Input<string> id, AssociationState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Eip/association:Association", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Eip/association:Association", name, state, MakeResourceOptions(options, id))
         {
         }
 

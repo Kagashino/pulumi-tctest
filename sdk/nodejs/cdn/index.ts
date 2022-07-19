@@ -15,11 +15,11 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Cdn/cdnDomain:CdnDomain":
+            case "tctest:Cdn/cdnDomain:CdnDomain":
                 return new CdnDomain(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Cdn/cdnDomain", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cdn/cdnDomain", _module)

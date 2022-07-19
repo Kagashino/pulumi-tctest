@@ -29,26 +29,26 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Vpc/aCL:ACL":
+            case "tctest:Vpc/aCL:ACL":
                 return new ACL(name, <any>undefined, { urn })
-            case "tencentcloud:Vpc/aclAttachment:AclAttachment":
+            case "tctest:Vpc/aclAttachment:AclAttachment":
                 return new AclAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Vpc/instance:Instance":
+            case "tctest:Vpc/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Vpc/routeEntry:RouteEntry":
+            case "tctest:Vpc/routeEntry:RouteEntry":
                 return new RouteEntry(name, <any>undefined, { urn })
-            case "tencentcloud:Vpc/routeTable:RouteTable":
+            case "tctest:Vpc/routeTable:RouteTable":
                 return new RouteTable(name, <any>undefined, { urn })
-            case "tencentcloud:Vpc/subnet:Subnet":
+            case "tctest:Vpc/subnet:Subnet":
                 return new Subnet(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/aCL", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/aclAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/routeEntry", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/routeTable", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpc/subnet", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/aCL", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/aclAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/routeEntry", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/routeTable", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpc/subnet", _module)

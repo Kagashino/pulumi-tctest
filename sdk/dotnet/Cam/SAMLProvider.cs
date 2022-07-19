@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/sAMLProvider:SAMLProvider")]
+    [TctestResourceType("tctest:Cam/sAMLProvider:SAMLProvider")]
     public partial class SAMLProvider : Pulumi.CustomResource
     {
         /// <summary>
@@ -57,12 +57,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SAMLProvider(string name, SAMLProviderArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/sAMLProvider:SAMLProvider", name, args ?? new SAMLProviderArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/sAMLProvider:SAMLProvider", name, args ?? new SAMLProviderArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SAMLProvider(string name, Input<string> id, SAMLProviderState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/sAMLProvider:SAMLProvider", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/sAMLProvider:SAMLProvider", name, state, MakeResourceOptions(options, id))
         {
         }
 

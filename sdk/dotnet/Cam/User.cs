@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/user:User")]
+    [TctestResourceType("tctest:Cam/user:User")]
     public partial class User : Pulumi.CustomResource
     {
         /// <summary>
@@ -108,12 +108,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public User(string name, UserArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/user:User", name, args ?? new UserArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/user:User", name, args ?? new UserArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private User(string name, Input<string> id, UserState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/user:User", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/user:User", name, state, MakeResourceOptions(options, id))
         {
         }
 

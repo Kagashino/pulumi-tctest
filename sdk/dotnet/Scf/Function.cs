@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Scf
+namespace Pulumi.Tctest.Scf
 {
-    [TencentcloudResourceType("tencentcloud:Scf/function:Function")]
+    [TctestResourceType("tctest:Scf/function:Function")]
     public partial class Function : Pulumi.CustomResource
     {
         /// <summary>
@@ -255,12 +255,12 @@ namespace Pulumi.Tencentcloud.Scf
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Function(string name, FunctionArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/function:Function", name, args ?? new FunctionArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Scf/function:Function", name, args ?? new FunctionArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Function(string name, Input<string> id, FunctionState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/function:Function", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Scf/function:Function", name, state, MakeResourceOptions(options, id))
         {
         }
 

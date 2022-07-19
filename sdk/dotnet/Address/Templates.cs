@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Address
+namespace Pulumi.Tctest.Address
 {
     public static class Templates
     {
         public static Task<TemplatesResult> InvokeAsync(TemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TemplatesResult>("tencentcloud:Address/templates:Templates", args ?? new TemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TemplatesResult>("tctest:Address/templates:Templates", args ?? new TemplatesArgs(), options.WithDefaults());
 
         public static Output<TemplatesResult> Invoke(TemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TemplatesResult>("tencentcloud:Address/templates:Templates", args ?? new TemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TemplatesResult>("tctest:Address/templates:Templates", args ?? new TemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -19,7 +19,7 @@ export class DomainErrorPageInfo extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/domainErrorPageInfo:DomainErrorPageInfo';
+    public static readonly __pulumiType = 'tctest:Gaap/domainErrorPageInfo:DomainErrorPageInfo';
 
     /**
      * Returns true if the given object is an instance of DomainErrorPageInfo.  This is designed to work even

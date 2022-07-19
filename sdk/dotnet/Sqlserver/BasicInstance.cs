@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
-    [TencentcloudResourceType("tencentcloud:Sqlserver/basicInstance:BasicInstance")]
+    [TctestResourceType("tctest:Sqlserver/basicInstance:BasicInstance")]
     public partial class BasicInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -174,12 +174,12 @@ namespace Pulumi.Tencentcloud.Sqlserver
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public BasicInstance(string name, BasicInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/basicInstance:BasicInstance", name, args ?? new BasicInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Sqlserver/basicInstance:BasicInstance", name, args ?? new BasicInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private BasicInstance(string name, Input<string> id, BasicInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/basicInstance:BasicInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Sqlserver/basicInstance:BasicInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

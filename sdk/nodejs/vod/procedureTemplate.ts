@@ -20,7 +20,7 @@ export class ProcedureTemplate extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/procedureTemplate:ProcedureTemplate';
+    public static readonly __pulumiType = 'tctest:Vod/procedureTemplate:ProcedureTemplate';
 
     /**
      * Returns true if the given object is an instance of ProcedureTemplate.  This is designed to work even

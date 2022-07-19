@@ -11,7 +11,7 @@ export function nodes(args: NodesArgs, opts?: pulumi.InvokeOptions): Promise<Nod
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Emr/nodes:Nodes", {
+    return pulumi.runtime.invoke("tctest:Emr/nodes:Nodes", {
         "hardwareResourceType": args.hardwareResourceType,
         "instanceId": args.instanceId,
         "limit": args.limit,

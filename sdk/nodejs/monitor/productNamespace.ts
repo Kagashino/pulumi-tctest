@@ -12,7 +12,7 @@ export function productNamespace(args?: ProductNamespaceArgs, opts?: pulumi.Invo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/productNamespace:ProductNamespace", {
+    return pulumi.runtime.invoke("tctest:Monitor/productNamespace:ProductNamespace", {
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

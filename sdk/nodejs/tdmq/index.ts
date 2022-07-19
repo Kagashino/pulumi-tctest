@@ -22,23 +22,23 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Tdmq/instance:Instance":
+            case "tctest:Tdmq/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Tdmq/namespace:Namespace":
+            case "tctest:Tdmq/namespace:Namespace":
                 return new Namespace(name, <any>undefined, { urn })
-            case "tencentcloud:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment":
+            case "tctest:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment":
                 return new NamespaceRoleAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Tdmq/role:Role":
+            case "tctest:Tdmq/role:Role":
                 return new Role(name, <any>undefined, { urn })
-            case "tencentcloud:Tdmq/topic:Topic":
+            case "tctest:Tdmq/topic:Topic":
                 return new Topic(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Tdmq/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tdmq/namespace", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tdmq/namespaceRoleAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tdmq/role", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tdmq/topic", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tdmq/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tdmq/namespace", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tdmq/namespaceRoleAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tdmq/role", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tdmq/topic", _module)

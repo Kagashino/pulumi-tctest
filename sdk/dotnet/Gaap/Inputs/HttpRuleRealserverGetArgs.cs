@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap.Inputs
+namespace Pulumi.Tctest.Gaap.Inputs
 {
 
     public sealed class HttpRuleRealserverGetArgs : Pulumi.ResourceArgs

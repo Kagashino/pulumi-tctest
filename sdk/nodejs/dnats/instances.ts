@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dnats/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Dnats/instances:Instances", {
         "description": args.description,
         "elasticIp": args.elasticIp,
         "elasticPort": args.elasticPort,

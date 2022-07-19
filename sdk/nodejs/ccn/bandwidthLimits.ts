@@ -11,7 +11,7 @@ export function bandwidthLimits(args: BandwidthLimitsArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ccn/bandwidthLimits:BandwidthLimits", {
+    return pulumi.runtime.invoke("tctest:Ccn/bandwidthLimits:BandwidthLimits", {
         "ccnId": args.ccnId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/oIDCSSO:OIDCSSO")]
+    [TctestResourceType("tctest:Cam/oIDCSSO:OIDCSSO")]
     public partial class OIDCSSO : Pulumi.CustomResource
     {
         /// <summary>
@@ -74,12 +74,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public OIDCSSO(string name, OIDCSSOArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/oIDCSSO:OIDCSSO", name, args ?? new OIDCSSOArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/oIDCSSO:OIDCSSO", name, args ?? new OIDCSSOArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private OIDCSSO(string name, Input<string> id, OIDCSSOState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/oIDCSSO:OIDCSSO", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/oIDCSSO:OIDCSSO", name, state, MakeResourceOptions(options, id))
         {
         }
 

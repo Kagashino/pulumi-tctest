@@ -12,7 +12,7 @@ export function instancesTypes(args?: InstancesTypesArgs, opts?: pulumi.InvokeOp
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cvm/instancesTypes:InstancesTypes", {
+    return pulumi.runtime.invoke("tctest:Cvm/instancesTypes:InstancesTypes", {
         "availabilityZone": args.availabilityZone,
         "cpuCoreCount": args.cpuCoreCount,
         "excludeSoldOut": args.excludeSoldOut,

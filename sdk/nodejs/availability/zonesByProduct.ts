@@ -11,7 +11,7 @@ export function zonesByProduct(args: ZonesByProductArgs, opts?: pulumi.InvokeOpt
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Availability/zonesByProduct:ZonesByProduct", {
+    return pulumi.runtime.invoke("tctest:Availability/zonesByProduct:ZonesByProduct", {
         "includeUnavailable": args.includeUnavailable,
         "name": args.name,
         "product": args.product,

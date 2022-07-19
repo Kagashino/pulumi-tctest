@@ -12,7 +12,7 @@ export function superPlayerConfigs(args?: SuperPlayerConfigsArgs, opts?: pulumi.
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vod/superPlayerConfigs:SuperPlayerConfigs", {
+    return pulumi.runtime.invoke("tctest:Vod/superPlayerConfigs:SuperPlayerConfigs", {
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,
         "subAppId": args.subAppId,

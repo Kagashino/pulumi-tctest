@@ -11,7 +11,7 @@ export function layer7Listeners(args: Layer7ListenersArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/layer7Listeners:Layer7Listeners", {
+    return pulumi.runtime.invoke("tctest:Gaap/layer7Listeners:Layer7Listeners", {
         "listenerId": args.listenerId,
         "listenerName": args.listenerName,
         "port": args.port,

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Scf
+namespace Pulumi.Tctest.Scf
 {
-    [TencentcloudResourceType("tencentcloud:Scf/scfNamespace:ScfNamespace")]
+    [TctestResourceType("tctest:Scf/scfNamespace:ScfNamespace")]
     public partial class ScfNamespace : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Scf
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ScfNamespace(string name, ScfNamespaceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/scfNamespace:ScfNamespace", name, args ?? new ScfNamespaceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Scf/scfNamespace:ScfNamespace", name, args ?? new ScfNamespaceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ScfNamespace(string name, Input<string> id, ScfNamespaceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/scfNamespace:ScfNamespace", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Scf/scfNamespace:ScfNamespace", name, state, MakeResourceOptions(options, id))
         {
         }
 

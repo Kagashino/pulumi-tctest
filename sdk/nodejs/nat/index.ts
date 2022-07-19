@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Nat/gateway:Gateway":
+            case "tctest:Nat/gateway:Gateway":
                 return new Gateway(name, <any>undefined, { urn })
-            case "tencentcloud:Nat/gatewaySnat:GatewaySnat":
+            case "tctest:Nat/gatewaySnat:GatewaySnat":
                 return new GatewaySnat(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Nat/gateway", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Nat/gatewaySnat", _module)
+pulumi.runtime.registerResourceModule("tctest", "Nat/gateway", _module)
+pulumi.runtime.registerResourceModule("tctest", "Nat/gatewaySnat", _module)

@@ -20,7 +20,7 @@ export class PublishSubscribe extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Sqlserver/publishSubscribe:PublishSubscribe';
+    public static readonly __pulumiType = 'tctest:Sqlserver/publishSubscribe:PublishSubscribe';
 
     /**
      * Returns true if the given object is an instance of PublishSubscribe.  This is designed to work even

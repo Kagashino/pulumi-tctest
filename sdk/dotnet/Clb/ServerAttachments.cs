@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
     public static class ServerAttachments
     {
         public static Task<ServerAttachmentsResult> InvokeAsync(ServerAttachmentsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ServerAttachmentsResult>("tencentcloud:Clb/serverAttachments:ServerAttachments", args ?? new ServerAttachmentsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ServerAttachmentsResult>("tctest:Clb/serverAttachments:ServerAttachments", args ?? new ServerAttachmentsArgs(), options.WithDefaults());
 
         public static Output<ServerAttachmentsResult> Invoke(ServerAttachmentsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ServerAttachmentsResult>("tencentcloud:Clb/serverAttachments:ServerAttachments", args ?? new ServerAttachmentsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ServerAttachmentsResult>("tctest:Clb/serverAttachments:ServerAttachments", args ?? new ServerAttachmentsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -19,7 +19,7 @@ export class SecurityRule extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/securityRule:SecurityRule';
+    public static readonly __pulumiType = 'tctest:Gaap/securityRule:SecurityRule';
 
     /**
      * Returns true if the given object is an instance of SecurityRule.  This is designed to work even

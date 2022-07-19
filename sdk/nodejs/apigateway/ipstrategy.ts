@@ -19,7 +19,7 @@ export class IPStrategy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/iPStrategy:IPStrategy';
+    public static readonly __pulumiType = 'tctest:APIGateway/iPStrategy:IPStrategy';
 
     /**
      * Returns true if the given object is an instance of IPStrategy.  This is designed to work even

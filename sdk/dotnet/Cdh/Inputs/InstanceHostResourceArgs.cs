@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cdh.Inputs
+namespace Pulumi.Tctest.Cdh.Inputs
 {
 
     public sealed class InstanceHostResourceArgs : Pulumi.ResourceArgs

@@ -18,8 +18,6 @@
         "address/templateGroup.ts",
         "address/templateGroups.ts",
         "address/templates.ts",
-        "alb/index.ts",
-        "alb/serverAttachment.ts",
         "api/availabilityRegions.ts",
         "api/index.ts",
         "apigateway/api.ts",

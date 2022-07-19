@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cdh/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Cdh/instances:Instances", {
         "availabilityZone": args.availabilityZone,
         "hostId": args.hostId,
         "hostName": args.hostName,

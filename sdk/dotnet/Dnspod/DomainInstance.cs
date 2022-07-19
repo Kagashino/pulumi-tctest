@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dnspod
+namespace Pulumi.Tctest.Dnspod
 {
-    [TencentcloudResourceType("tencentcloud:Dnspod/domainInstance:DomainInstance")]
+    [TctestResourceType("tctest:Dnspod/domainInstance:DomainInstance")]
     public partial class DomainInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -57,12 +57,12 @@ namespace Pulumi.Tencentcloud.Dnspod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public DomainInstance(string name, DomainInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dnspod/domainInstance:DomainInstance", name, args ?? new DomainInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dnspod/domainInstance:DomainInstance", name, args ?? new DomainInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private DomainInstance(string name, Input<string> id, DomainInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dnspod/domainInstance:DomainInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dnspod/domainInstance:DomainInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

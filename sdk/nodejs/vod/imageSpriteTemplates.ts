@@ -12,7 +12,7 @@ export function imageSpriteTemplates(args?: ImageSpriteTemplatesArgs, opts?: pul
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vod/imageSpriteTemplates:ImageSpriteTemplates", {
+    return pulumi.runtime.invoke("tctest:Vod/imageSpriteTemplates:ImageSpriteTemplates", {
         "definition": args.definition,
         "resultOutputFile": args.resultOutputFile,
         "subAppId": args.subAppId,

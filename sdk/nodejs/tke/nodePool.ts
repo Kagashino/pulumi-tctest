@@ -20,7 +20,7 @@ export class NodePool extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tke/nodePool:NodePool';
+    public static readonly __pulumiType = 'tctest:Tke/nodePool:NodePool';
 
     /**
      * Returns true if the given object is an instance of NodePool.  This is designed to work even

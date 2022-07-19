@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Availability
+namespace Pulumi.Tctest.Availability
 {
     public static class Zones
     {
         public static Task<ZonesResult> InvokeAsync(ZonesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ZonesResult>("tencentcloud:Availability/zones:Zones", args ?? new ZonesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ZonesResult>("tctest:Availability/zones:Zones", args ?? new ZonesArgs(), options.WithDefaults());
 
         public static Output<ZonesResult> Invoke(ZonesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ZonesResult>("tencentcloud:Availability/zones:Zones", args ?? new ZonesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ZonesResult>("tctest:Availability/zones:Zones", args ?? new ZonesInvokeArgs(), options.WithDefaults());
     }
 
 

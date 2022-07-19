@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
-    [TencentcloudResourceType("tencentcloud:Cfs/accessRule:AccessRule")]
+    [TctestResourceType("tctest:Cfs/accessRule:AccessRule")]
     public partial class AccessRule : Pulumi.CustomResource
     {
         /// <summary>
@@ -56,12 +56,12 @@ namespace Pulumi.Tencentcloud.Cfs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AccessRule(string name, AccessRuleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/accessRule:AccessRule", name, args ?? new AccessRuleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cfs/accessRule:AccessRule", name, args ?? new AccessRuleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AccessRule(string name, Input<string> id, AccessRuleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/accessRule:AccessRule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cfs/accessRule:AccessRule", name, state, MakeResourceOptions(options, id))
         {
         }
 

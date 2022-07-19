@@ -19,7 +19,7 @@ export class Namespace extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tcr/namespace:Namespace';
+    public static readonly __pulumiType = 'tctest:Tcr/namespace:Namespace';
 
     /**
      * Returns true if the given object is an instance of Namespace.  This is designed to work even

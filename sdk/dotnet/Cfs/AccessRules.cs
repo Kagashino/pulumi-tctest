@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
     public static class AccessRules
     {
         public static Task<AccessRulesResult> InvokeAsync(AccessRulesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<AccessRulesResult>("tencentcloud:Cfs/accessRules:AccessRules", args ?? new AccessRulesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<AccessRulesResult>("tctest:Cfs/accessRules:AccessRules", args ?? new AccessRulesArgs(), options.WithDefaults());
 
         public static Output<AccessRulesResult> Invoke(AccessRulesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<AccessRulesResult>("tencentcloud:Cfs/accessRules:AccessRules", args ?? new AccessRulesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<AccessRulesResult>("tctest:Cfs/accessRules:AccessRules", args ?? new AccessRulesInvokeArgs(), options.WithDefaults());
     }
 
 

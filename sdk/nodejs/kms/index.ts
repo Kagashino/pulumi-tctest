@@ -17,14 +17,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Kms/externalKey:ExternalKey":
+            case "tctest:Kms/externalKey:ExternalKey":
                 return new ExternalKey(name, <any>undefined, { urn })
-            case "tencentcloud:Kms/kmsKey:KmsKey":
+            case "tctest:Kms/kmsKey:KmsKey":
                 return new KmsKey(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Kms/externalKey", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Kms/kmsKey", _module)
+pulumi.runtime.registerResourceModule("tctest", "Kms/externalKey", _module)
+pulumi.runtime.registerResourceModule("tctest", "Kms/kmsKey", _module)

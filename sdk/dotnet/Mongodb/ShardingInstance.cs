@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mongodb
+namespace Pulumi.Tctest.Mongodb
 {
-    [TencentcloudResourceType("tencentcloud:Mongodb/shardingInstance:ShardingInstance")]
+    [TctestResourceType("tctest:Mongodb/shardingInstance:ShardingInstance")]
     public partial class ShardingInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -157,12 +157,12 @@ namespace Pulumi.Tencentcloud.Mongodb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ShardingInstance(string name, ShardingInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/shardingInstance:ShardingInstance", name, args ?? new ShardingInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mongodb/shardingInstance:ShardingInstance", name, args ?? new ShardingInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ShardingInstance(string name, Input<string> id, ShardingInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/shardingInstance:ShardingInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mongodb/shardingInstance:ShardingInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

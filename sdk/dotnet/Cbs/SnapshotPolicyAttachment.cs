@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
-    [TencentcloudResourceType("tencentcloud:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment")]
+    [TctestResourceType("tctest:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment")]
     public partial class SnapshotPolicyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Cbs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SnapshotPolicyAttachment(string name, SnapshotPolicyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment", name, args ?? new SnapshotPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment", name, args ?? new SnapshotPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SnapshotPolicyAttachment(string name, Input<string> id, SnapshotPolicyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

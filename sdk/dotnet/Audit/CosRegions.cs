@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Audit
+namespace Pulumi.Tctest.Audit
 {
     public static class CosRegions
     {
         public static Task<CosRegionsResult> InvokeAsync(CosRegionsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<CosRegionsResult>("tencentcloud:Audit/cosRegions:CosRegions", args ?? new CosRegionsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<CosRegionsResult>("tctest:Audit/cosRegions:CosRegions", args ?? new CosRegionsArgs(), options.WithDefaults());
 
         public static Output<CosRegionsResult> Invoke(CosRegionsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<CosRegionsResult>("tencentcloud:Audit/cosRegions:CosRegions", args ?? new CosRegionsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<CosRegionsResult>("tctest:Audit/cosRegions:CosRegions", args ?? new CosRegionsInvokeArgs(), options.WithDefaults());
     }
 
 

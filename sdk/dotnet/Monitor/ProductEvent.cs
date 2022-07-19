@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
     public static class ProductEvent
     {
         public static Task<ProductEventResult> InvokeAsync(ProductEventArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ProductEventResult>("tencentcloud:Monitor/productEvent:ProductEvent", args ?? new ProductEventArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ProductEventResult>("tctest:Monitor/productEvent:ProductEvent", args ?? new ProductEventArgs(), options.WithDefaults());
 
         public static Output<ProductEventResult> Invoke(ProductEventInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ProductEventResult>("tencentcloud:Monitor/productEvent:ProductEvent", args ?? new ProductEventInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ProductEventResult>("tctest:Monitor/productEvent:ProductEvent", args ?? new ProductEventInvokeArgs(), options.WithDefaults());
     }
 
 

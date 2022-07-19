@@ -20,7 +20,7 @@ export class CCPolicyV2 extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dayu/cCPolicyV2:CCPolicyV2';
+    public static readonly __pulumiType = 'tctest:Dayu/cCPolicyV2:CCPolicyV2';
 
     /**
      * Returns true if the given object is an instance of CCPolicyV2.  This is designed to work even

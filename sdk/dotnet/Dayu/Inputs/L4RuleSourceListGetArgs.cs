@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu.Inputs
+namespace Pulumi.Tctest.Dayu.Inputs
 {
 
     public sealed class L4RuleSourceListGetArgs : Pulumi.ResourceArgs

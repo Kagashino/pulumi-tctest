@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/ddosPolicyAttachment:DdosPolicyAttachment")]
+    [TctestResourceType("tctest:Dayu/ddosPolicyAttachment:DdosPolicyAttachment")]
     public partial class DdosPolicyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public DdosPolicyAttachment(string name, DdosPolicyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/ddosPolicyAttachment:DdosPolicyAttachment", name, args ?? new DdosPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/ddosPolicyAttachment:DdosPolicyAttachment", name, args ?? new DdosPolicyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private DdosPolicyAttachment(string name, Input<string> id, DdosPolicyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/ddosPolicyAttachment:DdosPolicyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/ddosPolicyAttachment:DdosPolicyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

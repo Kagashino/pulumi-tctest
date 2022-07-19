@@ -19,7 +19,7 @@ export class Storage extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cbs/storage:Storage';
+    public static readonly __pulumiType = 'tctest:Cbs/storage:Storage';
 
     /**
      * Returns true if the given object is an instance of Storage.  This is designed to work even

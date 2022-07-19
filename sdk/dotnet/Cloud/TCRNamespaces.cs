@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class TCRNamespaces
     {
         public static Task<TCRNamespacesResult> InvokeAsync(TCRNamespacesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TCRNamespacesResult>("tencentcloud:Cloud/tCRNamespaces:TCRNamespaces", args ?? new TCRNamespacesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TCRNamespacesResult>("tctest:Cloud/tCRNamespaces:TCRNamespaces", args ?? new TCRNamespacesArgs(), options.WithDefaults());
 
         public static Output<TCRNamespacesResult> Invoke(TCRNamespacesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TCRNamespacesResult>("tencentcloud:Cloud/tCRNamespaces:TCRNamespaces", args ?? new TCRNamespacesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TCRNamespacesResult>("tctest:Cloud/tCRNamespaces:TCRNamespaces", args ?? new TCRNamespacesInvokeArgs(), options.WithDefaults());
     }
 
 

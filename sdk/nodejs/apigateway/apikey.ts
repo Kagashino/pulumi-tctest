@@ -19,7 +19,7 @@ export class APIKey extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/aPIKey:APIKey';
+    public static readonly __pulumiType = 'tctest:APIGateway/aPIKey:APIKey';
 
     /**
      * Returns true if the given object is an instance of APIKey.  This is designed to work even

@@ -12,7 +12,7 @@ export function availabilityRegions(args?: AvailabilityRegionsArgs, opts?: pulum
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Api/availabilityRegions:AvailabilityRegions", {
+    return pulumi.runtime.invoke("tctest:Api/availabilityRegions:AvailabilityRegions", {
         "includeUnavailable": args.includeUnavailable,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

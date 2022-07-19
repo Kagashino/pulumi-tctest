@@ -19,7 +19,7 @@ export class Entry extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Route/entry:Entry';
+    public static readonly __pulumiType = 'tctest:Route/entry:Entry';
 
     /**
      * Returns true if the given object is an instance of Entry.  This is designed to work even

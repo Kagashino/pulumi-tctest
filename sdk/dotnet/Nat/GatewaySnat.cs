@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Nat
+namespace Pulumi.Tctest.Nat
 {
-    [TencentcloudResourceType("tencentcloud:Nat/gatewaySnat:GatewaySnat")]
+    [TctestResourceType("tctest:Nat/gatewaySnat:GatewaySnat")]
     public partial class GatewaySnat : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Nat
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GatewaySnat(string name, GatewaySnatArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Nat/gatewaySnat:GatewaySnat", name, args ?? new GatewaySnatArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Nat/gatewaySnat:GatewaySnat", name, args ?? new GatewaySnatArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GatewaySnat(string name, Input<string> id, GatewaySnatState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Nat/gatewaySnat:GatewaySnat", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Nat/gatewaySnat:GatewaySnat", name, state, MakeResourceOptions(options, id))
         {
         }
 

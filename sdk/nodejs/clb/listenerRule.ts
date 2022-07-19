@@ -19,7 +19,7 @@ export class ListenerRule extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/listenerRule:ListenerRule';
+    public static readonly __pulumiType = 'tctest:Clb/listenerRule:ListenerRule';
 
     /**
      * Returns true if the given object is an instance of ListenerRule.  This is designed to work even

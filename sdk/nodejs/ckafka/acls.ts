@@ -11,7 +11,7 @@ export function acls(args: AclsArgs, opts?: pulumi.InvokeOptions): Promise<AclsR
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ckafka/acls:Acls", {
+    return pulumi.runtime.invoke("tctest:Ckafka/acls:Acls", {
         "host": args.host,
         "instanceId": args.instanceId,
         "resourceName": args.resourceName,

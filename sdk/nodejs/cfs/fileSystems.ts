@@ -12,7 +12,7 @@ export function fileSystems(args?: FileSystemsArgs, opts?: pulumi.InvokeOptions)
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cfs/fileSystems:FileSystems", {
+    return pulumi.runtime.invoke("tctest:Cfs/fileSystems:FileSystems", {
         "availabilityZone": args.availabilityZone,
         "fileSystemId": args.fileSystemId,
         "name": args.name,

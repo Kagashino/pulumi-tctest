@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.APIGateway
+namespace Pulumi.Tctest.APIGateway
 {
-    [TencentcloudResourceType("tencentcloud:APIGateway/aPI:API")]
+    [TctestResourceType("tctest:APIGateway/aPI:API")]
     public partial class API : Pulumi.CustomResource
     {
         /// <summary>
@@ -198,12 +198,12 @@ namespace Pulumi.Tencentcloud.APIGateway
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public API(string name, APIArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/aPI:API", name, args ?? new APIArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:APIGateway/aPI:API", name, args ?? new APIArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private API(string name, Input<string> id, APIState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/aPI:API", name, state, MakeResourceOptions(options, id))
+            : base("tctest:APIGateway/aPI:API", name, state, MakeResourceOptions(options, id))
         {
         }
 

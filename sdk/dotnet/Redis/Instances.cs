@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Redis
+namespace Pulumi.Tctest.Redis
 {
     public static class Instances
     {
         public static Task<InstancesResult> InvokeAsync(InstancesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tencentcloud:Redis/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tctest:Redis/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
 
         public static Output<InstancesResult> Invoke(InstancesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tencentcloud:Redis/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tctest:Redis/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
     }
 
 

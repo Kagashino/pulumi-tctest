@@ -12,7 +12,7 @@ export function defaultParams(args?: DefaultParamsArgs, opts?: pulumi.InvokeOpti
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mysql/defaultParams:DefaultParams", {
+    return pulumi.runtime.invoke("tctest:Mysql/defaultParams:DefaultParams", {
         "dbVersion": args.dbVersion,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

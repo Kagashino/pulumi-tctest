@@ -12,7 +12,7 @@ export function clusterCommonNames(args?: ClusterCommonNamesArgs, opts?: pulumi.
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tke/clusterCommonNames:ClusterCommonNames", {
+    return pulumi.runtime.invoke("tctest:Tke/clusterCommonNames:ClusterCommonNames", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
         "roleIds": args.roleIds,

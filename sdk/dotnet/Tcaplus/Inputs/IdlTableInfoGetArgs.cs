@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcaplus.Inputs
+namespace Pulumi.Tctest.Tcaplus.Inputs
 {
 
     public sealed class IdlTableInfoGetArgs : Pulumi.ResourceArgs

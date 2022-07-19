@@ -12,7 +12,7 @@ export function gateways(args?: GatewaysArgs, opts?: pulumi.InvokeOptions): Prom
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Nat/gateways:Gateways", {
+    return pulumi.runtime.invoke("tctest:Nat/gateways:Gateways", {
         "id": args.id,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

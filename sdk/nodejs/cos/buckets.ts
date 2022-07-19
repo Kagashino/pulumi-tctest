@@ -12,7 +12,7 @@ export function buckets(args?: BucketsArgs, opts?: pulumi.InvokeOptions): Promis
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cos/buckets:Buckets", {
+    return pulumi.runtime.invoke("tctest:Cos/buckets:Buckets", {
         "bucketPrefix": args.bucketPrefix,
         "resultOutputFile": args.resultOutputFile,
         "tags": args.tags,

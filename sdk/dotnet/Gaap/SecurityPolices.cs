@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class SecurityPolices
     {
         public static Task<SecurityPolicesResult> InvokeAsync(SecurityPolicesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SecurityPolicesResult>("tencentcloud:Gaap/securityPolices:SecurityPolices", args ?? new SecurityPolicesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SecurityPolicesResult>("tctest:Gaap/securityPolices:SecurityPolices", args ?? new SecurityPolicesArgs(), options.WithDefaults());
 
         public static Output<SecurityPolicesResult> Invoke(SecurityPolicesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SecurityPolicesResult>("tencentcloud:Gaap/securityPolices:SecurityPolices", args ?? new SecurityPolicesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SecurityPolicesResult>("tctest:Gaap/securityPolices:SecurityPolices", args ?? new SecurityPolicesInvokeArgs(), options.WithDefaults());
     }
 
 

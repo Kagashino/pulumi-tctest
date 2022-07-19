@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayUsagePlans
     {
         public static Task<APIGatewayUsagePlansResult> InvokeAsync(APIGatewayUsagePlansArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayUsagePlansResult>("tencentcloud:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", args ?? new APIGatewayUsagePlansArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayUsagePlansResult>("tctest:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", args ?? new APIGatewayUsagePlansArgs(), options.WithDefaults());
 
         public static Output<APIGatewayUsagePlansResult> Invoke(APIGatewayUsagePlansInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayUsagePlansResult>("tencentcloud:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", args ?? new APIGatewayUsagePlansInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayUsagePlansResult>("tctest:Cloud/aPIGatewayUsagePlans:APIGatewayUsagePlans", args ?? new APIGatewayUsagePlansInvokeArgs(), options.WithDefaults());
     }
 
 

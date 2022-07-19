@@ -15,11 +15,11 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Dcx/instance:Instance":
+            case "tctest:Dcx/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Dcx/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dcx/instance", _module)

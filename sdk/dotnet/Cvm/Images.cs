@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cvm
+namespace Pulumi.Tctest.Cvm
 {
     public static class Images
     {
         public static Task<ImagesResult> InvokeAsync(ImagesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ImagesResult>("tencentcloud:Cvm/images:Images", args ?? new ImagesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ImagesResult>("tctest:Cvm/images:Images", args ?? new ImagesArgs(), options.WithDefaults());
 
         public static Output<ImagesResult> Invoke(ImagesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ImagesResult>("tencentcloud:Cvm/images:Images", args ?? new ImagesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ImagesResult>("tctest:Cvm/images:Images", args ?? new ImagesInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -11,7 +11,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpc/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Vpc/instances:Instances", {
         "id": args.id,
         "name": args.name,
     }, opts);

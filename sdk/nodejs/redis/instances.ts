@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Redis/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Redis/instances:Instances", {
         "limit": args.limit,
         "projectId": args.projectId,
         "resultOutputFile": args.resultOutputFile,

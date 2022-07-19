@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayAPIKeys
     {
         public static Task<APIGatewayAPIKeysResult> InvokeAsync(APIGatewayAPIKeysArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayAPIKeysResult>("tencentcloud:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", args ?? new APIGatewayAPIKeysArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayAPIKeysResult>("tctest:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", args ?? new APIGatewayAPIKeysArgs(), options.WithDefaults());
 
         public static Output<APIGatewayAPIKeysResult> Invoke(APIGatewayAPIKeysInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayAPIKeysResult>("tencentcloud:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", args ?? new APIGatewayAPIKeysInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayAPIKeysResult>("tctest:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", args ?? new APIGatewayAPIKeysInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ssl.Inputs
+namespace Pulumi.Tctest.Ssl.Inputs
 {
 
     public sealed class InstanceInformationGetArgs : Pulumi.ResourceArgs

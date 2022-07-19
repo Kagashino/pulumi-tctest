@@ -23,20 +23,20 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Postgresql/instance:Instance":
+            case "tctest:Postgresql/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Postgresql/readonlyAttachment:ReadonlyAttachment":
+            case "tctest:Postgresql/readonlyAttachment:ReadonlyAttachment":
                 return new ReadonlyAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Postgresql/readonlyGroup:ReadonlyGroup":
+            case "tctest:Postgresql/readonlyGroup:ReadonlyGroup":
                 return new ReadonlyGroup(name, <any>undefined, { urn })
-            case "tencentcloud:Postgresql/readonlyInstance:ReadonlyInstance":
+            case "tctest:Postgresql/readonlyInstance:ReadonlyInstance":
                 return new ReadonlyInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Postgresql/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Postgresql/readonlyAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Postgresql/readonlyGroup", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Postgresql/readonlyInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Postgresql/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Postgresql/readonlyAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Postgresql/readonlyGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Postgresql/readonlyInstance", _module)

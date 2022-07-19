@@ -19,7 +19,7 @@ export class Redirection extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/redirection:Redirection';
+    public static readonly __pulumiType = 'tctest:Clb/redirection:Redirection';
 
     /**
      * Returns true if the given object is an instance of Redirection.  This is designed to work even

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
-    [TencentcloudResourceType("tencentcloud:Cbs/snapshotPolicy:SnapshotPolicy")]
+    [TctestResourceType("tctest:Cbs/snapshotPolicy:SnapshotPolicy")]
     public partial class SnapshotPolicy : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Cbs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SnapshotPolicy(string name, SnapshotPolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshotPolicy:SnapshotPolicy", name, args ?? new SnapshotPolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cbs/snapshotPolicy:SnapshotPolicy", name, args ?? new SnapshotPolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SnapshotPolicy(string name, Input<string> id, SnapshotPolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshotPolicy:SnapshotPolicy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cbs/snapshotPolicy:SnapshotPolicy", name, state, MakeResourceOptions(options, id))
         {
         }
 

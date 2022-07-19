@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dc
+namespace Pulumi.Tctest.Dc
 {
-    [TencentcloudResourceType("tencentcloud:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance")]
+    [TctestResourceType("tctest:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance")]
     public partial class GatewayCcnRouteInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Dc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GatewayCcnRouteInstance(string name, GatewayCcnRouteInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance", name, args ?? new GatewayCcnRouteInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance", name, args ?? new GatewayCcnRouteInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GatewayCcnRouteInstance(string name, Input<string> id, GatewayCcnRouteInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

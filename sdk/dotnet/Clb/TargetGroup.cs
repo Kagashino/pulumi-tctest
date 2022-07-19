@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/targetGroup:TargetGroup")]
+    [TctestResourceType("tctest:Clb/targetGroup:TargetGroup")]
     public partial class TargetGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public TargetGroup(string name, TargetGroupArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/targetGroup:TargetGroup", name, args ?? new TargetGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/targetGroup:TargetGroup", name, args ?? new TargetGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private TargetGroup(string name, Input<string> id, TargetGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/targetGroup:TargetGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/targetGroup:TargetGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
-    [TencentcloudResourceType("tencentcloud:Cfs/fileSystem:FileSystem")]
+    [TctestResourceType("tctest:Cfs/fileSystem:FileSystem")]
     public partial class FileSystem : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Cfs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public FileSystem(string name, FileSystemArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/fileSystem:FileSystem", name, args ?? new FileSystemArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cfs/fileSystem:FileSystem", name, args ?? new FileSystemArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private FileSystem(string name, Input<string> id, FileSystemState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/fileSystem:FileSystem", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cfs/fileSystem:FileSystem", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cynosdb/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Cynosdb/instances:Instances", {
         "clusterId": args.clusterId,
         "dbType": args.dbType,
         "instanceId": args.instanceId,

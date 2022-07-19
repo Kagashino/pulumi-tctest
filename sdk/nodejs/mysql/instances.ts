@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mysql/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Mysql/instances:Instances", {
         "chargeType": args.chargeType,
         "engineVersion": args.engineVersion,
         "initFlag": args.initFlag,

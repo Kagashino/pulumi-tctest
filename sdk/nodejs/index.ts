@@ -9,7 +9,6 @@ export * from "./provider";
 
 // Export sub-modules:
 import * as address from "./address";
-import * as alb from "./alb";
 import * as api from "./api";
 import * as apigateway from "./apigateway";
 import * as as from "./as";
@@ -80,7 +79,6 @@ import * as vpn from "./vpn";
 
 export {
     address,
-    alb,
     api,
     apigateway,
     as,
@@ -152,10 +150,10 @@ export {
 
 import { Provider } from "./provider";
 
-pulumi.runtime.registerResourcePackage("tencentcloud", {
+pulumi.runtime.registerResourcePackage("tctest", {
     version: utilities.getVersion(),
     constructProvider: (name: string, type: string, urn: string): pulumi.ProviderResource => {
-        if (type !== "pulumi:providers:tencentcloud") {
+        if (type !== "pulumi:providers:tctest") {
             throw new Error(`unknown provider type ${type}`);
         }
         return new Provider(name, <any>undefined, { urn });

@@ -42,38 +42,38 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Gaap/certificate:Certificate":
+            case "tctest:Gaap/certificate:Certificate":
                 return new Certificate(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/domainErrorPageInfo:DomainErrorPageInfo":
+            case "tctest:Gaap/domainErrorPageInfo:DomainErrorPageInfo":
                 return new DomainErrorPageInfo(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/httpDomain:HttpDomain":
+            case "tctest:Gaap/httpDomain:HttpDomain":
                 return new HttpDomain(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/httpRule:HttpRule":
+            case "tctest:Gaap/httpRule:HttpRule":
                 return new HttpRule(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/layer4Listener:Layer4Listener":
+            case "tctest:Gaap/layer4Listener:Layer4Listener":
                 return new Layer4Listener(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/layer7Listener:Layer7Listener":
+            case "tctest:Gaap/layer7Listener:Layer7Listener":
                 return new Layer7Listener(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/proxy:Proxy":
+            case "tctest:Gaap/proxy:Proxy":
                 return new Proxy(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/realserver:Realserver":
+            case "tctest:Gaap/realserver:Realserver":
                 return new Realserver(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/securityPolicy:SecurityPolicy":
+            case "tctest:Gaap/securityPolicy:SecurityPolicy":
                 return new SecurityPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Gaap/securityRule:SecurityRule":
+            case "tctest:Gaap/securityRule:SecurityRule":
                 return new SecurityRule(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/certificate", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/domainErrorPageInfo", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/httpDomain", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/httpRule", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/layer4Listener", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/layer7Listener", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/proxy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/realserver", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/securityPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Gaap/securityRule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/certificate", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/domainErrorPageInfo", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/httpDomain", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/httpRule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/layer4Listener", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/layer7Listener", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/proxy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/realserver", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/securityPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Gaap/securityRule", _module)

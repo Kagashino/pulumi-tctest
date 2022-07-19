@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
     public static class ReadonlyGroups
     {
         public static Task<ReadonlyGroupsResult> InvokeAsync(ReadonlyGroupsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ReadonlyGroupsResult>("tencentcloud:Sqlserver/readonlyGroups:ReadonlyGroups", args ?? new ReadonlyGroupsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ReadonlyGroupsResult>("tctest:Sqlserver/readonlyGroups:ReadonlyGroups", args ?? new ReadonlyGroupsArgs(), options.WithDefaults());
 
         public static Output<ReadonlyGroupsResult> Invoke(ReadonlyGroupsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ReadonlyGroupsResult>("tencentcloud:Sqlserver/readonlyGroups:ReadonlyGroups", args ?? new ReadonlyGroupsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ReadonlyGroupsResult>("tctest:Sqlserver/readonlyGroups:ReadonlyGroups", args ?? new ReadonlyGroupsInvokeArgs(), options.WithDefaults());
     }
 
 

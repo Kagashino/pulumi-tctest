@@ -20,7 +20,7 @@ export class CosShipper extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cls/cosShipper:CosShipper';
+    public static readonly __pulumiType = 'tctest:Cls/cosShipper:CosShipper';
 
     /**
      * Returns true if the given object is an instance of CosShipper.  This is designed to work even

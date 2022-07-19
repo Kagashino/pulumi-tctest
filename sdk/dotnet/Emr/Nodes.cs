@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Emr
+namespace Pulumi.Tctest.Emr
 {
     public static class Nodes
     {
         public static Task<NodesResult> InvokeAsync(NodesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<NodesResult>("tencentcloud:Emr/nodes:Nodes", args ?? new NodesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<NodesResult>("tctest:Emr/nodes:Nodes", args ?? new NodesArgs(), options.WithDefaults());
 
         public static Output<NodesResult> Invoke(NodesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<NodesResult>("tencentcloud:Emr/nodes:Nodes", args ?? new NodesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<NodesResult>("tctest:Emr/nodes:Nodes", args ?? new NodesInvokeArgs(), options.WithDefaults());
     }
 
 

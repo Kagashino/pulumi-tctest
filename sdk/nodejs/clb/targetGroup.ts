@@ -20,7 +20,7 @@ export class TargetGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/targetGroup:TargetGroup';
+    public static readonly __pulumiType = 'tctest:Clb/targetGroup:TargetGroup';
 
     /**
      * Returns true if the given object is an instance of TargetGroup.  This is designed to work even

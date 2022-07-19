@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class Certificates
     {
         public static Task<CertificatesResult> InvokeAsync(CertificatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<CertificatesResult>("tencentcloud:Gaap/certificates:Certificates", args ?? new CertificatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<CertificatesResult>("tctest:Gaap/certificates:Certificates", args ?? new CertificatesArgs(), options.WithDefaults());
 
         public static Output<CertificatesResult> Invoke(CertificatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<CertificatesResult>("tencentcloud:Gaap/certificates:Certificates", args ?? new CertificatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<CertificatesResult>("tctest:Gaap/certificates:Certificates", args ?? new CertificatesInvokeArgs(), options.WithDefaults());
     }
 
 

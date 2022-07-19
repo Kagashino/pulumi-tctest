@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Security
+namespace Pulumi.Tctest.Security
 {
-    [TencentcloudResourceType("tencentcloud:Security/groupRule:GroupRule")]
+    [TctestResourceType("tctest:Security/groupRule:GroupRule")]
     public partial class GroupRule : Pulumi.CustomResource
     {
         /// <summary>
@@ -83,12 +83,12 @@ namespace Pulumi.Tencentcloud.Security
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GroupRule(string name, GroupRuleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Security/groupRule:GroupRule", name, args ?? new GroupRuleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Security/groupRule:GroupRule", name, args ?? new GroupRuleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GroupRule(string name, Input<string> id, GroupRuleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Security/groupRule:GroupRule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Security/groupRule:GroupRule", name, state, MakeResourceOptions(options, id))
         {
         }
 

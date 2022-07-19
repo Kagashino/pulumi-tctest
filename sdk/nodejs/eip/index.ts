@@ -17,14 +17,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Eip/association:Association":
+            case "tctest:Eip/association:Association":
                 return new Association(name, <any>undefined, { urn })
-            case "tencentcloud:Eip/instance:Instance":
+            case "tctest:Eip/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Eip/association", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Eip/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Eip/association", _module)
+pulumi.runtime.registerResourceModule("tctest", "Eip/instance", _module)

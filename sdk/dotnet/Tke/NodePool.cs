@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
-    [TencentcloudResourceType("tencentcloud:Tke/nodePool:NodePool")]
+    [TctestResourceType("tctest:Tke/nodePool:NodePool")]
     public partial class NodePool : Pulumi.CustomResource
     {
         /// <summary>
@@ -198,12 +198,12 @@ namespace Pulumi.Tencentcloud.Tke
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public NodePool(string name, NodePoolArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/nodePool:NodePool", name, args ?? new NodePoolArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tke/nodePool:NodePool", name, args ?? new NodePoolArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private NodePool(string name, Input<string> id, NodePoolState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/nodePool:NodePool", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tke/nodePool:NodePool", name, state, MakeResourceOptions(options, id))
         {
         }
 

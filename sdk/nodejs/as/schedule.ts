@@ -19,7 +19,7 @@ export class Schedule extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:As/schedule:Schedule';
+    public static readonly __pulumiType = 'tctest:As/schedule:Schedule';
 
     /**
      * Returns true if the given object is an instance of Schedule.  This is designed to work even

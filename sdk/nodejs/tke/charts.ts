@@ -12,7 +12,7 @@ export function charts(args?: ChartsArgs, opts?: pulumi.InvokeOptions): Promise<
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tke/charts:Charts", {
+    return pulumi.runtime.invoke("tctest:Tke/charts:Charts", {
         "arch": args.arch,
         "clusterType": args.clusterType,
         "kind": args.kind,

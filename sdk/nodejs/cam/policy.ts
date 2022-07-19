@@ -19,7 +19,7 @@ export class Policy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/policy:Policy';
+    public static readonly __pulumiType = 'tctest:Cam/policy:Policy';
 
     /**
      * Returns true if the given object is an instance of Policy.  This is designed to work even

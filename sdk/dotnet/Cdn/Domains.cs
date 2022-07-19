@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cdn
+namespace Pulumi.Tctest.Cdn
 {
     public static class Domains
     {
         public static Task<DomainsResult> InvokeAsync(DomainsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DomainsResult>("tencentcloud:Cdn/domains:Domains", args ?? new DomainsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<DomainsResult>("tctest:Cdn/domains:Domains", args ?? new DomainsArgs(), options.WithDefaults());
 
         public static Output<DomainsResult> Invoke(DomainsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DomainsResult>("tencentcloud:Cdn/domains:Domains", args ?? new DomainsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<DomainsResult>("tctest:Cdn/domains:Domains", args ?? new DomainsInvokeArgs(), options.WithDefaults());
     }
 
 

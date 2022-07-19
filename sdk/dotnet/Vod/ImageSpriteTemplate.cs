@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/imageSpriteTemplate:ImageSpriteTemplate")]
+    [TctestResourceType("tctest:Vod/imageSpriteTemplate:ImageSpriteTemplate")]
     public partial class ImageSpriteTemplate : Pulumi.CustomResource
     {
         /// <summary>
@@ -113,12 +113,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ImageSpriteTemplate(string name, ImageSpriteTemplateArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/imageSpriteTemplate:ImageSpriteTemplate", name, args ?? new ImageSpriteTemplateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/imageSpriteTemplate:ImageSpriteTemplate", name, args ?? new ImageSpriteTemplateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ImageSpriteTemplate(string name, Input<string> id, ImageSpriteTemplateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/imageSpriteTemplate:ImageSpriteTemplate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/imageSpriteTemplate:ImageSpriteTemplate", name, state, MakeResourceOptions(options, id))
         {
         }
 

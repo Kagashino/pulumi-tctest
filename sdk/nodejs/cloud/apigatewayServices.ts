@@ -12,7 +12,7 @@ export function apigatewayServices(args?: ApigatewayServicesArgs, opts?: pulumi.
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayServices:APIGatewayServices", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayServices:APIGatewayServices", {
         "resultOutputFile": args.resultOutputFile,
         "serviceId": args.serviceId,
         "serviceName": args.serviceName,

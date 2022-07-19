@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Enis/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Enis/instances:Instances", {
         "description": args.description,
         "ids": args.ids,
         "instanceId": args.instanceId,

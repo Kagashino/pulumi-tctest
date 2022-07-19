@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap.Outputs
+namespace Pulumi.Tctest.Gaap.Outputs
 {
 
     [OutputType]

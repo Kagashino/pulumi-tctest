@@ -19,7 +19,7 @@ export class ReadonlyInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cynosdb/readonlyInstance:ReadonlyInstance';
+    public static readonly __pulumiType = 'tctest:Cynosdb/readonlyInstance:ReadonlyInstance';
 
     /**
      * Returns true if the given object is an instance of ReadonlyInstance.  This is designed to work even

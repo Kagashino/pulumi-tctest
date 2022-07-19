@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpn
+namespace Pulumi.Tctest.Vpn
 {
     public static class Connections
     {
         public static Task<ConnectionsResult> InvokeAsync(ConnectionsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ConnectionsResult>("tencentcloud:Vpn/connections:Connections", args ?? new ConnectionsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ConnectionsResult>("tctest:Vpn/connections:Connections", args ?? new ConnectionsArgs(), options.WithDefaults());
 
         public static Output<ConnectionsResult> Invoke(ConnectionsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ConnectionsResult>("tencentcloud:Vpn/connections:Connections", args ?? new ConnectionsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ConnectionsResult>("tctest:Vpn/connections:Connections", args ?? new ConnectionsInvokeArgs(), options.WithDefaults());
     }
 
 

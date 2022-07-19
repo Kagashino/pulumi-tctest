@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eni.Inputs
+namespace Pulumi.Tctest.Eni.Inputs
 {
 
     public sealed class InstanceIpv4InfoGetArgs : Pulumi.ResourceArgs

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
     public static class ImageSpriteTemplates
     {
         public static Task<ImageSpriteTemplatesResult> InvokeAsync(ImageSpriteTemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ImageSpriteTemplatesResult>("tencentcloud:Vod/imageSpriteTemplates:ImageSpriteTemplates", args ?? new ImageSpriteTemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ImageSpriteTemplatesResult>("tctest:Vod/imageSpriteTemplates:ImageSpriteTemplates", args ?? new ImageSpriteTemplatesArgs(), options.WithDefaults());
 
         public static Output<ImageSpriteTemplatesResult> Invoke(ImageSpriteTemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ImageSpriteTemplatesResult>("tencentcloud:Vod/imageSpriteTemplates:ImageSpriteTemplates", args ?? new ImageSpriteTemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ImageSpriteTemplatesResult>("tctest:Vod/imageSpriteTemplates:ImageSpriteTemplates", args ?? new ImageSpriteTemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

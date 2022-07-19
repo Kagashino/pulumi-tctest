@@ -17,14 +17,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Ssl/certificate:Certificate":
+            case "tctest:Ssl/certificate:Certificate":
                 return new Certificate(name, <any>undefined, { urn })
-            case "tencentcloud:Ssl/instance:Instance":
+            case "tctest:Ssl/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Ssl/certificate", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ssl/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ssl/certificate", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ssl/instance", _module)

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tdmq
+namespace Pulumi.Tctest.Tdmq
 {
-    [TencentcloudResourceType("tencentcloud:Tdmq/topic:Topic")]
+    [TctestResourceType("tctest:Tdmq/topic:Topic")]
     public partial class Topic : Pulumi.CustomResource
     {
         /// <summary>
@@ -63,12 +63,12 @@ namespace Pulumi.Tencentcloud.Tdmq
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Topic(string name, TopicArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/topic:Topic", name, args ?? new TopicArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tdmq/topic:Topic", name, args ?? new TopicArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Topic(string name, Input<string> id, TopicState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/topic:Topic", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tdmq/topic:Topic", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cynosdb
+namespace Pulumi.Tctest.Cynosdb
 {
-    [TencentcloudResourceType("tencentcloud:Cynosdb/readonlyInstance:ReadonlyInstance")]
+    [TctestResourceType("tctest:Cynosdb/readonlyInstance:ReadonlyInstance")]
     public partial class ReadonlyInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -84,12 +84,12 @@ namespace Pulumi.Tencentcloud.Cynosdb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ReadonlyInstance(string name, ReadonlyInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cynosdb/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cynosdb/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ReadonlyInstance(string name, Input<string> id, ReadonlyInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cynosdb/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cynosdb/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

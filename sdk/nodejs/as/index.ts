@@ -29,29 +29,29 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:As/attachment:Attachment":
+            case "tctest:As/attachment:Attachment":
                 return new Attachment(name, <any>undefined, { urn })
-            case "tencentcloud:As/lifecycleHook:LifecycleHook":
+            case "tctest:As/lifecycleHook:LifecycleHook":
                 return new LifecycleHook(name, <any>undefined, { urn })
-            case "tencentcloud:As/notification:Notification":
+            case "tctest:As/notification:Notification":
                 return new Notification(name, <any>undefined, { urn })
-            case "tencentcloud:As/scalingConfig:ScalingConfig":
+            case "tctest:As/scalingConfig:ScalingConfig":
                 return new ScalingConfig(name, <any>undefined, { urn })
-            case "tencentcloud:As/scalingGroup:ScalingGroup":
+            case "tctest:As/scalingGroup:ScalingGroup":
                 return new ScalingGroup(name, <any>undefined, { urn })
-            case "tencentcloud:As/scalingPolicy:ScalingPolicy":
+            case "tctest:As/scalingPolicy:ScalingPolicy":
                 return new ScalingPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:As/schedule:Schedule":
+            case "tctest:As/schedule:Schedule":
                 return new Schedule(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "As/attachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/lifecycleHook", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/notification", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/scalingConfig", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/scalingGroup", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/scalingPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "As/schedule", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/attachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/lifecycleHook", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/notification", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/scalingConfig", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/scalingGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/scalingPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "As/schedule", _module)

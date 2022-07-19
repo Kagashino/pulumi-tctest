@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
     public static class AdaptiveDynamicStreamingTemplates
     {
         public static Task<AdaptiveDynamicStreamingTemplatesResult> InvokeAsync(AdaptiveDynamicStreamingTemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<AdaptiveDynamicStreamingTemplatesResult>("tencentcloud:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", args ?? new AdaptiveDynamicStreamingTemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<AdaptiveDynamicStreamingTemplatesResult>("tctest:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", args ?? new AdaptiveDynamicStreamingTemplatesArgs(), options.WithDefaults());
 
         public static Output<AdaptiveDynamicStreamingTemplatesResult> Invoke(AdaptiveDynamicStreamingTemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<AdaptiveDynamicStreamingTemplatesResult>("tencentcloud:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", args ?? new AdaptiveDynamicStreamingTemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<AdaptiveDynamicStreamingTemplatesResult>("tctest:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", args ?? new AdaptiveDynamicStreamingTemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

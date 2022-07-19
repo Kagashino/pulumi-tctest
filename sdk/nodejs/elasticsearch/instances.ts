@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Elasticsearch/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Elasticsearch/instances:Instances", {
         "instanceId": args.instanceId,
         "instanceName": args.instanceName,
         "resultOutputFile": args.resultOutputFile,

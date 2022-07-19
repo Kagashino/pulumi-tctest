@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
-    [TencentcloudResourceType("tencentcloud:Monitor/alarmPolicy:AlarmPolicy")]
+    [TctestResourceType("tctest:Monitor/alarmPolicy:AlarmPolicy")]
     public partial class AlarmPolicy : Pulumi.CustomResource
     {
         /// <summary>
@@ -105,12 +105,12 @@ namespace Pulumi.Tencentcloud.Monitor
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AlarmPolicy(string name, AlarmPolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/alarmPolicy:AlarmPolicy", name, args ?? new AlarmPolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Monitor/alarmPolicy:AlarmPolicy", name, args ?? new AlarmPolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AlarmPolicy(string name, Input<string> id, AlarmPolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/alarmPolicy:AlarmPolicy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Monitor/alarmPolicy:AlarmPolicy", name, state, MakeResourceOptions(options, id))
         {
         }
 

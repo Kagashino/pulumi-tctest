@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
-    [TencentcloudResourceType("tencentcloud:Mysql/backupPolicy:BackupPolicy")]
+    [TctestResourceType("tctest:Mysql/backupPolicy:BackupPolicy")]
     public partial class BackupPolicy : Pulumi.CustomResource
     {
         /// <summary>
@@ -53,12 +53,12 @@ namespace Pulumi.Tencentcloud.Mysql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public BackupPolicy(string name, BackupPolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/backupPolicy:BackupPolicy", name, args ?? new BackupPolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mysql/backupPolicy:BackupPolicy", name, args ?? new BackupPolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private BackupPolicy(string name, Input<string> id, BackupPolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/backupPolicy:BackupPolicy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mysql/backupPolicy:BackupPolicy", name, state, MakeResourceOptions(options, id))
         {
         }
 

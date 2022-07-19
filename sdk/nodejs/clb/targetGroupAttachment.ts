@@ -19,7 +19,7 @@ export class TargetGroupAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/targetGroupAttachment:TargetGroupAttachment';
+    public static readonly __pulumiType = 'tctest:Clb/targetGroupAttachment:TargetGroupAttachment';
 
     /**
      * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even

@@ -12,7 +12,7 @@ export function zoneConfig(args?: ZoneConfigArgs, opts?: pulumi.InvokeOptions): 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mongodb/zoneConfig:ZoneConfig", {
+    return pulumi.runtime.invoke("tctest:Mongodb/zoneConfig:ZoneConfig", {
         "availableZone": args.availableZone,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

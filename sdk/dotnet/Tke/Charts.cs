@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
     public static class Charts
     {
         public static Task<ChartsResult> InvokeAsync(ChartsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ChartsResult>("tencentcloud:Tke/charts:Charts", args ?? new ChartsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ChartsResult>("tctest:Tke/charts:Charts", args ?? new ChartsArgs(), options.WithDefaults());
 
         public static Output<ChartsResult> Invoke(ChartsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ChartsResult>("tencentcloud:Tke/charts:Charts", args ?? new ChartsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ChartsResult>("tctest:Tke/charts:Charts", args ?? new ChartsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -11,7 +11,7 @@ export function l7rules(args: L7rulesArgs, opts?: pulumi.InvokeOptions): Promise
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dayu/l7Rules:L7Rules", {
+    return pulumi.runtime.invoke("tctest:Dayu/l7Rules:L7Rules", {
         "domain": args.domain,
         "resourceId": args.resourceId,
         "resourceType": args.resourceType,

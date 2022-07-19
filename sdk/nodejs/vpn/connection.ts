@@ -20,7 +20,7 @@ export class Connection extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vpn/connection:Connection';
+    public static readonly __pulumiType = 'tctest:Vpn/connection:Connection';
 
     /**
      * Returns true if the given object is an instance of Connection.  This is designed to work even

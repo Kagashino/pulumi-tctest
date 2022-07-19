@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
     public static class Accounts
     {
         public static Task<AccountsResult> InvokeAsync(AccountsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<AccountsResult>("tencentcloud:Sqlserver/accounts:Accounts", args ?? new AccountsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<AccountsResult>("tctest:Sqlserver/accounts:Accounts", args ?? new AccountsArgs(), options.WithDefaults());
 
         public static Output<AccountsResult> Invoke(AccountsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<AccountsResult>("tencentcloud:Sqlserver/accounts:Accounts", args ?? new AccountsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<AccountsResult>("tctest:Sqlserver/accounts:Accounts", args ?? new AccountsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayThrottlingServices
     {
         public static Task<APIGatewayThrottlingServicesResult> InvokeAsync(APIGatewayThrottlingServicesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayThrottlingServicesResult>("tencentcloud:Cloud/aPIGatewayThrottlingServices:APIGatewayThrottlingServices", args ?? new APIGatewayThrottlingServicesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayThrottlingServicesResult>("tctest:Cloud/aPIGatewayThrottlingServices:APIGatewayThrottlingServices", args ?? new APIGatewayThrottlingServicesArgs(), options.WithDefaults());
 
         public static Output<APIGatewayThrottlingServicesResult> Invoke(APIGatewayThrottlingServicesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayThrottlingServicesResult>("tencentcloud:Cloud/aPIGatewayThrottlingServices:APIGatewayThrottlingServices", args ?? new APIGatewayThrottlingServicesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayThrottlingServicesResult>("tctest:Cloud/aPIGatewayThrottlingServices:APIGatewayThrottlingServices", args ?? new APIGatewayThrottlingServicesInvokeArgs(), options.WithDefaults());
     }
 
 

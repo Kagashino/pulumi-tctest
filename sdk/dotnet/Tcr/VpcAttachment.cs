@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcr
+namespace Pulumi.Tctest.Tcr
 {
-    [TencentcloudResourceType("tencentcloud:Tcr/vpcAttachment:VpcAttachment")]
+    [TctestResourceType("tctest:Tcr/vpcAttachment:VpcAttachment")]
     public partial class VpcAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -75,12 +75,12 @@ namespace Pulumi.Tencentcloud.Tcr
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public VpcAttachment(string name, VpcAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/vpcAttachment:VpcAttachment", name, args ?? new VpcAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tcr/vpcAttachment:VpcAttachment", name, args ?? new VpcAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private VpcAttachment(string name, Input<string> id, VpcAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/vpcAttachment:VpcAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tcr/vpcAttachment:VpcAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

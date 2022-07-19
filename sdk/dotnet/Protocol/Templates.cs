@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Protocol
+namespace Pulumi.Tctest.Protocol
 {
     public static class Templates
     {
         public static Task<TemplatesResult> InvokeAsync(TemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TemplatesResult>("tencentcloud:Protocol/templates:Templates", args ?? new TemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TemplatesResult>("tctest:Protocol/templates:Templates", args ?? new TemplatesArgs(), options.WithDefaults());
 
         public static Output<TemplatesResult> Invoke(TemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TemplatesResult>("tencentcloud:Protocol/templates:Templates", args ?? new TemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TemplatesResult>("tctest:Protocol/templates:Templates", args ?? new TemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

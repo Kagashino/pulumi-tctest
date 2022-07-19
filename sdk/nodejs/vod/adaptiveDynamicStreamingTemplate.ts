@@ -20,7 +20,7 @@ export class AdaptiveDynamicStreamingTemplate extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate';
+    public static readonly __pulumiType = 'tctest:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate';
 
     /**
      * Returns true if the given object is an instance of AdaptiveDynamicStreamingTemplate.  This is designed to work even

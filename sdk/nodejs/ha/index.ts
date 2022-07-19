@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Ha/haVip:HaVip":
+            case "tctest:Ha/haVip:HaVip":
                 return new HaVip(name, <any>undefined, { urn })
-            case "tencentcloud:Ha/vipEipAttachment:VipEipAttachment":
+            case "tctest:Ha/vipEipAttachment:VipEipAttachment":
                 return new VipEipAttachment(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Ha/haVip", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ha/vipEipAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ha/haVip", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ha/vipEipAttachment", _module)

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpn
+namespace Pulumi.Tctest.Vpn
 {
-    [TencentcloudResourceType("tencentcloud:Vpn/customerGateway:CustomerGateway")]
+    [TctestResourceType("tctest:Vpn/customerGateway:CustomerGateway")]
     public partial class CustomerGateway : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Vpn
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CustomerGateway(string name, CustomerGatewayArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpn/customerGateway:CustomerGateway", name, args ?? new CustomerGatewayArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpn/customerGateway:CustomerGateway", name, args ?? new CustomerGatewayArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CustomerGateway(string name, Input<string> id, CustomerGatewayState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpn/customerGateway:CustomerGateway", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpn/customerGateway:CustomerGateway", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
-    [TencentcloudResourceType("tencentcloud:Cfs/accessGroup:AccessGroup")]
+    [TctestResourceType("tctest:Cfs/accessGroup:AccessGroup")]
     public partial class AccessGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Cfs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AccessGroup(string name, AccessGroupArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/accessGroup:AccessGroup", name, args ?? new AccessGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cfs/accessGroup:AccessGroup", name, args ?? new AccessGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AccessGroup(string name, Input<string> id, AccessGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cfs/accessGroup:AccessGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cfs/accessGroup:AccessGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

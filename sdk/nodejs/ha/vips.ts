@@ -12,7 +12,7 @@ export function vips(args?: VipsArgs, opts?: pulumi.InvokeOptions): Promise<Vips
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ha/vips:Vips", {
+    return pulumi.runtime.invoke("tctest:Ha/vips:Vips", {
         "addressIp": args.addressIp,
         "id": args.id,
         "name": args.name,

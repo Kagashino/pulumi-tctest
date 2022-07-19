@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpn
+namespace Pulumi.Tctest.Vpn
 {
-    [TencentcloudResourceType("tencentcloud:Vpn/sslServer:SslServer")]
+    [TctestResourceType("tctest:Vpn/sslServer:SslServer")]
     public partial class SslServer : Pulumi.CustomResource
     {
         /// <summary>
@@ -75,12 +75,12 @@ namespace Pulumi.Tencentcloud.Vpn
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SslServer(string name, SslServerArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpn/sslServer:SslServer", name, args ?? new SslServerArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpn/sslServer:SslServer", name, args ?? new SslServerArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SslServer(string name, Input<string> id, SslServerState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpn/sslServer:SslServer", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpn/sslServer:SslServer", name, state, MakeResourceOptions(options, id))
         {
         }
 

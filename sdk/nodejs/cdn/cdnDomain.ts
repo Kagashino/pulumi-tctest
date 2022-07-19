@@ -20,7 +20,7 @@ export class CdnDomain extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cdn/cdnDomain:CdnDomain';
+    public static readonly __pulumiType = 'tctest:Cdn/cdnDomain:CdnDomain';
 
     /**
      * Returns true if the given object is an instance of CdnDomain.  This is designed to work even

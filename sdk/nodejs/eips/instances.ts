@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Eips/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Eips/instances:Instances", {
         "eipId": args.eipId,
         "eipName": args.eipName,
         "publicIp": args.publicIp,

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eip.Inputs
+namespace Pulumi.Tctest.Eip.Inputs
 {
 
     public sealed class InstancesFilterArgs : Pulumi.InvokeArgs

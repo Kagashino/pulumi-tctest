@@ -19,7 +19,7 @@ export class Proxy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/proxy:Proxy';
+    public static readonly __pulumiType = 'tctest:Gaap/proxy:Proxy';
 
     /**
      * Returns true if the given object is an instance of Proxy.  This is designed to work even

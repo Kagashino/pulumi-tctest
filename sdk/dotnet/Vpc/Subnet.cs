@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
-    [TencentcloudResourceType("tencentcloud:Vpc/subnet:Subnet")]
+    [TctestResourceType("tctest:Vpc/subnet:Subnet")]
     public partial class Subnet : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Vpc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Subnet(string name, SubnetArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/subnet:Subnet", name, args ?? new SubnetArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpc/subnet:Subnet", name, args ?? new SubnetArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Subnet(string name, Input<string> id, SubnetState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/subnet:Subnet", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpc/subnet:Subnet", name, state, MakeResourceOptions(options, id))
         {
         }
 

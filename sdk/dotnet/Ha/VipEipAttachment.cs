@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ha
+namespace Pulumi.Tctest.Ha
 {
-    [TencentcloudResourceType("tencentcloud:Ha/vipEipAttachment:VipEipAttachment")]
+    [TctestResourceType("tctest:Ha/vipEipAttachment:VipEipAttachment")]
     public partial class VipEipAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Ha
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public VipEipAttachment(string name, VipEipAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ha/vipEipAttachment:VipEipAttachment", name, args ?? new VipEipAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ha/vipEipAttachment:VipEipAttachment", name, args ?? new VipEipAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private VipEipAttachment(string name, Input<string> id, VipEipAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ha/vipEipAttachment:VipEipAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ha/vipEipAttachment:VipEipAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

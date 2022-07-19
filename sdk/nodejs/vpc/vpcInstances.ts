@@ -12,7 +12,7 @@ export function vpcInstances(args?: VpcInstancesArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpc/vpcInstances:VpcInstances", {
+    return pulumi.runtime.invoke("tctest:Vpc/vpcInstances:VpcInstances", {
         "cidrBlock": args.cidrBlock,
         "isDefault": args.isDefault,
         "name": args.name,

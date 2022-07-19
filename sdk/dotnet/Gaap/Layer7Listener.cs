@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/layer7Listener:Layer7Listener")]
+    [TctestResourceType("tctest:Gaap/layer7Listener:Layer7Listener")]
     public partial class Layer7Listener : Pulumi.CustomResource
     {
         /// <summary>
@@ -90,12 +90,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Layer7Listener(string name, Layer7ListenerArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/layer7Listener:Layer7Listener", name, args ?? new Layer7ListenerArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/layer7Listener:Layer7Listener", name, args ?? new Layer7ListenerArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Layer7Listener(string name, Input<string> id, Layer7ListenerState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/layer7Listener:Layer7Listener", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/layer7Listener:Layer7Listener", name, state, MakeResourceOptions(options, id))
         {
         }
 

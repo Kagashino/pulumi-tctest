@@ -11,7 +11,7 @@ export function httpDomains(args: HttpDomainsArgs, opts?: pulumi.InvokeOptions):
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/httpDomains:HttpDomains", {
+    return pulumi.runtime.invoke("tctest:Gaap/httpDomains:HttpDomains", {
         "domain": args.domain,
         "listenerId": args.listenerId,
         "resultOutputFile": args.resultOutputFile,

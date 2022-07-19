@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
-    [TencentcloudResourceType("tencentcloud:As/scalingGroup:ScalingGroup")]
+    [TctestResourceType("tctest:As/scalingGroup:ScalingGroup")]
     public partial class ScalingGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -157,12 +157,12 @@ namespace Pulumi.Tencentcloud.As
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ScalingGroup(string name, ScalingGroupArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/scalingGroup:ScalingGroup", name, args ?? new ScalingGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:As/scalingGroup:ScalingGroup", name, args ?? new ScalingGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ScalingGroup(string name, Input<string> id, ScalingGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/scalingGroup:ScalingGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:As/scalingGroup:ScalingGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

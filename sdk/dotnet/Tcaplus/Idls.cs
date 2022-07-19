@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcaplus
+namespace Pulumi.Tctest.Tcaplus
 {
     public static class Idls
     {
         public static Task<IdlsResult> InvokeAsync(IdlsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<IdlsResult>("tencentcloud:Tcaplus/idls:Idls", args ?? new IdlsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<IdlsResult>("tctest:Tcaplus/idls:Idls", args ?? new IdlsArgs(), options.WithDefaults());
 
         public static Output<IdlsResult> Invoke(IdlsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<IdlsResult>("tencentcloud:Tcaplus/idls:Idls", args ?? new IdlsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<IdlsResult>("tctest:Tcaplus/idls:Idls", args ?? new IdlsInvokeArgs(), options.WithDefaults());
     }
 
 

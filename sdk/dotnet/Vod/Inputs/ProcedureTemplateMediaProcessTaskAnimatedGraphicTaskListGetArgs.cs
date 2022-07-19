@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod.Inputs
+namespace Pulumi.Tctest.Vod.Inputs
 {
 
     public sealed class ProcedureTemplateMediaProcessTaskAnimatedGraphicTaskListGetArgs : Pulumi.ResourceArgs

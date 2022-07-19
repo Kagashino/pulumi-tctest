@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cls
+namespace Pulumi.Tctest.Cls
 {
-    [TencentcloudResourceType("tencentcloud:Cls/machineGroup:MachineGroup")]
+    [TctestResourceType("tctest:Cls/machineGroup:MachineGroup")]
     public partial class MachineGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -65,12 +65,12 @@ namespace Pulumi.Tencentcloud.Cls
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public MachineGroup(string name, MachineGroupArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/machineGroup:MachineGroup", name, args ?? new MachineGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cls/machineGroup:MachineGroup", name, args ?? new MachineGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private MachineGroup(string name, Input<string> id, MachineGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/machineGroup:MachineGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cls/machineGroup:MachineGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

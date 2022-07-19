@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ha
+namespace Pulumi.Tctest.Ha
 {
     public static class VipEipAttachments
     {
         public static Task<VipEipAttachmentsResult> InvokeAsync(VipEipAttachmentsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<VipEipAttachmentsResult>("tencentcloud:Ha/vipEipAttachments:VipEipAttachments", args ?? new VipEipAttachmentsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<VipEipAttachmentsResult>("tctest:Ha/vipEipAttachments:VipEipAttachments", args ?? new VipEipAttachmentsArgs(), options.WithDefaults());
 
         public static Output<VipEipAttachmentsResult> Invoke(VipEipAttachmentsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<VipEipAttachmentsResult>("tencentcloud:Ha/vipEipAttachments:VipEipAttachments", args ?? new VipEipAttachmentsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<VipEipAttachmentsResult>("tctest:Ha/vipEipAttachments:VipEipAttachments", args ?? new VipEipAttachmentsInvokeArgs(), options.WithDefaults());
     }
 
 

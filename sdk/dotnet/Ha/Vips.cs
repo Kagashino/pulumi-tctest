@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ha
+namespace Pulumi.Tctest.Ha
 {
     public static class Vips
     {
         public static Task<VipsResult> InvokeAsync(VipsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<VipsResult>("tencentcloud:Ha/vips:Vips", args ?? new VipsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<VipsResult>("tctest:Ha/vips:Vips", args ?? new VipsArgs(), options.WithDefaults());
 
         public static Output<VipsResult> Invoke(VipsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<VipsResult>("tencentcloud:Ha/vips:Vips", args ?? new VipsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<VipsResult>("tctest:Ha/vips:Vips", args ?? new VipsInvokeArgs(), options.WithDefaults());
     }
 
 

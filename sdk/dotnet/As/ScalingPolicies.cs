@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
     public static class ScalingPolicies
     {
         public static Task<ScalingPoliciesResult> InvokeAsync(ScalingPoliciesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ScalingPoliciesResult>("tencentcloud:As/scalingPolicies:ScalingPolicies", args ?? new ScalingPoliciesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ScalingPoliciesResult>("tctest:As/scalingPolicies:ScalingPolicies", args ?? new ScalingPoliciesArgs(), options.WithDefaults());
 
         public static Output<ScalingPoliciesResult> Invoke(ScalingPoliciesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ScalingPoliciesResult>("tencentcloud:As/scalingPolicies:ScalingPolicies", args ?? new ScalingPoliciesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ScalingPoliciesResult>("tctest:As/scalingPolicies:ScalingPolicies", args ?? new ScalingPoliciesInvokeArgs(), options.WithDefaults());
     }
 
 

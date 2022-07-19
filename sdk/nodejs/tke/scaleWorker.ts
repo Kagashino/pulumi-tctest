@@ -20,7 +20,7 @@ export class ScaleWorker extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tke/scaleWorker:ScaleWorker';
+    public static readonly __pulumiType = 'tctest:Tke/scaleWorker:ScaleWorker';
 
     /**
      * Returns true if the given object is an instance of ScaleWorker.  This is designed to work even

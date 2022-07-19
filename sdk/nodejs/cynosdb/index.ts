@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Cynosdb/cluster:Cluster":
+            case "tctest:Cynosdb/cluster:Cluster":
                 return new Cluster(name, <any>undefined, { urn })
-            case "tencentcloud:Cynosdb/readonlyInstance:ReadonlyInstance":
+            case "tctest:Cynosdb/readonlyInstance:ReadonlyInstance":
                 return new ReadonlyInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Cynosdb/cluster", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cynosdb/readonlyInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cynosdb/cluster", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cynosdb/readonlyInstance", _module)

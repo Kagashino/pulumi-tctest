@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.APIGateway
+namespace Pulumi.Tctest.APIGateway
 {
-    [TencentcloudResourceType("tencentcloud:APIGateway/serviceRelease:ServiceRelease")]
+    [TctestResourceType("tctest:APIGateway/serviceRelease:ServiceRelease")]
     public partial class ServiceRelease : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.APIGateway
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ServiceRelease(string name, ServiceReleaseArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/serviceRelease:ServiceRelease", name, args ?? new ServiceReleaseArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:APIGateway/serviceRelease:ServiceRelease", name, args ?? new ServiceReleaseArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ServiceRelease(string name, Input<string> id, ServiceReleaseState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/serviceRelease:ServiceRelease", name, state, MakeResourceOptions(options, id))
+            : base("tctest:APIGateway/serviceRelease:ServiceRelease", name, state, MakeResourceOptions(options, id))
         {
         }
 

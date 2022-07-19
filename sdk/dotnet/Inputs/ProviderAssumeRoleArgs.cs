@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Inputs
+namespace Pulumi.Tctest.Inputs
 {
 
     public sealed class ProviderAssumeRoleArgs : Pulumi.ResourceArgs

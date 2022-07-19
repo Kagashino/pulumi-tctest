@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mongodb.Inputs
+namespace Pulumi.Tctest.Mongodb.Inputs
 {
 
     public sealed class InstanceStandbyInstanceListArgs : Pulumi.ResourceArgs

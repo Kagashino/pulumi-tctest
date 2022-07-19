@@ -20,17 +20,17 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Ccn/attachment:Attachment":
+            case "tctest:Ccn/attachment:Attachment":
                 return new Attachment(name, <any>undefined, { urn })
-            case "tencentcloud:Ccn/ccnBandwidthLimit:CcnBandwidthLimit":
+            case "tctest:Ccn/ccnBandwidthLimit:CcnBandwidthLimit":
                 return new CcnBandwidthLimit(name, <any>undefined, { urn })
-            case "tencentcloud:Ccn/instance:Instance":
+            case "tctest:Ccn/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Ccn/attachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ccn/ccnBandwidthLimit", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ccn/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ccn/attachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ccn/ccnBandwidthLimit", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ccn/instance", _module)

@@ -12,7 +12,7 @@ export function zoneConfig(args?: ZoneConfigArgs, opts?: pulumi.InvokeOptions): 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Redis/zoneConfig:ZoneConfig", {
+    return pulumi.runtime.invoke("tctest:Redis/zoneConfig:ZoneConfig", {
         "region": args.region,
         "resultOutputFile": args.resultOutputFile,
         "typeId": args.typeId,

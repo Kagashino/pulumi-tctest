@@ -40,41 +40,41 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Clb/customizedConfig:CustomizedConfig":
+            case "tctest:Clb/customizedConfig:CustomizedConfig":
                 return new CustomizedConfig(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/instance:Instance":
+            case "tctest:Clb/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/listener:Listener":
+            case "tctest:Clb/listener:Listener":
                 return new Listener(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/listenerRule:ListenerRule":
+            case "tctest:Clb/listenerRule:ListenerRule":
                 return new ListenerRule(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/logSet:LogSet":
+            case "tctest:Clb/logSet:LogSet":
                 return new LogSet(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/logTopic:LogTopic":
+            case "tctest:Clb/logTopic:LogTopic":
                 return new LogTopic(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/redirection:Redirection":
+            case "tctest:Clb/redirection:Redirection":
                 return new Redirection(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/serverAttachment:ServerAttachment":
+            case "tctest:Clb/serverAttachment:ServerAttachment":
                 return new ServerAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/tGAttachmentInstance:TGAttachmentInstance":
+            case "tctest:Clb/tGAttachmentInstance:TGAttachmentInstance":
                 return new TGAttachmentInstance(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/targetGroup:TargetGroup":
+            case "tctest:Clb/targetGroup:TargetGroup":
                 return new TargetGroup(name, <any>undefined, { urn })
-            case "tencentcloud:Clb/targetGroupAttachment:TargetGroupAttachment":
+            case "tctest:Clb/targetGroupAttachment:TargetGroupAttachment":
                 return new TargetGroupAttachment(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/customizedConfig", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/listener", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/listenerRule", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/logSet", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/logTopic", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/redirection", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/serverAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/tGAttachmentInstance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/targetGroup", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Clb/targetGroupAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/customizedConfig", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/listener", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/listenerRule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/logSet", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/logTopic", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/redirection", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/serverAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/tGAttachmentInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/targetGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Clb/targetGroupAttachment", _module)

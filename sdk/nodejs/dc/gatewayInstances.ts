@@ -12,7 +12,7 @@ export function gatewayInstances(args?: GatewayInstancesArgs, opts?: pulumi.Invo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dc/gatewayInstances:GatewayInstances", {
+    return pulumi.runtime.invoke("tctest:Dc/gatewayInstances:GatewayInstances", {
         "dcgId": args.dcgId,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

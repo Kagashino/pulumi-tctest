@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke.Inputs
+namespace Pulumi.Tctest.Tke.Inputs
 {
 
     public sealed class ScaleWorkerWorkerConfigDataDiskArgs : Pulumi.ResourceArgs

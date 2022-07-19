@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mongodb
+namespace Pulumi.Tctest.Mongodb
 {
-    [TencentcloudResourceType("tencentcloud:Mongodb/standbyInstance:StandbyInstance")]
+    [TctestResourceType("tctest:Mongodb/standbyInstance:StandbyInstance")]
     public partial class StandbyInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -148,12 +148,12 @@ namespace Pulumi.Tencentcloud.Mongodb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public StandbyInstance(string name, StandbyInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/standbyInstance:StandbyInstance", name, args ?? new StandbyInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mongodb/standbyInstance:StandbyInstance", name, args ?? new StandbyInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private StandbyInstance(string name, Input<string> id, StandbyInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/standbyInstance:StandbyInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mongodb/standbyInstance:StandbyInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

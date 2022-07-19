@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ssl
+namespace Pulumi.Tctest.Ssl
 {
-    [TencentcloudResourceType("tencentcloud:Ssl/certificate:Certificate")]
+    [TctestResourceType("tctest:Ssl/certificate:Certificate")]
     public partial class Certificate : Pulumi.CustomResource
     {
         /// <summary>
@@ -93,12 +93,12 @@ namespace Pulumi.Tencentcloud.Ssl
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Certificate(string name, CertificateArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ssl/certificate:Certificate", name, args ?? new CertificateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ssl/certificate:Certificate", name, args ?? new CertificateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Certificate(string name, Input<string> id, CertificateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ssl/certificate:Certificate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ssl/certificate:Certificate", name, state, MakeResourceOptions(options, id))
         {
         }
 

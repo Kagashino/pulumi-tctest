@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor.Inputs
+namespace Pulumi.Tctest.Monitor.Inputs
 {
 
     public sealed class AlarmPolicyConditionsRuleGetArgs : Pulumi.ResourceArgs

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cdn.Inputs
+namespace Pulumi.Tctest.Cdn.Inputs
 {
 
     public sealed class CdnDomainRuleCachGetArgs : Pulumi.ResourceArgs

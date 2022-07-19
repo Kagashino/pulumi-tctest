@@ -12,7 +12,7 @@ export function templates(args?: TemplatesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Protocol/templates:Templates", {
+    return pulumi.runtime.invoke("tctest:Protocol/templates:Templates", {
         "id": args.id,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

@@ -11,7 +11,7 @@ export function bindingObjects(args: BindingObjectsArgs, opts?: pulumi.InvokeOpt
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/bindingObjects:BindingObjects", {
+    return pulumi.runtime.invoke("tctest:Monitor/bindingObjects:BindingObjects", {
         "groupId": args.groupId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

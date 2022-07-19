@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcr
+namespace Pulumi.Tctest.Tcr
 {
-    [TencentcloudResourceType("tencentcloud:Tcr/tcrToken:TcrToken")]
+    [TctestResourceType("tctest:Tcr/tcrToken:TcrToken")]
     public partial class TcrToken : Pulumi.CustomResource
     {
         /// <summary>
@@ -63,12 +63,12 @@ namespace Pulumi.Tencentcloud.Tcr
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public TcrToken(string name, TcrTokenArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/tcrToken:TcrToken", name, args ?? new TcrTokenArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tcr/tcrToken:TcrToken", name, args ?? new TcrTokenArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private TcrToken(string name, Input<string> id, TcrTokenState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/tcrToken:TcrToken", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tcr/tcrToken:TcrToken", name, state, MakeResourceOptions(options, id))
         {
         }
 

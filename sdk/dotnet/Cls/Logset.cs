@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cls
+namespace Pulumi.Tctest.Cls
 {
-    [TencentcloudResourceType("tencentcloud:Cls/logset:Logset")]
+    [TctestResourceType("tctest:Cls/logset:Logset")]
     public partial class Logset : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Cls
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Logset(string name, LogsetArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/logset:Logset", name, args ?? new LogsetArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cls/logset:Logset", name, args ?? new LogsetArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Logset(string name, Input<string> id, LogsetState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/logset:Logset", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cls/logset:Logset", name, state, MakeResourceOptions(options, id))
         {
         }
 

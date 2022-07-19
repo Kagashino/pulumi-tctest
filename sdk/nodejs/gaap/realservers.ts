@@ -12,7 +12,7 @@ export function realservers(args?: RealserversArgs, opts?: pulumi.InvokeOptions)
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/realservers:Realservers", {
+    return pulumi.runtime.invoke("tctest:Gaap/realservers:Realservers", {
         "domain": args.domain,
         "ip": args.ip,
         "name": args.name,

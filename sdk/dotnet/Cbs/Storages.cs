@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
     public static class Storages
     {
         public static Task<StoragesResult> InvokeAsync(StoragesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<StoragesResult>("tencentcloud:Cbs/storages:Storages", args ?? new StoragesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<StoragesResult>("tctest:Cbs/storages:Storages", args ?? new StoragesArgs(), options.WithDefaults());
 
         public static Output<StoragesResult> Invoke(StoragesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<StoragesResult>("tencentcloud:Cbs/storages:Storages", args ?? new StoragesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<StoragesResult>("tctest:Cbs/storages:Storages", args ?? new StoragesInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -19,7 +19,7 @@ export class HaVip extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Ha/haVip:HaVip';
+    public static readonly __pulumiType = 'tctest:Ha/haVip:HaVip';
 
     /**
      * Returns true if the given object is an instance of HaVip.  This is designed to work even

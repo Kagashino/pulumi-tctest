@@ -20,7 +20,7 @@ export class UsagePlan extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/usagePlan:UsagePlan';
+    public static readonly __pulumiType = 'tctest:APIGateway/usagePlan:UsagePlan';
 
     /**
      * Returns true if the given object is an instance of UsagePlan.  This is designed to work even

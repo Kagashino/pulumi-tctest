@@ -19,7 +19,7 @@ export class ClusterInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Container/clusterInstance:ClusterInstance';
+    public static readonly __pulumiType = 'tctest:Container/clusterInstance:ClusterInstance';
 
     /**
      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even

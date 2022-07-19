@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tdmq
+namespace Pulumi.Tctest.Tdmq
 {
-    [TencentcloudResourceType("tencentcloud:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment")]
+    [TctestResourceType("tctest:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment")]
     public partial class NamespaceRoleAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Tdmq
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public NamespaceRoleAttachment(string name, NamespaceRoleAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment", name, args ?? new NamespaceRoleAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment", name, args ?? new NamespaceRoleAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private NamespaceRoleAttachment(string name, Input<string> id, NamespaceRoleAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tdmq/namespaceRoleAttachment:NamespaceRoleAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

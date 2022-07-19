@@ -12,7 +12,7 @@ export function connections(args?: ConnectionsArgs, opts?: pulumi.InvokeOptions)
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpn/connections:Connections", {
+    return pulumi.runtime.invoke("tctest:Vpn/connections:Connections", {
         "customerGatewayId": args.customerGatewayId,
         "id": args.id,
         "name": args.name,

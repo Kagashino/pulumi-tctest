@@ -19,7 +19,7 @@ export class GroupLiteRule extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Security/groupLiteRule:GroupLiteRule';
+    public static readonly __pulumiType = 'tctest:Security/groupLiteRule:GroupLiteRule';
 
     /**
      * Returns true if the given object is an instance of GroupLiteRule.  This is designed to work even

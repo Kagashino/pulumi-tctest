@@ -12,7 +12,7 @@ export function adaptiveDynamicStreamingTemplates(args?: AdaptiveDynamicStreamin
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", {
+    return pulumi.runtime.invoke("tctest:Vod/adaptiveDynamicStreamingTemplates:AdaptiveDynamicStreamingTemplates", {
         "definition": args.definition,
         "resultOutputFile": args.resultOutputFile,
         "subAppId": args.subAppId,

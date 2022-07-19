@@ -11,7 +11,7 @@ export function backupList(args: BackupListArgs, opts?: pulumi.InvokeOptions): P
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mysql/backupList:BackupList", {
+    return pulumi.runtime.invoke("tctest:Mysql/backupList:BackupList", {
         "maxNumber": args.maxNumber,
         "mysqlId": args.mysqlId,
         "resultOutputFile": args.resultOutputFile,

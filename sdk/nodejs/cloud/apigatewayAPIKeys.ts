@@ -12,7 +12,7 @@ export function apigatewayAPIKeys(args?: ApigatewayAPIKeysArgs, opts?: pulumi.In
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayAPIKeys:APIGatewayAPIKeys", {
         "apiKeyId": args.apiKeyId,
         "resultOutputFile": args.resultOutputFile,
         "secretName": args.secretName,

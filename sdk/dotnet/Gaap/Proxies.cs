@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class Proxies
     {
         public static Task<ProxiesResult> InvokeAsync(ProxiesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ProxiesResult>("tencentcloud:Gaap/proxies:Proxies", args ?? new ProxiesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ProxiesResult>("tctest:Gaap/proxies:Proxies", args ?? new ProxiesArgs(), options.WithDefaults());
 
         public static Output<ProxiesResult> Invoke(ProxiesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ProxiesResult>("tencentcloud:Gaap/proxies:Proxies", args ?? new ProxiesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ProxiesResult>("tctest:Gaap/proxies:Proxies", args ?? new ProxiesInvokeArgs(), options.WithDefaults());
     }
 
 

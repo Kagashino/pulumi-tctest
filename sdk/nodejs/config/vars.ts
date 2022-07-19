@@ -6,7 +6,7 @@ import { input as inputs, output as outputs } from "../types";
 import * as utilities from "../utilities";
 
 declare var exports: any;
-const __config = new pulumi.Config("tencentcloud");
+const __config = new pulumi.Config("tctest");
 
 /**
  * The `assume_role` block. If provided, terraform will attempt to assume this role using the supplied credentials.

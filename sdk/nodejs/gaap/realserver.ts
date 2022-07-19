@@ -19,7 +19,7 @@ export class Realserver extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/realserver:Realserver';
+    public static readonly __pulumiType = 'tctest:Gaap/realserver:Realserver';
 
     /**
      * Returns true if the given object is an instance of Realserver.  This is designed to work even

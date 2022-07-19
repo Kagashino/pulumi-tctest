@@ -12,7 +12,7 @@ export function readonlyGroups(args?: ReadonlyGroupsArgs, opts?: pulumi.InvokeOp
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/readonlyGroups:ReadonlyGroups", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/readonlyGroups:ReadonlyGroups", {
         "masterInstanceId": args.masterInstanceId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

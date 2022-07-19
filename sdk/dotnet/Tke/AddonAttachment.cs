@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
-    [TencentcloudResourceType("tencentcloud:Tke/addonAttachment:AddonAttachment")]
+    [TctestResourceType("tctest:Tke/addonAttachment:AddonAttachment")]
     public partial class AddonAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -63,12 +63,12 @@ namespace Pulumi.Tencentcloud.Tke
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AddonAttachment(string name, AddonAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/addonAttachment:AddonAttachment", name, args ?? new AddonAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tke/addonAttachment:AddonAttachment", name, args ?? new AddonAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AddonAttachment(string name, Input<string> id, AddonAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/addonAttachment:AddonAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tke/addonAttachment:AddonAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

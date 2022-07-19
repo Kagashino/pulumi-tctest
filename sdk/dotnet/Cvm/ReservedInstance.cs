@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cvm
+namespace Pulumi.Tctest.Cvm
 {
-    [TencentcloudResourceType("tencentcloud:Cvm/reservedInstance:ReservedInstance")]
+    [TctestResourceType("tctest:Cvm/reservedInstance:ReservedInstance")]
     public partial class ReservedInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -58,12 +58,12 @@ namespace Pulumi.Tencentcloud.Cvm
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ReservedInstance(string name, ReservedInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cvm/reservedInstance:ReservedInstance", name, args ?? new ReservedInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cvm/reservedInstance:ReservedInstance", name, args ?? new ReservedInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ReservedInstance(string name, Input<string> id, ReservedInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cvm/reservedInstance:ReservedInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cvm/reservedInstance:ReservedInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

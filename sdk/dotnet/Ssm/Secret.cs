@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ssm
+namespace Pulumi.Tctest.Ssm
 {
-    [TencentcloudResourceType("tencentcloud:Ssm/secret:Secret")]
+    [TctestResourceType("tctest:Ssm/secret:Secret")]
     public partial class Secret : Pulumi.CustomResource
     {
         /// <summary>
@@ -66,12 +66,12 @@ namespace Pulumi.Tencentcloud.Ssm
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Secret(string name, SecretArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ssm/secret:Secret", name, args ?? new SecretArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ssm/secret:Secret", name, args ?? new SecretArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Secret(string name, Input<string> id, SecretState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ssm/secret:Secret", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ssm/secret:Secret", name, state, MakeResourceOptions(options, id))
         {
         }
 

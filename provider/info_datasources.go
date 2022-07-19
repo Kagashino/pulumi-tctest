@@ -1,4 +1,4 @@
-package tencentcloud
+package tctest
 
 import "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 

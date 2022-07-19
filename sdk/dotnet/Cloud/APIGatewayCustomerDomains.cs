@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayCustomerDomains
     {
         public static Task<APIGatewayCustomerDomainsResult> InvokeAsync(APIGatewayCustomerDomainsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayCustomerDomainsResult>("tencentcloud:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", args ?? new APIGatewayCustomerDomainsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayCustomerDomainsResult>("tctest:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", args ?? new APIGatewayCustomerDomainsArgs(), options.WithDefaults());
 
         public static Output<APIGatewayCustomerDomainsResult> Invoke(APIGatewayCustomerDomainsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayCustomerDomainsResult>("tencentcloud:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", args ?? new APIGatewayCustomerDomainsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayCustomerDomainsResult>("tctest:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", args ?? new APIGatewayCustomerDomainsInvokeArgs(), options.WithDefaults());
     }
 
 

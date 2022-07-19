@@ -11,7 +11,7 @@ export function data(args: DataArgs, opts?: pulumi.InvokeOptions): Promise<DataR
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/data:Data", {
+    return pulumi.runtime.invoke("tctest:Monitor/data:Data", {
         "dimensions": args.dimensions,
         "endTime": args.endTime,
         "metricName": args.metricName,

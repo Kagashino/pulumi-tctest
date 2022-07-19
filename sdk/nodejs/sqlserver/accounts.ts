@@ -11,7 +11,7 @@ export function accounts(args: AccountsArgs, opts?: pulumi.InvokeOptions): Promi
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/accounts:Accounts", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/accounts:Accounts", {
         "instanceId": args.instanceId,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

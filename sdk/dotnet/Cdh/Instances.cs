@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cdh
+namespace Pulumi.Tctest.Cdh
 {
     public static class Instances
     {
         public static Task<InstancesResult> InvokeAsync(InstancesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tencentcloud:Cdh/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tctest:Cdh/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
 
         public static Output<InstancesResult> Invoke(InstancesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tencentcloud:Cdh/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tctest:Cdh/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
     }
 
 

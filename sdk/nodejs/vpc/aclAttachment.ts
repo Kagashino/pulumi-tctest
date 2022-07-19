@@ -19,7 +19,7 @@ export class AclAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vpc/aclAttachment:AclAttachment';
+    public static readonly __pulumiType = 'tctest:Vpc/aclAttachment:AclAttachment';
 
     /**
      * Returns true if the given object is an instance of AclAttachment.  This is designed to work even

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql.Inputs
+namespace Pulumi.Tctest.Mysql.Inputs
 {
 
     public sealed class PrivilegeDatabaseArgs : Pulumi.ResourceArgs

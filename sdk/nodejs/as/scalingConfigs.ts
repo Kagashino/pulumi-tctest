@@ -12,7 +12,7 @@ export function scalingConfigs(args?: ScalingConfigsArgs, opts?: pulumi.InvokeOp
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:As/scalingConfigs:ScalingConfigs", {
+    return pulumi.runtime.invoke("tctest:As/scalingConfigs:ScalingConfigs", {
         "configurationId": args.configurationId,
         "configurationName": args.configurationName,
         "resultOutputFile": args.resultOutputFile,

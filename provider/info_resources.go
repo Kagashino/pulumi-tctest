@@ -1,4 +1,4 @@
-package tencentcloud
+package tctest
 
 import "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 
@@ -45,7 +45,7 @@ var ResourceInfo = map[string]*tfbridge.ResourceInfo{
 	"tencentcloud_security_group_rule":            {Tok: tfbridge.MakeResource(mainPkg, "Security", "GroupRule")},
 	"tencentcloud_security_group_lite_rule":       {Tok: tfbridge.MakeResource(mainPkg, "Security", "GroupLiteRule")},
 	//"tencentcloud_lb":                                      {Tok: tfbridge.MakeResource(mainPkg, "LB","Instance")},
-	"tencentcloud_alb_server_attachment":                   {Tok: tfbridge.MakeResource(mainPkg, "Alb", "ServerAttachment")},
+	//"tencentcloud_alb_server_attachment":                   {Tok: tfbridge.MakeResource(mainPkg, "Alb", "ServerAttachment")},
 	"tencentcloud_clb_instance":                            {Tok: tfbridge.MakeResource(mainPkg, "Clb", "Instance")},
 	"tencentcloud_clb_listener":                            {Tok: tfbridge.MakeResource(mainPkg, "Clb", "Listener")},
 	"tencentcloud_clb_listener_rule":                       {Tok: tfbridge.MakeResource(mainPkg, "Clb", "ListenerRule")},

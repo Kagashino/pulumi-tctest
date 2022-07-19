@@ -19,7 +19,7 @@ export class CustomDomain extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/customDomain:CustomDomain';
+    public static readonly __pulumiType = 'tctest:APIGateway/customDomain:CustomDomain';
 
     /**
      * Returns true if the given object is an instance of CustomDomain.  This is designed to work even

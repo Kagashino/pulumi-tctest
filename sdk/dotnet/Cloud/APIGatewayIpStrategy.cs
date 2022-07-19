@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class APIGatewayIpStrategy
     {
         public static Task<APIGatewayIpStrategyResult> InvokeAsync(APIGatewayIpStrategyArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayIpStrategyResult>("tencentcloud:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", args ?? new APIGatewayIpStrategyArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<APIGatewayIpStrategyResult>("tctest:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", args ?? new APIGatewayIpStrategyArgs(), options.WithDefaults());
 
         public static Output<APIGatewayIpStrategyResult> Invoke(APIGatewayIpStrategyInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<APIGatewayIpStrategyResult>("tencentcloud:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", args ?? new APIGatewayIpStrategyInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<APIGatewayIpStrategyResult>("tctest:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", args ?? new APIGatewayIpStrategyInvokeArgs(), options.WithDefaults());
     }
 
 

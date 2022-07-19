@@ -19,7 +19,7 @@ export class GatewayRoute extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vpn/gatewayRoute:GatewayRoute';
+    public static readonly __pulumiType = 'tctest:Vpn/gatewayRoute:GatewayRoute';
 
     /**
      * Returns true if the given object is an instance of GatewayRoute.  This is designed to work even

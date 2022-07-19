@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
-    [TencentcloudResourceType("tencentcloud:Tke/authAttachment:AuthAttachment")]
+    [TctestResourceType("tctest:Tke/authAttachment:AuthAttachment")]
     public partial class AuthAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -46,12 +46,12 @@ namespace Pulumi.Tencentcloud.Tke
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AuthAttachment(string name, AuthAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/authAttachment:AuthAttachment", name, args ?? new AuthAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tke/authAttachment:AuthAttachment", name, args ?? new AuthAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AuthAttachment(string name, Input<string> id, AuthAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/authAttachment:AuthAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tke/authAttachment:AuthAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

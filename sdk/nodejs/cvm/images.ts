@@ -12,7 +12,7 @@ export function images(args?: ImagesArgs, opts?: pulumi.InvokeOptions): Promise<
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cvm/images:Images", {
+    return pulumi.runtime.invoke("tctest:Cvm/images:Images", {
         "imageId": args.imageId,
         "imageNameRegex": args.imageNameRegex,
         "imageTypes": args.imageTypes,

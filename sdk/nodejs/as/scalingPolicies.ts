@@ -12,7 +12,7 @@ export function scalingPolicies(args?: ScalingPoliciesArgs, opts?: pulumi.Invoke
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:As/scalingPolicies:ScalingPolicies", {
+    return pulumi.runtime.invoke("tctest:As/scalingPolicies:ScalingPolicies", {
         "policyName": args.policyName,
         "resultOutputFile": args.resultOutputFile,
         "scalingGroupId": args.scalingGroupId,

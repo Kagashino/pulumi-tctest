@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/ddosPolicyCase:DdosPolicyCase")]
+    [TctestResourceType("tctest:Dayu/ddosPolicyCase:DdosPolicyCase")]
     public partial class DdosPolicyCase : Pulumi.CustomResource
     {
         /// <summary>
@@ -167,12 +167,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public DdosPolicyCase(string name, DdosPolicyCaseArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/ddosPolicyCase:DdosPolicyCase", name, args ?? new DdosPolicyCaseArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/ddosPolicyCase:DdosPolicyCase", name, args ?? new DdosPolicyCaseArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private DdosPolicyCase(string name, Input<string> id, DdosPolicyCaseState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/ddosPolicyCase:DdosPolicyCase", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/ddosPolicyCase:DdosPolicyCase", name, state, MakeResourceOptions(options, id))
         {
         }
 

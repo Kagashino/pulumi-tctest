@@ -12,7 +12,7 @@ export function storages(args?: StoragesArgs, opts?: pulumi.InvokeOptions): Prom
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cbs/storages:Storages", {
+    return pulumi.runtime.invoke("tctest:Cbs/storages:Storages", {
         "availabilityZone": args.availabilityZone,
         "chargeTypes": args.chargeTypes,
         "instanceIps": args.instanceIps,

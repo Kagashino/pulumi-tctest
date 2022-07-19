@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
     public static class Snapshots
     {
         public static Task<SnapshotsResult> InvokeAsync(SnapshotsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotsResult>("tencentcloud:Cbs/snapshots:Snapshots", args ?? new SnapshotsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotsResult>("tctest:Cbs/snapshots:Snapshots", args ?? new SnapshotsArgs(), options.WithDefaults());
 
         public static Output<SnapshotsResult> Invoke(SnapshotsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SnapshotsResult>("tencentcloud:Cbs/snapshots:Snapshots", args ?? new SnapshotsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SnapshotsResult>("tctest:Cbs/snapshots:Snapshots", args ?? new SnapshotsInvokeArgs(), options.WithDefaults());
     }
 
 

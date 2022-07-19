@@ -19,7 +19,7 @@ export class Record extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:PrivateDns/record:Record';
+    public static readonly __pulumiType = 'tctest:PrivateDns/record:Record';
 
     /**
      * Returns true if the given object is an instance of Record.  This is designed to work even

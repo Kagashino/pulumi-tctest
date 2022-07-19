@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
     public static class VpcInstances
     {
         public static Task<VpcInstancesResult> InvokeAsync(VpcInstancesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<VpcInstancesResult>("tencentcloud:Vpc/vpcInstances:VpcInstances", args ?? new VpcInstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<VpcInstancesResult>("tctest:Vpc/vpcInstances:VpcInstances", args ?? new VpcInstancesArgs(), options.WithDefaults());
 
         public static Output<VpcInstancesResult> Invoke(VpcInstancesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<VpcInstancesResult>("tencentcloud:Vpc/vpcInstances:VpcInstances", args ?? new VpcInstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<VpcInstancesResult>("tctest:Vpc/vpcInstances:VpcInstances", args ?? new VpcInstancesInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/policy:Policy")]
+    [TctestResourceType("tctest:Cam/policy:Policy")]
     public partial class Policy : Pulumi.CustomResource
     {
         /// <summary>
@@ -60,12 +60,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Policy(string name, PolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/policy:Policy", name, args ?? new PolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/policy:Policy", name, args ?? new PolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Policy(string name, Input<string> id, PolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/policy:Policy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/policy:Policy", name, state, MakeResourceOptions(options, id))
         {
         }
 

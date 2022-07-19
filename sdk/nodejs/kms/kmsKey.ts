@@ -19,7 +19,7 @@ export class KmsKey extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Kms/kmsKey:KmsKey';
+    public static readonly __pulumiType = 'tctest:Kms/kmsKey:KmsKey';
 
     /**
      * Returns true if the given object is an instance of KmsKey.  This is designed to work even

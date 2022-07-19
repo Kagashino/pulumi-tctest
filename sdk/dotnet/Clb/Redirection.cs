@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/redirection:Redirection")]
+    [TctestResourceType("tctest:Clb/redirection:Redirection")]
     public partial class Redirection : Pulumi.CustomResource
     {
         /// <summary>
@@ -66,12 +66,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Redirection(string name, RedirectionArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/redirection:Redirection", name, args ?? new RedirectionArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/redirection:Redirection", name, args ?? new RedirectionArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Redirection(string name, Input<string> id, RedirectionState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/redirection:Redirection", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/redirection:Redirection", name, state, MakeResourceOptions(options, id))
         {
         }
 

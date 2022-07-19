@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpn.Inputs
+namespace Pulumi.Tctest.Vpn.Inputs
 {
 
     public sealed class ConnectionSecurityGroupPolicyArgs : Pulumi.ResourceArgs

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/proxy:Proxy")]
+    [TctestResourceType("tctest:Gaap/proxy:Proxy")]
     public partial class Proxy : Pulumi.CustomResource
     {
         /// <summary>
@@ -116,12 +116,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Proxy(string name, ProxyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/proxy:Proxy", name, args ?? new ProxyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/proxy:Proxy", name, args ?? new ProxyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Proxy(string name, Input<string> id, ProxyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/proxy:Proxy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/proxy:Proxy", name, state, MakeResourceOptions(options, id))
         {
         }
 

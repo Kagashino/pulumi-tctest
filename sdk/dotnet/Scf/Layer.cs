@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Scf
+namespace Pulumi.Tctest.Scf
 {
-    [TencentcloudResourceType("tencentcloud:Scf/layer:Layer")]
+    [TctestResourceType("tctest:Scf/layer:Layer")]
     public partial class Layer : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Scf
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Layer(string name, LayerArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/layer:Layer", name, args ?? new LayerArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Scf/layer:Layer", name, args ?? new LayerArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Layer(string name, Input<string> id, LayerState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Scf/layer:Layer", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Scf/layer:Layer", name, state, MakeResourceOptions(options, id))
         {
         }
 

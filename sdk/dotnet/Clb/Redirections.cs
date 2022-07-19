@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
     public static class Redirections
     {
         public static Task<RedirectionsResult> InvokeAsync(RedirectionsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<RedirectionsResult>("tencentcloud:Clb/redirections:Redirections", args ?? new RedirectionsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<RedirectionsResult>("tctest:Clb/redirections:Redirections", args ?? new RedirectionsArgs(), options.WithDefaults());
 
         public static Output<RedirectionsResult> Invoke(RedirectionsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<RedirectionsResult>("tencentcloud:Clb/redirections:Redirections", args ?? new RedirectionsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<RedirectionsResult>("tctest:Clb/redirections:Redirections", args ?? new RedirectionsInvokeArgs(), options.WithDefaults());
     }
 
 

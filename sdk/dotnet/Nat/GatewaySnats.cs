@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Nat
+namespace Pulumi.Tctest.Nat
 {
     public static class GatewaySnats
     {
         public static Task<GatewaySnatsResult> InvokeAsync(GatewaySnatsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<GatewaySnatsResult>("tencentcloud:Nat/gatewaySnats:GatewaySnats", args ?? new GatewaySnatsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<GatewaySnatsResult>("tctest:Nat/gatewaySnats:GatewaySnats", args ?? new GatewaySnatsArgs(), options.WithDefaults());
 
         public static Output<GatewaySnatsResult> Invoke(GatewaySnatsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<GatewaySnatsResult>("tencentcloud:Nat/gatewaySnats:GatewaySnats", args ?? new GatewaySnatsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<GatewaySnatsResult>("tctest:Nat/gatewaySnats:GatewaySnats", args ?? new GatewaySnatsInvokeArgs(), options.WithDefaults());
     }
 
 

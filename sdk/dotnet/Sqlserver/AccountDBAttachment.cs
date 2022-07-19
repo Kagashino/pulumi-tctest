@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
-    [TencentcloudResourceType("tencentcloud:Sqlserver/accountDBAttachment:AccountDBAttachment")]
+    [TctestResourceType("tctest:Sqlserver/accountDBAttachment:AccountDBAttachment")]
     public partial class AccountDBAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Sqlserver
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AccountDBAttachment(string name, AccountDBAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/accountDBAttachment:AccountDBAttachment", name, args ?? new AccountDBAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Sqlserver/accountDBAttachment:AccountDBAttachment", name, args ?? new AccountDBAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AccountDBAttachment(string name, Input<string> id, AccountDBAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/accountDBAttachment:AccountDBAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Sqlserver/accountDBAttachment:AccountDBAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

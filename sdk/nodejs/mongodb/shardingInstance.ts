@@ -19,7 +19,7 @@ export class ShardingInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Mongodb/shardingInstance:ShardingInstance';
+    public static readonly __pulumiType = 'tctest:Mongodb/shardingInstance:ShardingInstance';
 
     /**
      * Returns true if the given object is an instance of ShardingInstance.  This is designed to work even

@@ -19,7 +19,7 @@ export class GatewaySnat extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Nat/gatewaySnat:GatewaySnat';
+    public static readonly __pulumiType = 'tctest:Nat/gatewaySnat:GatewaySnat';
 
     /**
      * Returns true if the given object is an instance of GatewaySnat.  This is designed to work even

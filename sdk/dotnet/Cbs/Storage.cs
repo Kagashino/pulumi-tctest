@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
-    [TencentcloudResourceType("tencentcloud:Cbs/storage:Storage")]
+    [TctestResourceType("tctest:Cbs/storage:Storage")]
     public partial class Storage : Pulumi.CustomResource
     {
         /// <summary>
@@ -123,12 +123,12 @@ namespace Pulumi.Tencentcloud.Cbs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Storage(string name, StorageArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/storage:Storage", name, args ?? new StorageArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cbs/storage:Storage", name, args ?? new StorageArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Storage(string name, Input<string> id, StorageState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/storage:Storage", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cbs/storage:Storage", name, state, MakeResourceOptions(options, id))
         {
         }
 

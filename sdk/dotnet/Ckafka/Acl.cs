@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ckafka
+namespace Pulumi.Tctest.Ckafka
 {
-    [TencentcloudResourceType("tencentcloud:Ckafka/acl:Acl")]
+    [TctestResourceType("tctest:Ckafka/acl:Acl")]
     public partial class Acl : Pulumi.CustomResource
     {
         /// <summary>
@@ -69,12 +69,12 @@ namespace Pulumi.Tencentcloud.Ckafka
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Acl(string name, AclArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ckafka/acl:Acl", name, args ?? new AclArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ckafka/acl:Acl", name, args ?? new AclArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Acl(string name, Input<string> id, AclState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ckafka/acl:Acl", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ckafka/acl:Acl", name, state, MakeResourceOptions(options, id))
         {
         }
 

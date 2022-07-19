@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mongodb/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Mongodb/instances:Instances", {
         "clusterType": args.clusterType,
         "instanceId": args.instanceId,
         "instanceNamePrefix": args.instanceNamePrefix,

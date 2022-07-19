@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Route
+namespace Pulumi.Tctest.Route
 {
-    [TencentcloudResourceType("tencentcloud:Route/entry:Entry")]
+    [TctestResourceType("tctest:Route/entry:Entry")]
     public partial class Entry : Pulumi.CustomResource
     {
         /// <summary>
@@ -53,12 +53,12 @@ namespace Pulumi.Tencentcloud.Route
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Entry(string name, EntryArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Route/entry:Entry", name, args ?? new EntryArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Route/entry:Entry", name, args ?? new EntryArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Entry(string name, Input<string> id, EntryState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Route/entry:Entry", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Route/entry:Entry", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -19,7 +19,7 @@ export class Pair extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Key/pair:Pair';
+    public static readonly __pulumiType = 'tctest:Key/pair:Pair';
 
     /**
      * Returns true if the given object is an instance of Pair.  This is designed to work even

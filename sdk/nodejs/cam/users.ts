@@ -12,7 +12,7 @@ export function users(args?: UsersArgs, opts?: pulumi.InvokeOptions): Promise<Us
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/users:Users", {
+    return pulumi.runtime.invoke("tctest:Cam/users:Users", {
         "consoleLogin": args.consoleLogin,
         "countryCode": args.countryCode,
         "email": args.email,

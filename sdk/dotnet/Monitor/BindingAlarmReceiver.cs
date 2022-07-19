@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
-    [TencentcloudResourceType("tencentcloud:Monitor/bindingAlarmReceiver:BindingAlarmReceiver")]
+    [TctestResourceType("tctest:Monitor/bindingAlarmReceiver:BindingAlarmReceiver")]
     public partial class BindingAlarmReceiver : Pulumi.CustomResource
     {
         /// <summary>
@@ -34,12 +34,12 @@ namespace Pulumi.Tencentcloud.Monitor
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public BindingAlarmReceiver(string name, BindingAlarmReceiverArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/bindingAlarmReceiver:BindingAlarmReceiver", name, args ?? new BindingAlarmReceiverArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Monitor/bindingAlarmReceiver:BindingAlarmReceiver", name, args ?? new BindingAlarmReceiverArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private BindingAlarmReceiver(string name, Input<string> id, BindingAlarmReceiverState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/bindingAlarmReceiver:BindingAlarmReceiver", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Monitor/bindingAlarmReceiver:BindingAlarmReceiver", name, state, MakeResourceOptions(options, id))
         {
         }
 

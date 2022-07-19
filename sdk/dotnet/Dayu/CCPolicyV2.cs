@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/cCPolicyV2:CCPolicyV2")]
+    [TctestResourceType("tctest:Dayu/cCPolicyV2:CCPolicyV2")]
     public partial class CCPolicyV2 : Pulumi.CustomResource
     {
         /// <summary>
@@ -64,12 +64,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CCPolicyV2(string name, CCPolicyV2Args args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/cCPolicyV2:CCPolicyV2", name, args ?? new CCPolicyV2Args(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/cCPolicyV2:CCPolicyV2", name, args ?? new CCPolicyV2Args(), MakeResourceOptions(options, ""))
         {
         }
 
         private CCPolicyV2(string name, Input<string> id, CCPolicyV2State? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/cCPolicyV2:CCPolicyV2", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/cCPolicyV2:CCPolicyV2", name, state, MakeResourceOptions(options, id))
         {
         }
 

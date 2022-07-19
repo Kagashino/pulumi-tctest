@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
-    [TencentcloudResourceType("tencentcloud:As/notification:Notification")]
+    [TctestResourceType("tctest:As/notification:Notification")]
     public partial class Notification : Pulumi.CustomResource
     {
         /// <summary>
@@ -41,12 +41,12 @@ namespace Pulumi.Tencentcloud.As
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Notification(string name, NotificationArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/notification:Notification", name, args ?? new NotificationArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:As/notification:Notification", name, args ?? new NotificationArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Notification(string name, Input<string> id, NotificationState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/notification:Notification", name, state, MakeResourceOptions(options, id))
+            : base("tctest:As/notification:Notification", name, state, MakeResourceOptions(options, id))
         {
         }
 

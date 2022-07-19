@@ -11,7 +11,7 @@ export function tcrrepositories(args: TcrrepositoriesArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/tCRRepositories:TCRRepositories", {
+    return pulumi.runtime.invoke("tctest:Cloud/tCRRepositories:TCRRepositories", {
         "instanceId": args.instanceId,
         "namespaceName": args.namespaceName,
         "repositoryName": args.repositoryName,

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cvm
+namespace Pulumi.Tctest.Cvm
 {
     public static class InstancesTypes
     {
         public static Task<InstancesTypesResult> InvokeAsync(InstancesTypesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<InstancesTypesResult>("tencentcloud:Cvm/instancesTypes:InstancesTypes", args ?? new InstancesTypesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<InstancesTypesResult>("tctest:Cvm/instancesTypes:InstancesTypes", args ?? new InstancesTypesArgs(), options.WithDefaults());
 
         public static Output<InstancesTypesResult> Invoke(InstancesTypesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<InstancesTypesResult>("tencentcloud:Cvm/instancesTypes:InstancesTypes", args ?? new InstancesTypesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<InstancesTypesResult>("tctest:Cvm/instancesTypes:InstancesTypes", args ?? new InstancesTypesInvokeArgs(), options.WithDefaults());
     }
 
 

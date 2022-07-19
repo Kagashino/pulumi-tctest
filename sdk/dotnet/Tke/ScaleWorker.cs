@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tke
+namespace Pulumi.Tctest.Tke
 {
-    [TencentcloudResourceType("tencentcloud:Tke/scaleWorker:ScaleWorker")]
+    [TctestResourceType("tctest:Tke/scaleWorker:ScaleWorker")]
     public partial class ScaleWorker : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Tke
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ScaleWorker(string name, ScaleWorkerArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/scaleWorker:ScaleWorker", name, args ?? new ScaleWorkerArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tke/scaleWorker:ScaleWorker", name, args ?? new ScaleWorkerArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ScaleWorker(string name, Input<string> id, ScaleWorkerState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tke/scaleWorker:ScaleWorker", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tke/scaleWorker:ScaleWorker", name, state, MakeResourceOptions(options, id))
         {
         }
 

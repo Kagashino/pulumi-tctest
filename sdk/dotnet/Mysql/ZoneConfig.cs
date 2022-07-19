@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
     public static class ZoneConfig
     {
         public static Task<ZoneConfigResult> InvokeAsync(ZoneConfigArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ZoneConfigResult>("tencentcloud:Mysql/zoneConfig:ZoneConfig", args ?? new ZoneConfigArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ZoneConfigResult>("tctest:Mysql/zoneConfig:ZoneConfig", args ?? new ZoneConfigArgs(), options.WithDefaults());
 
         public static Output<ZoneConfigResult> Invoke(ZoneConfigInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ZoneConfigResult>("tencentcloud:Mysql/zoneConfig:ZoneConfig", args ?? new ZoneConfigInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ZoneConfigResult>("tctest:Mysql/zoneConfig:ZoneConfig", args ?? new ZoneConfigInvokeArgs(), options.WithDefaults());
     }
 
 

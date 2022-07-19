@@ -20,7 +20,7 @@ export class PolicyGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Monitor/policyGroup:PolicyGroup';
+    public static readonly __pulumiType = 'tctest:Monitor/policyGroup:PolicyGroup';
 
     /**
      * Returns true if the given object is an instance of PolicyGroup.  This is designed to work even

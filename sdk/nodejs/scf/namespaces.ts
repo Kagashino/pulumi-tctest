@@ -12,7 +12,7 @@ export function namespaces(args?: NamespacesArgs, opts?: pulumi.InvokeOptions): 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Scf/namespaces:Namespaces", {
+    return pulumi.runtime.invoke("tctest:Scf/namespaces:Namespaces", {
         "description": args.description,
         "namespace": args.namespace,
         "resultOutputFile": args.resultOutputFile,

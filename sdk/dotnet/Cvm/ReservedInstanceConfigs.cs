@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cvm
+namespace Pulumi.Tctest.Cvm
 {
     public static class ReservedInstanceConfigs
     {
         public static Task<ReservedInstanceConfigsResult> InvokeAsync(ReservedInstanceConfigsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ReservedInstanceConfigsResult>("tencentcloud:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", args ?? new ReservedInstanceConfigsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ReservedInstanceConfigsResult>("tctest:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", args ?? new ReservedInstanceConfigsArgs(), options.WithDefaults());
 
         public static Output<ReservedInstanceConfigsResult> Invoke(ReservedInstanceConfigsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ReservedInstanceConfigsResult>("tencentcloud:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", args ?? new ReservedInstanceConfigsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ReservedInstanceConfigsResult>("tctest:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", args ?? new ReservedInstanceConfigsInvokeArgs(), options.WithDefaults());
     }
 
 

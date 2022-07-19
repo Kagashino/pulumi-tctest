@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ssm
+namespace Pulumi.Tctest.Ssm
 {
     public static class Secrets
     {
         public static Task<SecretsResult> InvokeAsync(SecretsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SecretsResult>("tencentcloud:Ssm/secrets:Secrets", args ?? new SecretsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SecretsResult>("tctest:Ssm/secrets:Secrets", args ?? new SecretsArgs(), options.WithDefaults());
 
         public static Output<SecretsResult> Invoke(SecretsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SecretsResult>("tencentcloud:Ssm/secrets:Secrets", args ?? new SecretsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SecretsResult>("tctest:Ssm/secrets:Secrets", args ?? new SecretsInvokeArgs(), options.WithDefaults());
     }
 
 

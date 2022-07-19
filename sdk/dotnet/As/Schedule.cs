@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
-    [TencentcloudResourceType("tencentcloud:As/schedule:Schedule")]
+    [TctestResourceType("tctest:As/schedule:Schedule")]
     public partial class Schedule : Pulumi.CustomResource
     {
         /// <summary>
@@ -70,12 +70,12 @@ namespace Pulumi.Tencentcloud.As
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Schedule(string name, ScheduleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/schedule:Schedule", name, args ?? new ScheduleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:As/schedule:Schedule", name, args ?? new ScheduleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Schedule(string name, Input<string> id, ScheduleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/schedule:Schedule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:As/schedule:Schedule", name, state, MakeResourceOptions(options, id))
         {
         }
 

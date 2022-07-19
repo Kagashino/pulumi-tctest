@@ -19,7 +19,7 @@ export class TGAttachmentInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/tGAttachmentInstance:TGAttachmentInstance';
+    public static readonly __pulumiType = 'tctest:Clb/tGAttachmentInstance:TGAttachmentInstance';
 
     /**
      * Returns true if the given object is an instance of TGAttachmentInstance.  This is designed to work even

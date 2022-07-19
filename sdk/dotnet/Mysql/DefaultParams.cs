@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
     public static class DefaultParams
     {
         public static Task<DefaultParamsResult> InvokeAsync(DefaultParamsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DefaultParamsResult>("tencentcloud:Mysql/defaultParams:DefaultParams", args ?? new DefaultParamsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<DefaultParamsResult>("tctest:Mysql/defaultParams:DefaultParams", args ?? new DefaultParamsArgs(), options.WithDefaults());
 
         public static Output<DefaultParamsResult> Invoke(DefaultParamsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DefaultParamsResult>("tencentcloud:Mysql/defaultParams:DefaultParams", args ?? new DefaultParamsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<DefaultParamsResult>("tctest:Mysql/defaultParams:DefaultParams", args ?? new DefaultParamsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -19,7 +19,7 @@ export class ReservedInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cvm/reservedInstance:ReservedInstance';
+    public static readonly __pulumiType = 'tctest:Cvm/reservedInstance:ReservedInstance';
 
     /**
      * Returns true if the given object is an instance of ReservedInstance.  This is designed to work even

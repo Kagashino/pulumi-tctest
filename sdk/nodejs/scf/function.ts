@@ -20,7 +20,7 @@ export class Function extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Scf/function:Function';
+    public static readonly __pulumiType = 'tctest:Scf/function:Function';
 
     /**
      * Returns true if the given object is an instance of Function.  This is designed to work even

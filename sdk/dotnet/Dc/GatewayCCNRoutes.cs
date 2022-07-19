@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dc
+namespace Pulumi.Tctest.Dc
 {
     public static class GatewayCCNRoutes
     {
         public static Task<GatewayCCNRoutesResult> InvokeAsync(GatewayCCNRoutesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<GatewayCCNRoutesResult>("tencentcloud:Dc/gatewayCCNRoutes:GatewayCCNRoutes", args ?? new GatewayCCNRoutesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<GatewayCCNRoutesResult>("tctest:Dc/gatewayCCNRoutes:GatewayCCNRoutes", args ?? new GatewayCCNRoutesArgs(), options.WithDefaults());
 
         public static Output<GatewayCCNRoutesResult> Invoke(GatewayCCNRoutesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<GatewayCCNRoutesResult>("tencentcloud:Dc/gatewayCCNRoutes:GatewayCCNRoutes", args ?? new GatewayCCNRoutesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<GatewayCCNRoutesResult>("tctest:Dc/gatewayCCNRoutes:GatewayCCNRoutes", args ?? new GatewayCCNRoutesInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -35,29 +35,29 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Sqlserver/account:Account":
+            case "tctest:Sqlserver/account:Account":
                 return new Account(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/accountDBAttachment:AccountDBAttachment":
+            case "tctest:Sqlserver/accountDBAttachment:AccountDBAttachment":
                 return new AccountDBAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/basicInstance:BasicInstance":
+            case "tctest:Sqlserver/basicInstance:BasicInstance":
                 return new BasicInstance(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/dB:DB":
+            case "tctest:Sqlserver/dB:DB":
                 return new DB(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/instance:Instance":
+            case "tctest:Sqlserver/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/publishSubscribe:PublishSubscribe":
+            case "tctest:Sqlserver/publishSubscribe:PublishSubscribe":
                 return new PublishSubscribe(name, <any>undefined, { urn })
-            case "tencentcloud:Sqlserver/readonlyInstance:ReadonlyInstance":
+            case "tctest:Sqlserver/readonlyInstance:ReadonlyInstance":
                 return new ReadonlyInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/account", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/accountDBAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/basicInstance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/dB", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/publishSubscribe", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Sqlserver/readonlyInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/account", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/accountDBAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/basicInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/dB", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/publishSubscribe", _module)
+pulumi.runtime.registerResourceModule("tctest", "Sqlserver/readonlyInstance", _module)

@@ -11,7 +11,7 @@ export function groupPolicyAttachments(args: GroupPolicyAttachmentsArgs, opts?: 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/groupPolicyAttachments:GroupPolicyAttachments", {
+    return pulumi.runtime.invoke("tctest:Cam/groupPolicyAttachments:GroupPolicyAttachments", {
         "createMode": args.createMode,
         "groupId": args.groupId,
         "policyId": args.policyId,

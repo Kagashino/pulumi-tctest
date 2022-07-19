@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/certificate:Certificate")]
+    [TctestResourceType("tctest:Gaap/certificate:Certificate")]
     public partial class Certificate : Pulumi.CustomResource
     {
         /// <summary>
@@ -79,12 +79,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Certificate(string name, CertificateArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/certificate:Certificate", name, args ?? new CertificateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/certificate:Certificate", name, args ?? new CertificateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Certificate(string name, Input<string> id, CertificateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/certificate:Certificate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/certificate:Certificate", name, state, MakeResourceOptions(options, id))
         {
         }
 

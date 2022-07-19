@@ -19,7 +19,7 @@ export class GroupMembership extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/groupMembership:GroupMembership';
+    public static readonly __pulumiType = 'tctest:Cam/groupMembership:GroupMembership';
 
     /**
      * Returns true if the given object is an instance of GroupMembership.  This is designed to work even

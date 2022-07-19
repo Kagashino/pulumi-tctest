@@ -12,7 +12,7 @@ export function snapshotByTimeOffsetTemplates(args?: SnapshotByTimeOffsetTemplat
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", {
+    return pulumi.runtime.invoke("tctest:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", {
         "definition": args.definition,
         "resultOutputFile": args.resultOutputFile,
         "subAppId": args.subAppId,

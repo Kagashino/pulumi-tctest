@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
-    [TencentcloudResourceType("tencentcloud:Vpc/routeEntry:RouteEntry")]
+    [TctestResourceType("tctest:Vpc/routeEntry:RouteEntry")]
     public partial class RouteEntry : Pulumi.CustomResource
     {
         /// <summary>
@@ -58,12 +58,12 @@ namespace Pulumi.Tencentcloud.Vpc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public RouteEntry(string name, RouteEntryArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/routeEntry:RouteEntry", name, args ?? new RouteEntryArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpc/routeEntry:RouteEntry", name, args ?? new RouteEntryArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private RouteEntry(string name, Input<string> id, RouteEntryState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/routeEntry:RouteEntry", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpc/routeEntry:RouteEntry", name, state, MakeResourceOptions(options, id))
         {
         }
 

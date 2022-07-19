@@ -20,7 +20,7 @@ export class Zone extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:PrivateDns/zone:Zone';
+    public static readonly __pulumiType = 'tctest:PrivateDns/zone:Zone';
 
     /**
      * Returns true if the given object is an instance of Zone.  This is designed to work even

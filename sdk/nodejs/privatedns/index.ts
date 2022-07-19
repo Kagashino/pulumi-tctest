@@ -16,14 +16,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:PrivateDns/record:Record":
+            case "tctest:PrivateDns/record:Record":
                 return new Record(name, <any>undefined, { urn })
-            case "tencentcloud:PrivateDns/zone:Zone":
+            case "tctest:PrivateDns/zone:Zone":
                 return new Zone(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "PrivateDns/record", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "PrivateDns/zone", _module)
+pulumi.runtime.registerResourceModule("tctest", "PrivateDns/record", _module)
+pulumi.runtime.registerResourceModule("tctest", "PrivateDns/zone", _module)

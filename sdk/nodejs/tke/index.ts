@@ -30,29 +30,29 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Tke/addonAttachment:AddonAttachment":
+            case "tctest:Tke/addonAttachment:AddonAttachment":
                 return new AddonAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/asScalingGroup:AsScalingGroup":
+            case "tctest:Tke/asScalingGroup:AsScalingGroup":
                 return new AsScalingGroup(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/authAttachment:AuthAttachment":
+            case "tctest:Tke/authAttachment:AuthAttachment":
                 return new AuthAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/cluster:Cluster":
+            case "tctest:Tke/cluster:Cluster":
                 return new Cluster(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/clusterAttachment:ClusterAttachment":
+            case "tctest:Tke/clusterAttachment:ClusterAttachment":
                 return new ClusterAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/nodePool:NodePool":
+            case "tctest:Tke/nodePool:NodePool":
                 return new NodePool(name, <any>undefined, { urn })
-            case "tencentcloud:Tke/scaleWorker:ScaleWorker":
+            case "tctest:Tke/scaleWorker:ScaleWorker":
                 return new ScaleWorker(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/addonAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/asScalingGroup", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/authAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/cluster", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/clusterAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/nodePool", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tke/scaleWorker", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/addonAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/asScalingGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/authAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/cluster", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/clusterAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/nodePool", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tke/scaleWorker", _module)

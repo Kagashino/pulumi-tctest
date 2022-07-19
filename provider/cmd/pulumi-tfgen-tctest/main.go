@@ -15,12 +15,12 @@
 package main
 
 import (
-	tencentcloud "github.com/Kagashino/tctest/provider"
+	tctest "github.com/Kagashino/tctest/provider"
 	"github.com/Kagashino/tctest/provider/pkg/version"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfgen"
 )
 
 func main() {
 	// Modify the path to point to the new provider
-	tfgen.Main("tencentcloud", version.Version, tencentcloud.Provider())
+	tfgen.Main("tctest", version.Version, tctest.Provider())
 }

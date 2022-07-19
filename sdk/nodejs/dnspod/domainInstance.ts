@@ -19,7 +19,7 @@ export class DomainInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dnspod/domainInstance:DomainInstance';
+    public static readonly __pulumiType = 'tctest:Dnspod/domainInstance:DomainInstance';
 
     /**
      * Returns true if the given object is an instance of DomainInstance.  This is designed to work even

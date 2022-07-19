@@ -12,7 +12,7 @@ export function snapshotPolicies(args?: SnapshotPoliciesArgs, opts?: pulumi.Invo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cbs/snapshotPolicies:SnapshotPolicies", {
+    return pulumi.runtime.invoke("tctest:Cbs/snapshotPolicies:SnapshotPolicies", {
         "resultOutputFile": args.resultOutputFile,
         "snapshotPolicyId": args.snapshotPolicyId,
         "snapshotPolicyName": args.snapshotPolicyName,

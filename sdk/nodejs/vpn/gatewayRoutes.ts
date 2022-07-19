@@ -11,7 +11,7 @@ export function gatewayRoutes(args: GatewayRoutesArgs, opts?: pulumi.InvokeOptio
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpn/gatewayRoutes:GatewayRoutes", {
+    return pulumi.runtime.invoke("tctest:Vpn/gatewayRoutes:GatewayRoutes", {
         "destinationCidr": args.destinationCidr,
         "instanceId": args.instanceId,
         "instanceType": args.instanceType,

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/subApplication:SubApplication")]
+    [TctestResourceType("tctest:Vod/subApplication:SubApplication")]
     public partial class SubApplication : Pulumi.CustomResource
     {
         /// <summary>
@@ -46,12 +46,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SubApplication(string name, SubApplicationArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/subApplication:SubApplication", name, args ?? new SubApplicationArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/subApplication:SubApplication", name, args ?? new SubApplicationArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SubApplication(string name, Input<string> id, SubApplicationState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/subApplication:SubApplication", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/subApplication:SubApplication", name, state, MakeResourceOptions(options, id))
         {
         }
 

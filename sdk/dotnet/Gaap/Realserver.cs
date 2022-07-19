@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/realserver:Realserver")]
+    [TctestResourceType("tctest:Gaap/realserver:Realserver")]
     public partial class Realserver : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Realserver(string name, RealserverArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/realserver:Realserver", name, args ?? new RealserverArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/realserver:Realserver", name, args ?? new RealserverArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Realserver(string name, Input<string> id, RealserverState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/realserver:Realserver", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/realserver:Realserver", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
     public static class BackupList
     {
         public static Task<BackupListResult> InvokeAsync(BackupListArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<BackupListResult>("tencentcloud:Mysql/backupList:BackupList", args ?? new BackupListArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<BackupListResult>("tctest:Mysql/backupList:BackupList", args ?? new BackupListArgs(), options.WithDefaults());
 
         public static Output<BackupListResult> Invoke(BackupListInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<BackupListResult>("tencentcloud:Mysql/backupList:BackupList", args ?? new BackupListInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<BackupListResult>("tctest:Mysql/backupList:BackupList", args ?? new BackupListInvokeArgs(), options.WithDefaults());
     }
 
 

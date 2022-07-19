@@ -19,7 +19,7 @@ export class TableGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tcaplus/tableGroup:TableGroup';
+    public static readonly __pulumiType = 'tctest:Tcaplus/tableGroup:TableGroup';
 
     /**
      * Returns true if the given object is an instance of TableGroup.  This is designed to work even

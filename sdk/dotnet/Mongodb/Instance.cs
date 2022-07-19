@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mongodb
+namespace Pulumi.Tctest.Mongodb
 {
-    [TencentcloudResourceType("tencentcloud:Mongodb/instance:Instance")]
+    [TctestResourceType("tctest:Mongodb/instance:Instance")]
     public partial class Instance : Pulumi.CustomResource
     {
         /// <summary>
@@ -151,12 +151,12 @@ namespace Pulumi.Tencentcloud.Mongodb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Instance(string name, InstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/instance:Instance", name, args ?? new InstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mongodb/instance:Instance", name, args ?? new InstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Instance(string name, Input<string> id, InstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mongodb/instance:Instance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mongodb/instance:Instance", name, state, MakeResourceOptions(options, id))
         {
         }
 

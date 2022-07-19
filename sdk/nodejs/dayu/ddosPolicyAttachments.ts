@@ -11,7 +11,7 @@ export function ddosPolicyAttachments(args: DdosPolicyAttachmentsArgs, opts?: pu
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dayu/ddosPolicyAttachments:DdosPolicyAttachments", {
+    return pulumi.runtime.invoke("tctest:Dayu/ddosPolicyAttachments:DdosPolicyAttachments", {
         "policyId": args.policyId,
         "resourceId": args.resourceId,
         "resourceType": args.resourceType,

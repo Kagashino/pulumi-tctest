@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpn
+namespace Pulumi.Tctest.Vpn
 {
     public static class GatewayRoutes
     {
         public static Task<GatewayRoutesResult> InvokeAsync(GatewayRoutesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<GatewayRoutesResult>("tencentcloud:Vpn/gatewayRoutes:GatewayRoutes", args ?? new GatewayRoutesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<GatewayRoutesResult>("tctest:Vpn/gatewayRoutes:GatewayRoutes", args ?? new GatewayRoutesArgs(), options.WithDefaults());
 
         public static Output<GatewayRoutesResult> Invoke(GatewayRoutesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<GatewayRoutesResult>("tencentcloud:Vpn/gatewayRoutes:GatewayRoutes", args ?? new GatewayRoutesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<GatewayRoutesResult>("tctest:Vpn/gatewayRoutes:GatewayRoutes", args ?? new GatewayRoutesInvokeArgs(), options.WithDefaults());
     }
 
 

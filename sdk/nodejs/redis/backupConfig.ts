@@ -19,7 +19,7 @@ export class BackupConfig extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Redis/backupConfig:BackupConfig';
+    public static readonly __pulumiType = 'tctest:Redis/backupConfig:BackupConfig';
 
     /**
      * Returns true if the given object is an instance of BackupConfig.  This is designed to work even

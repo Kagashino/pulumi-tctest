@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cvm.Inputs
+namespace Pulumi.Tctest.Cvm.Inputs
 {
 
     public sealed class InstanceDataDiskArgs : Pulumi.ResourceArgs

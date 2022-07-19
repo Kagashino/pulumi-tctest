@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/listener:Listener")]
+    [TctestResourceType("tctest:Clb/listener:Listener")]
     public partial class Listener : Pulumi.CustomResource
     {
         /// <summary>
@@ -211,12 +211,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Listener(string name, ListenerArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/listener:Listener", name, args ?? new ListenerArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/listener:Listener", name, args ?? new ListenerArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Listener(string name, Input<string> id, ListenerState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/listener:Listener", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/listener:Listener", name, state, MakeResourceOptions(options, id))
         {
         }
 

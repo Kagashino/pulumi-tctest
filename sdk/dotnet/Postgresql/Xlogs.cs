@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Postgresql
+namespace Pulumi.Tctest.Postgresql
 {
     public static class Xlogs
     {
         public static Task<XlogsResult> InvokeAsync(XlogsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<XlogsResult>("tencentcloud:Postgresql/xlogs:Xlogs", args ?? new XlogsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<XlogsResult>("tctest:Postgresql/xlogs:Xlogs", args ?? new XlogsArgs(), options.WithDefaults());
 
         public static Output<XlogsResult> Invoke(XlogsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<XlogsResult>("tencentcloud:Postgresql/xlogs:Xlogs", args ?? new XlogsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<XlogsResult>("tctest:Postgresql/xlogs:Xlogs", args ?? new XlogsInvokeArgs(), options.WithDefaults());
     }
 
 

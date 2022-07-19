@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
     public static class RouteTables
     {
         public static Task<RouteTablesResult> InvokeAsync(RouteTablesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<RouteTablesResult>("tencentcloud:Vpc/routeTables:RouteTables", args ?? new RouteTablesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<RouteTablesResult>("tctest:Vpc/routeTables:RouteTables", args ?? new RouteTablesArgs(), options.WithDefaults());
 
         public static Output<RouteTablesResult> Invoke(RouteTablesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<RouteTablesResult>("tencentcloud:Vpc/routeTables:RouteTables", args ?? new RouteTablesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<RouteTablesResult>("tctest:Vpc/routeTables:RouteTables", args ?? new RouteTablesInvokeArgs(), options.WithDefaults());
     }
 
 

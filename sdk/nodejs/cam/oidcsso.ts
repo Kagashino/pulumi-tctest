@@ -19,7 +19,7 @@ export class OIDCSSO extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/oIDCSSO:OIDCSSO';
+    public static readonly __pulumiType = 'tctest:Cam/oIDCSSO:OIDCSSO';
 
     /**
      * Returns true if the given object is an instance of OIDCSSO.  This is designed to work even

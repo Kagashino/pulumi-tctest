@@ -12,7 +12,7 @@ export function functions(args?: FunctionsArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Scf/functions:Functions", {
+    return pulumi.runtime.invoke("tctest:Scf/functions:Functions", {
         "description": args.description,
         "name": args.name,
         "namespace": args.namespace,

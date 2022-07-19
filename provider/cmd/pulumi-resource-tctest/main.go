@@ -17,12 +17,12 @@
 package main
 
 import (
-	tencentcloud "github.com/Kagashino/tctest/provider"
+	tctest "github.com/Kagashino/tctest/provider"
 	"github.com/Kagashino/tctest/provider/pkg/version"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 )
 
 func main() {
 	// Modify the path to point to the new provider
-	tfbridge.Main("tencentcloud", version.Version, tencentcloud.Provider(), pulumiSchema)
+	tfbridge.Main("tctest", version.Version, tctest.Provider(), pulumiSchema)
 }

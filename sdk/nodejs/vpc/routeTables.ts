@@ -12,7 +12,7 @@ export function routeTables(args?: RouteTablesArgs, opts?: pulumi.InvokeOptions)
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpc/routeTables:RouteTables", {
+    return pulumi.runtime.invoke("tctest:Vpc/routeTables:RouteTables", {
         "associationMain": args.associationMain,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

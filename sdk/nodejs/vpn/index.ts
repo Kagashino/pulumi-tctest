@@ -28,26 +28,26 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Vpn/connection:Connection":
+            case "tctest:Vpn/connection:Connection":
                 return new Connection(name, <any>undefined, { urn })
-            case "tencentcloud:Vpn/customerGateway:CustomerGateway":
+            case "tctest:Vpn/customerGateway:CustomerGateway":
                 return new CustomerGateway(name, <any>undefined, { urn })
-            case "tencentcloud:Vpn/gateway:Gateway":
+            case "tctest:Vpn/gateway:Gateway":
                 return new Gateway(name, <any>undefined, { urn })
-            case "tencentcloud:Vpn/gatewayRoute:GatewayRoute":
+            case "tctest:Vpn/gatewayRoute:GatewayRoute":
                 return new GatewayRoute(name, <any>undefined, { urn })
-            case "tencentcloud:Vpn/sslClient:SslClient":
+            case "tctest:Vpn/sslClient:SslClient":
                 return new SslClient(name, <any>undefined, { urn })
-            case "tencentcloud:Vpn/sslServer:SslServer":
+            case "tctest:Vpn/sslServer:SslServer":
                 return new SslServer(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/connection", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/customerGateway", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/gateway", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/gatewayRoute", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/sslClient", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Vpn/sslServer", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/connection", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/customerGateway", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/gateway", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/gatewayRoute", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/sslClient", _module)
+pulumi.runtime.registerResourceModule("tctest", "Vpn/sslServer", _module)

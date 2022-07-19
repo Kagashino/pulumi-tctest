@@ -11,7 +11,7 @@ export function xlogs(args: XlogsArgs, opts?: pulumi.InvokeOptions): Promise<Xlo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Postgresql/xlogs:Xlogs", {
+    return pulumi.runtime.invoke("tctest:Postgresql/xlogs:Xlogs", {
         "endTime": args.endTime,
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,

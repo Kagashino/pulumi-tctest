@@ -11,7 +11,7 @@ export function users(args: UsersArgs, opts?: pulumi.InvokeOptions): Promise<Use
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ckafka/users:Users", {
+    return pulumi.runtime.invoke("tctest:Ckafka/users:Users", {
         "accountName": args.accountName,
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,

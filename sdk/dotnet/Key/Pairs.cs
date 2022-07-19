@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Key
+namespace Pulumi.Tctest.Key
 {
     public static class Pairs
     {
         public static Task<PairsResult> InvokeAsync(PairsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<PairsResult>("tencentcloud:Key/pairs:Pairs", args ?? new PairsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<PairsResult>("tctest:Key/pairs:Pairs", args ?? new PairsArgs(), options.WithDefaults());
 
         public static Output<PairsResult> Invoke(PairsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<PairsResult>("tencentcloud:Key/pairs:Pairs", args ?? new PairsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<PairsResult>("tctest:Key/pairs:Pairs", args ?? new PairsInvokeArgs(), options.WithDefaults());
     }
 
 

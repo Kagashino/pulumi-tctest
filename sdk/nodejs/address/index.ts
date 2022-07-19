@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Address/template:Template":
+            case "tctest:Address/template:Template":
                 return new Template(name, <any>undefined, { urn })
-            case "tencentcloud:Address/templateGroup:TemplateGroup":
+            case "tctest:Address/templateGroup:TemplateGroup":
                 return new TemplateGroup(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Address/template", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Address/templateGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Address/template", _module)
+pulumi.runtime.registerResourceModule("tctest", "Address/templateGroup", _module)

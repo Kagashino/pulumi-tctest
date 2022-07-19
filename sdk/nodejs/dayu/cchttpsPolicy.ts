@@ -20,7 +20,7 @@ export class CCHttpsPolicy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dayu/cCHttpsPolicy:CCHttpsPolicy';
+    public static readonly __pulumiType = 'tctest:Dayu/cCHttpsPolicy:CCHttpsPolicy';
 
     /**
      * Returns true if the given object is an instance of CCHttpsPolicy.  This is designed to work even

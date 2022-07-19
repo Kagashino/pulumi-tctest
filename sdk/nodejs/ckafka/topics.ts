@@ -11,7 +11,7 @@ export function topics(args: TopicsArgs, opts?: pulumi.InvokeOptions): Promise<T
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ckafka/topics:Topics", {
+    return pulumi.runtime.invoke("tctest:Ckafka/topics:Topics", {
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,
         "topicName": args.topicName,

@@ -19,7 +19,7 @@ export class AddonAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tke/addonAttachment:AddonAttachment';
+    public static readonly __pulumiType = 'tctest:Tke/addonAttachment:AddonAttachment';
 
     /**
      * Returns true if the given object is an instance of AddonAttachment.  This is designed to work even

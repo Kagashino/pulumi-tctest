@@ -12,7 +12,7 @@ export function groups(args?: GroupsArgs, opts?: pulumi.InvokeOptions): Promise<
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/groups:Groups", {
+    return pulumi.runtime.invoke("tctest:Cam/groups:Groups", {
         "groupId": args.groupId,
         "name": args.name,
         "remark": args.remark,

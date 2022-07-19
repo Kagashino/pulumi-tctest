@@ -11,7 +11,7 @@ export function tcrtokens(args: TcrtokensArgs, opts?: pulumi.InvokeOptions): Pro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/tCRTokens:TCRTokens", {
+    return pulumi.runtime.invoke("tctest:Cloud/tCRTokens:TCRTokens", {
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,
         "tokenId": args.tokenId,

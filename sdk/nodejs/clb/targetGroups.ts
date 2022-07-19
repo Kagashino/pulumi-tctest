@@ -12,7 +12,7 @@ export function targetGroups(args?: TargetGroupsArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/targetGroups:TargetGroups", {
+    return pulumi.runtime.invoke("tctest:Clb/targetGroups:TargetGroups", {
         "resultOutputFile": args.resultOutputFile,
         "targetGroupId": args.targetGroupId,
         "targetGroupName": args.targetGroupName,

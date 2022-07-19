@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class HttpDomains
     {
         public static Task<HttpDomainsResult> InvokeAsync(HttpDomainsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<HttpDomainsResult>("tencentcloud:Gaap/httpDomains:HttpDomains", args ?? new HttpDomainsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<HttpDomainsResult>("tctest:Gaap/httpDomains:HttpDomains", args ?? new HttpDomainsArgs(), options.WithDefaults());
 
         public static Output<HttpDomainsResult> Invoke(HttpDomainsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<HttpDomainsResult>("tencentcloud:Gaap/httpDomains:HttpDomains", args ?? new HttpDomainsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<HttpDomainsResult>("tctest:Gaap/httpDomains:HttpDomains", args ?? new HttpDomainsInvokeArgs(), options.WithDefaults());
     }
 
 

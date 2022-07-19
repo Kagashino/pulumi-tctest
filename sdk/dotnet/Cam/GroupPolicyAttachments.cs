@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
     public static class GroupPolicyAttachments
     {
         public static Task<GroupPolicyAttachmentsResult> InvokeAsync(GroupPolicyAttachmentsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<GroupPolicyAttachmentsResult>("tencentcloud:Cam/groupPolicyAttachments:GroupPolicyAttachments", args ?? new GroupPolicyAttachmentsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<GroupPolicyAttachmentsResult>("tctest:Cam/groupPolicyAttachments:GroupPolicyAttachments", args ?? new GroupPolicyAttachmentsArgs(), options.WithDefaults());
 
         public static Output<GroupPolicyAttachmentsResult> Invoke(GroupPolicyAttachmentsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<GroupPolicyAttachmentsResult>("tencentcloud:Cam/groupPolicyAttachments:GroupPolicyAttachments", args ?? new GroupPolicyAttachmentsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<GroupPolicyAttachmentsResult>("tctest:Cam/groupPolicyAttachments:GroupPolicyAttachments", args ?? new GroupPolicyAttachmentsInvokeArgs(), options.WithDefaults());
     }
 
 

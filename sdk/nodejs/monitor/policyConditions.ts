@@ -12,7 +12,7 @@ export function policyConditions(args?: PolicyConditionsArgs, opts?: pulumi.Invo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/policyConditions:PolicyConditions", {
+    return pulumi.runtime.invoke("tctest:Monitor/policyConditions:PolicyConditions", {
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

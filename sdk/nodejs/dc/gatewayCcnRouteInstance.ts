@@ -19,7 +19,7 @@ export class GatewayCcnRouteInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance';
+    public static readonly __pulumiType = 'tctest:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance';
 
     /**
      * Returns true if the given object is an instance of GatewayCcnRouteInstance.  This is designed to work even

@@ -19,7 +19,7 @@ export class StorageAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cbs/storageAttachment:StorageAttachment';
+    public static readonly __pulumiType = 'tctest:Cbs/storageAttachment:StorageAttachment';
 
     /**
      * Returns true if the given object is an instance of StorageAttachment.  This is designed to work even

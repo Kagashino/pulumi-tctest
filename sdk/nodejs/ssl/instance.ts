@@ -20,7 +20,7 @@ export class Instance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Ssl/instance:Instance';
+    public static readonly __pulumiType = 'tctest:Ssl/instance:Instance';
 
     /**
      * Returns true if the given object is an instance of Instance.  This is designed to work even

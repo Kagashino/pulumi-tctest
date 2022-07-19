@@ -12,7 +12,7 @@ export function accessGroups(args?: AccessGroupsArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cfs/accessGroups:AccessGroups", {
+    return pulumi.runtime.invoke("tctest:Cfs/accessGroups:AccessGroups", {
         "accessGroupId": args.accessGroupId,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

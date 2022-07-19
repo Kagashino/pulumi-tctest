@@ -12,7 +12,7 @@ export function apigatewayThrottlingApis(args?: ApigatewayThrottlingApisArgs, op
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayThrottlingApis:APIGatewayThrottlingApis", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayThrottlingApis:APIGatewayThrottlingApis", {
         "environmentNames": args.environmentNames,
         "resultOutputFile": args.resultOutputFile,
         "serviceId": args.serviceId,

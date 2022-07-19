@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dc
+namespace Pulumi.Tctest.Dc
 {
-    [TencentcloudResourceType("tencentcloud:Dc/gatewayInstance:GatewayInstance")]
+    [TctestResourceType("tctest:Dc/gatewayInstance:GatewayInstance")]
     public partial class GatewayInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -66,12 +66,12 @@ namespace Pulumi.Tencentcloud.Dc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GatewayInstance(string name, GatewayInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dc/gatewayInstance:GatewayInstance", name, args ?? new GatewayInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dc/gatewayInstance:GatewayInstance", name, args ?? new GatewayInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GatewayInstance(string name, Input<string> id, GatewayInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dc/gatewayInstance:GatewayInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dc/gatewayInstance:GatewayInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

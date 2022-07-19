@@ -12,7 +12,7 @@ export function productEvent(args?: ProductEventArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/productEvent:ProductEvent", {
+    return pulumi.runtime.invoke("tctest:Monitor/productEvent:ProductEvent", {
         "dimensions": args.dimensions,
         "endTime": args.endTime,
         "eventNames": args.eventNames,

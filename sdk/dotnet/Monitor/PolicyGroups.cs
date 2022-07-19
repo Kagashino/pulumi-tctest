@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
     public static class PolicyGroups
     {
         public static Task<PolicyGroupsResult> InvokeAsync(PolicyGroupsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<PolicyGroupsResult>("tencentcloud:Monitor/policyGroups:PolicyGroups", args ?? new PolicyGroupsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<PolicyGroupsResult>("tctest:Monitor/policyGroups:PolicyGroups", args ?? new PolicyGroupsArgs(), options.WithDefaults());
 
         public static Output<PolicyGroupsResult> Invoke(PolicyGroupsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<PolicyGroupsResult>("tencentcloud:Monitor/policyGroups:PolicyGroups", args ?? new PolicyGroupsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<PolicyGroupsResult>("tctest:Monitor/policyGroups:PolicyGroups", args ?? new PolicyGroupsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
     public static class AccessGroups
     {
         public static Task<AccessGroupsResult> InvokeAsync(AccessGroupsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<AccessGroupsResult>("tencentcloud:Cfs/accessGroups:AccessGroups", args ?? new AccessGroupsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<AccessGroupsResult>("tctest:Cfs/accessGroups:AccessGroups", args ?? new AccessGroupsArgs(), options.WithDefaults());
 
         public static Output<AccessGroupsResult> Invoke(AccessGroupsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<AccessGroupsResult>("tencentcloud:Cfs/accessGroups:AccessGroups", args ?? new AccessGroupsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<AccessGroupsResult>("tctest:Cfs/accessGroups:AccessGroups", args ?? new AccessGroupsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/tGAttachmentInstance:TGAttachmentInstance")]
+    [TctestResourceType("tctest:Clb/tGAttachmentInstance:TGAttachmentInstance")]
     public partial class TGAttachmentInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public TGAttachmentInstance(string name, TGAttachmentInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/tGAttachmentInstance:TGAttachmentInstance", name, args ?? new TGAttachmentInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/tGAttachmentInstance:TGAttachmentInstance", name, args ?? new TGAttachmentInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private TGAttachmentInstance(string name, Input<string> id, TGAttachmentInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/tGAttachmentInstance:TGAttachmentInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/tGAttachmentInstance:TGAttachmentInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

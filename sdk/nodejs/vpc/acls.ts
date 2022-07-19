@@ -12,7 +12,7 @@ export function acls(args?: AclsArgs, opts?: pulumi.InvokeOptions): Promise<Acls
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpc/acls:Acls", {
+    return pulumi.runtime.invoke("tctest:Vpc/acls:Acls", {
         "id": args.id,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

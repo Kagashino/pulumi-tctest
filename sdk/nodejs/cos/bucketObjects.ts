@@ -10,7 +10,7 @@ export function bucketObjects(args: BucketObjectsArgs, opts?: pulumi.InvokeOptio
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cos/bucketObjects:BucketObjects", {
+    return pulumi.runtime.invoke("tctest:Cos/bucketObjects:BucketObjects", {
         "bucket": args.bucket,
         "key": args.key,
         "resultOutputFile": args.resultOutputFile,

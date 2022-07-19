@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Elasticsearch.Inputs
+namespace Pulumi.Tctest.Elasticsearch.Inputs
 {
 
     public sealed class InstanceNodeInfoListGetArgs : Pulumi.ResourceArgs

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate")]
+    [TctestResourceType("tctest:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate")]
     public partial class AdaptiveDynamicStreamingTemplate : Pulumi.CustomResource
     {
         /// <summary>
@@ -86,12 +86,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public AdaptiveDynamicStreamingTemplate(string name, AdaptiveDynamicStreamingTemplateArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate", name, args ?? new AdaptiveDynamicStreamingTemplateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate", name, args ?? new AdaptiveDynamicStreamingTemplateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private AdaptiveDynamicStreamingTemplate(string name, Input<string> id, AdaptiveDynamicStreamingTemplateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/adaptiveDynamicStreamingTemplate:AdaptiveDynamicStreamingTemplate", name, state, MakeResourceOptions(options, id))
         {
         }
 

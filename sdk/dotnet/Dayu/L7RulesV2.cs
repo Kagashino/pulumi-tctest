@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
     public static class L7RulesV2
     {
         public static Task<L7RulesV2Result> InvokeAsync(L7RulesV2Args args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<L7RulesV2Result>("tencentcloud:Dayu/l7RulesV2:L7RulesV2", args ?? new L7RulesV2Args(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<L7RulesV2Result>("tctest:Dayu/l7RulesV2:L7RulesV2", args ?? new L7RulesV2Args(), options.WithDefaults());
 
         public static Output<L7RulesV2Result> Invoke(L7RulesV2InvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<L7RulesV2Result>("tencentcloud:Dayu/l7RulesV2:L7RulesV2", args ?? new L7RulesV2InvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<L7RulesV2Result>("tctest:Dayu/l7RulesV2:L7RulesV2", args ?? new L7RulesV2InvokeArgs(), options.WithDefaults());
     }
 
 

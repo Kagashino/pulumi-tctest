@@ -19,7 +19,7 @@ export class Account extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Sqlserver/account:Account';
+    public static readonly __pulumiType = 'tctest:Sqlserver/account:Account';
 
     /**
      * Returns true if the given object is an instance of Account.  This is designed to work even

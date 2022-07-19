@@ -11,7 +11,7 @@ export function gatewayCCNRoutes(args: GatewayCCNRoutesArgs, opts?: pulumi.Invok
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dc/gatewayCCNRoutes:GatewayCCNRoutes", {
+    return pulumi.runtime.invoke("tctest:Dc/gatewayCCNRoutes:GatewayCCNRoutes", {
         "dcgId": args.dcgId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

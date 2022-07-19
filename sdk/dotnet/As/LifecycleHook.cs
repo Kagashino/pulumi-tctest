@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
-    [TencentcloudResourceType("tencentcloud:As/lifecycleHook:LifecycleHook")]
+    [TctestResourceType("tctest:As/lifecycleHook:LifecycleHook")]
     public partial class LifecycleHook : Pulumi.CustomResource
     {
         /// <summary>
@@ -78,12 +78,12 @@ namespace Pulumi.Tencentcloud.As
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public LifecycleHook(string name, LifecycleHookArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/lifecycleHook:LifecycleHook", name, args ?? new LifecycleHookArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:As/lifecycleHook:LifecycleHook", name, args ?? new LifecycleHookArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private LifecycleHook(string name, Input<string> id, LifecycleHookState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/lifecycleHook:LifecycleHook", name, state, MakeResourceOptions(options, id))
+            : base("tctest:As/lifecycleHook:LifecycleHook", name, state, MakeResourceOptions(options, id))
         {
         }
 

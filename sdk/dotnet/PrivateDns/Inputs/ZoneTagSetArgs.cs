@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.PrivateDns.Inputs
+namespace Pulumi.Tctest.PrivateDns.Inputs
 {
 
     public sealed class ZoneTagSetArgs : Pulumi.ResourceArgs

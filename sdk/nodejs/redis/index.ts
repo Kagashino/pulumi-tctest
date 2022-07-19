@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Redis/backupConfig:BackupConfig":
+            case "tctest:Redis/backupConfig:BackupConfig":
                 return new BackupConfig(name, <any>undefined, { urn })
-            case "tencentcloud:Redis/instance:Instance":
+            case "tctest:Redis/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Redis/backupConfig", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Redis/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Redis/backupConfig", _module)
+pulumi.runtime.registerResourceModule("tctest", "Redis/instance", _module)

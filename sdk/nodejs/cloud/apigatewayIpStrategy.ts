@@ -11,7 +11,7 @@ export function apigatewayIpStrategy(args: ApigatewayIpStrategyArgs, opts?: pulu
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayIpStrategy:APIGatewayIpStrategy", {
         "resultOutputFile": args.resultOutputFile,
         "serviceId": args.serviceId,
         "strategyName": args.strategyName,

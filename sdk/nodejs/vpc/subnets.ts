@@ -12,7 +12,7 @@ export function subnets(args?: SubnetsArgs, opts?: pulumi.InvokeOptions): Promis
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vpc/subnets:Subnets", {
+    return pulumi.runtime.invoke("tctest:Vpc/subnets:Subnets", {
         "availabilityZone": args.availabilityZone,
         "cidrBlock": args.cidrBlock,
         "isDefault": args.isDefault,

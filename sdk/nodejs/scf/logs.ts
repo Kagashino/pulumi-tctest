@@ -11,7 +11,7 @@ export function logs(args: LogsArgs, opts?: pulumi.InvokeOptions): Promise<LogsR
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Scf/logs:Logs", {
+    return pulumi.runtime.invoke("tctest:Scf/logs:Logs", {
         "endTime": args.endTime,
         "functionName": args.functionName,
         "invokeRequestId": args.invokeRequestId,

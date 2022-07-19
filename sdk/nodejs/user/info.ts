@@ -11,7 +11,7 @@ export function info(args?: InfoArgs, opts?: pulumi.InvokeOptions): Promise<Info
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:User/info:Info", {
+    return pulumi.runtime.invoke("tctest:User/info:Info", {
         "resultOutputFile": args.resultOutputFile,
     }, opts);
 }

@@ -19,17 +19,17 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Security/group:Group":
+            case "tctest:Security/group:Group":
                 return new Group(name, <any>undefined, { urn })
-            case "tencentcloud:Security/groupLiteRule:GroupLiteRule":
+            case "tctest:Security/groupLiteRule:GroupLiteRule":
                 return new GroupLiteRule(name, <any>undefined, { urn })
-            case "tencentcloud:Security/groupRule:GroupRule":
+            case "tctest:Security/groupRule:GroupRule":
                 return new GroupRule(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Security/group", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Security/groupLiteRule", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Security/groupRule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Security/group", _module)
+pulumi.runtime.registerResourceModule("tctest", "Security/groupLiteRule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Security/groupRule", _module)

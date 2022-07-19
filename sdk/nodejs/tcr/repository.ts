@@ -19,7 +19,7 @@ export class Repository extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tcr/repository:Repository';
+    public static readonly __pulumiType = 'tctest:Tcr/repository:Repository';
 
     /**
      * Returns true if the given object is an instance of Repository.  This is designed to work even

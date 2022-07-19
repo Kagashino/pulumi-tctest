@@ -12,7 +12,7 @@ export function clusters(args?: ClustersArgs, opts?: pulumi.InvokeOptions): Prom
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Container/clusters:Clusters", {
+    return pulumi.runtime.invoke("tctest:Container/clusters:Clusters", {
         "clusterId": args.clusterId,
         "limit": args.limit,
     }, opts);

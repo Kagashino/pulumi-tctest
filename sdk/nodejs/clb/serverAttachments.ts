@@ -11,7 +11,7 @@ export function serverAttachments(args: ServerAttachmentsArgs, opts?: pulumi.Inv
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/serverAttachments:ServerAttachments", {
+    return pulumi.runtime.invoke("tctest:Clb/serverAttachments:ServerAttachments", {
         "clbId": args.clbId,
         "listenerId": args.listenerId,
         "resultOutputFile": args.resultOutputFile,

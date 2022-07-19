@@ -11,7 +11,7 @@ export function accountDBAttachments(args: AccountDBAttachmentsArgs, opts?: pulu
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/accountDBAttachments:AccountDBAttachments", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/accountDBAttachments:AccountDBAttachments", {
         "accountName": args.accountName,
         "dbName": args.dbName,
         "instanceId": args.instanceId,

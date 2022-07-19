@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ha
+namespace Pulumi.Tctest.Ha
 {
-    [TencentcloudResourceType("tencentcloud:Ha/haVip:HaVip")]
+    [TctestResourceType("tctest:Ha/haVip:HaVip")]
     public partial class HaVip : Pulumi.CustomResource
     {
         /// <summary>
@@ -76,12 +76,12 @@ namespace Pulumi.Tencentcloud.Ha
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public HaVip(string name, HaVipArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ha/haVip:HaVip", name, args ?? new HaVipArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ha/haVip:HaVip", name, args ?? new HaVipArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private HaVip(string name, Input<string> id, HaVipState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ha/haVip:HaVip", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ha/haVip:HaVip", name, state, MakeResourceOptions(options, id))
         {
         }
 

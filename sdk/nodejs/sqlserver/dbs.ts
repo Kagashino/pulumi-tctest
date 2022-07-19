@@ -11,7 +11,7 @@ export function dbs(args: DbsArgs, opts?: pulumi.InvokeOptions): Promise<DbsResu
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/dBs:DBs", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/dBs:DBs", {
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

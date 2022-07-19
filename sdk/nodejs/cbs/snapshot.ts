@@ -19,7 +19,7 @@ export class Snapshot extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cbs/snapshot:Snapshot';
+    public static readonly __pulumiType = 'tctest:Cbs/snapshot:Snapshot';
 
     /**
      * Returns true if the given object is an instance of Snapshot.  This is designed to work even

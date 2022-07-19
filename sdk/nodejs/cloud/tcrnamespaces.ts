@@ -11,7 +11,7 @@ export function tcrnamespaces(args: TcrnamespacesArgs, opts?: pulumi.InvokeOptio
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/tCRNamespaces:TCRNamespaces", {
+    return pulumi.runtime.invoke("tctest:Cloud/tCRNamespaces:TCRNamespaces", {
         "instanceId": args.instanceId,
         "namespaceName": args.namespaceName,
         "resultOutputFile": args.resultOutputFile,

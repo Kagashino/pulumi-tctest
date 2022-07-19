@@ -12,7 +12,7 @@ export function snapshots(args?: SnapshotsArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cbs/snapshots:Snapshots", {
+    return pulumi.runtime.invoke("tctest:Cbs/snapshots:Snapshots", {
         "availabilityZone": args.availabilityZone,
         "projectId": args.projectId,
         "resultOutputFile": args.resultOutputFile,

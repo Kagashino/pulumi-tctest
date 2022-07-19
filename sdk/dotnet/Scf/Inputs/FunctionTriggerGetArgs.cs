@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Scf.Inputs
+namespace Pulumi.Tctest.Scf.Inputs
 {
 
     public sealed class FunctionTriggerGetArgs : Pulumi.ResourceArgs

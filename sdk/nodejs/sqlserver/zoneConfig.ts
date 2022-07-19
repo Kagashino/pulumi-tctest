@@ -12,7 +12,7 @@ export function zoneConfig(args?: ZoneConfigArgs, opts?: pulumi.InvokeOptions): 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/zoneConfig:ZoneConfig", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/zoneConfig:ZoneConfig", {
         "resultOutputFile": args.resultOutputFile,
     }, opts);
 }

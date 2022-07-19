@@ -12,7 +12,7 @@ export function basicInstances(args?: BasicInstancesArgs, opts?: pulumi.InvokeOp
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/basicInstances:BasicInstances", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/basicInstances:BasicInstances", {
         "id": args.id,
         "name": args.name,
         "projectId": args.projectId,

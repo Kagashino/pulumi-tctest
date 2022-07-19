@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcaplus
+namespace Pulumi.Tctest.Tcaplus
 {
-    [TencentcloudResourceType("tencentcloud:Tcaplus/idl:Idl")]
+    [TctestResourceType("tctest:Tcaplus/idl:Idl")]
     public partial class Idl : Pulumi.CustomResource
     {
         /// <summary>
@@ -64,12 +64,12 @@ namespace Pulumi.Tencentcloud.Tcaplus
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Idl(string name, IdlArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcaplus/idl:Idl", name, args ?? new IdlArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tcaplus/idl:Idl", name, args ?? new IdlArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Idl(string name, Input<string> id, IdlState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcaplus/idl:Idl", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tcaplus/idl:Idl", name, state, MakeResourceOptions(options, id))
         {
         }
 

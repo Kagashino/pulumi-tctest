@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eips
+namespace Pulumi.Tctest.Eips
 {
     public static class Instances
     {
         public static Task<InstancesResult> InvokeAsync(InstancesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tencentcloud:Eips/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<InstancesResult>("tctest:Eips/instances:Instances", args ?? new InstancesArgs(), options.WithDefaults());
 
         public static Output<InstancesResult> Invoke(InstancesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tencentcloud:Eips/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<InstancesResult>("tctest:Eips/instances:Instances", args ?? new InstancesInvokeArgs(), options.WithDefaults());
     }
 
 

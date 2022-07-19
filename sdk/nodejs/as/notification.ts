@@ -19,7 +19,7 @@ export class Notification extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:As/notification:Notification';
+    public static readonly __pulumiType = 'tctest:As/notification:Notification';
 
     /**
      * Returns true if the given object is an instance of Notification.  This is designed to work even

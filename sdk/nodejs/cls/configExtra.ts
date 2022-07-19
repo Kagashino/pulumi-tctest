@@ -20,7 +20,7 @@ export class ConfigExtra extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cls/configExtra:ConfigExtra';
+    public static readonly __pulumiType = 'tctest:Cls/configExtra:ConfigExtra';
 
     /**
      * Returns true if the given object is an instance of ConfigExtra.  This is designed to work even

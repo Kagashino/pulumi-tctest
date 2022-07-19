@@ -16,14 +16,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Eni/attachment:Attachment":
+            case "tctest:Eni/attachment:Attachment":
                 return new Attachment(name, <any>undefined, { urn })
-            case "tencentcloud:Eni/instance:Instance":
+            case "tctest:Eni/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Eni/attachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Eni/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Eni/attachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Eni/instance", _module)

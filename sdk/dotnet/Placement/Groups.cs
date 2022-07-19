@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Placement
+namespace Pulumi.Tctest.Placement
 {
     public static class Groups
     {
         public static Task<GroupsResult> InvokeAsync(GroupsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<GroupsResult>("tencentcloud:Placement/groups:Groups", args ?? new GroupsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<GroupsResult>("tctest:Placement/groups:Groups", args ?? new GroupsArgs(), options.WithDefaults());
 
         public static Output<GroupsResult> Invoke(GroupsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<GroupsResult>("tencentcloud:Placement/groups:Groups", args ?? new GroupsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<GroupsResult>("tctest:Placement/groups:Groups", args ?? new GroupsInvokeArgs(), options.WithDefaults());
     }
 
 

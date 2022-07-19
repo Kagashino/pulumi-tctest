@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cos
+namespace Pulumi.Tctest.Cos
 {
     public static class BucketObjects
     {
         public static Task<BucketObjectsResult> InvokeAsync(BucketObjectsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<BucketObjectsResult>("tencentcloud:Cos/bucketObjects:BucketObjects", args ?? new BucketObjectsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<BucketObjectsResult>("tctest:Cos/bucketObjects:BucketObjects", args ?? new BucketObjectsArgs(), options.WithDefaults());
 
         public static Output<BucketObjectsResult> Invoke(BucketObjectsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<BucketObjectsResult>("tencentcloud:Cos/bucketObjects:BucketObjects", args ?? new BucketObjectsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<BucketObjectsResult>("tctest:Cos/bucketObjects:BucketObjects", args ?? new BucketObjectsInvokeArgs(), options.WithDefaults());
     }
 
 

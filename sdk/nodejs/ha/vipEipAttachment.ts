@@ -19,7 +19,7 @@ export class VipEipAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Ha/vipEipAttachment:VipEipAttachment';
+    public static readonly __pulumiType = 'tctest:Ha/vipEipAttachment:VipEipAttachment';
 
     /**
      * Returns true if the given object is an instance of VipEipAttachment.  This is designed to work even

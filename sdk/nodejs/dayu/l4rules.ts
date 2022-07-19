@@ -11,7 +11,7 @@ export function l4rules(args: L4rulesArgs, opts?: pulumi.InvokeOptions): Promise
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dayu/l4Rules:L4Rules", {
+    return pulumi.runtime.invoke("tctest:Dayu/l4Rules:L4Rules", {
         "name": args.name,
         "resourceId": args.resourceId,
         "resourceType": args.resourceType,

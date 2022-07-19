@@ -19,7 +19,7 @@ export class AccountDBAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Sqlserver/accountDBAttachment:AccountDBAttachment';
+    public static readonly __pulumiType = 'tctest:Sqlserver/accountDBAttachment:AccountDBAttachment';
 
     /**
      * Returns true if the given object is an instance of AccountDBAttachment.  This is designed to work even

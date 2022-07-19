@@ -11,7 +11,7 @@ export function publishSubscribes(args: PublishSubscribesArgs, opts?: pulumi.Inv
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/publishSubscribes:PublishSubscribes", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/publishSubscribes:PublishSubscribes", {
         "instanceId": args.instanceId,
         "pubOrSubInstanceId": args.pubOrSubInstanceId,
         "pubOrSubInstanceIp": args.pubOrSubInstanceIp,

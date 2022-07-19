@@ -12,7 +12,7 @@ export function zones(args?: ZonesArgs, opts?: pulumi.InvokeOptions): Promise<Zo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Availability/zones:Zones", {
+    return pulumi.runtime.invoke("tctest:Availability/zones:Zones", {
         "includeUnavailable": args.includeUnavailable,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

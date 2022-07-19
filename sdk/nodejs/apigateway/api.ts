@@ -20,7 +20,7 @@ export class API extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/aPI:API';
+    public static readonly __pulumiType = 'tctest:APIGateway/aPI:API';
 
     /**
      * Returns true if the given object is an instance of API.  This is designed to work even

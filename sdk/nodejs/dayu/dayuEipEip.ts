@@ -19,7 +19,7 @@ export class DayuEipEip extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dayu/dayuEipEip:DayuEipEip';
+    public static readonly __pulumiType = 'tctest:Dayu/dayuEipEip:DayuEipEip';
 
     /**
      * Returns true if the given object is an instance of DayuEipEip.  This is designed to work even

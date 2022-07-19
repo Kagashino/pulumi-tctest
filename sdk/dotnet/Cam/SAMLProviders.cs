@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
     public static class SAMLProviders
     {
         public static Task<SAMLProvidersResult> InvokeAsync(SAMLProvidersArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SAMLProvidersResult>("tencentcloud:Cam/sAMLProviders:SAMLProviders", args ?? new SAMLProvidersArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SAMLProvidersResult>("tctest:Cam/sAMLProviders:SAMLProviders", args ?? new SAMLProvidersArgs(), options.WithDefaults());
 
         public static Output<SAMLProvidersResult> Invoke(SAMLProvidersInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SAMLProvidersResult>("tencentcloud:Cam/sAMLProviders:SAMLProviders", args ?? new SAMLProvidersInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SAMLProvidersResult>("tctest:Cam/sAMLProviders:SAMLProviders", args ?? new SAMLProvidersInvokeArgs(), options.WithDefaults());
     }
 
 

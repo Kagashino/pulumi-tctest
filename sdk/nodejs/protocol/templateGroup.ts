@@ -19,7 +19,7 @@ export class TemplateGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Protocol/templateGroup:TemplateGroup';
+    public static readonly __pulumiType = 'tctest:Protocol/templateGroup:TemplateGroup';
 
     /**
      * Returns true if the given object is an instance of TemplateGroup.  This is designed to work even

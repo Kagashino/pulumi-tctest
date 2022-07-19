@@ -19,7 +19,7 @@ export class LogSet extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/logSet:LogSet';
+    public static readonly __pulumiType = 'tctest:Clb/logSet:LogSet';
 
     /**
      * Returns true if the given object is an instance of LogSet.  This is designed to work even

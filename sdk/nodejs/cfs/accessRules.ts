@@ -11,7 +11,7 @@ export function accessRules(args: AccessRulesArgs, opts?: pulumi.InvokeOptions):
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cfs/accessRules:AccessRules", {
+    return pulumi.runtime.invoke("tctest:Cfs/accessRules:AccessRules", {
         "accessGroupId": args.accessGroupId,
         "accessRuleId": args.accessRuleId,
         "resultOutputFile": args.resultOutputFile,

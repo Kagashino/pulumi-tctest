@@ -11,7 +11,7 @@ export function secretVersions(args: SecretVersionsArgs, opts?: pulumi.InvokeOpt
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ssm/secretVersions:SecretVersions", {
+    return pulumi.runtime.invoke("tctest:Ssm/secretVersions:SecretVersions", {
         "resultOutputFile": args.resultOutputFile,
         "secretName": args.secretName,
         "versionId": args.versionId,

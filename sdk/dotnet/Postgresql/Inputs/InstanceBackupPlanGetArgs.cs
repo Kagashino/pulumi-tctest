@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Postgresql.Inputs
+namespace Pulumi.Tctest.Postgresql.Inputs
 {
 
     public sealed class InstanceBackupPlanGetArgs : Pulumi.ResourceArgs

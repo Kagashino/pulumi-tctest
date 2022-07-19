@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Audit
+namespace Pulumi.Tctest.Audit
 {
     public static class KeyAlias
     {
         public static Task<KeyAliasResult> InvokeAsync(KeyAliasArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<KeyAliasResult>("tencentcloud:Audit/keyAlias:KeyAlias", args ?? new KeyAliasArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<KeyAliasResult>("tctest:Audit/keyAlias:KeyAlias", args ?? new KeyAliasArgs(), options.WithDefaults());
 
         public static Output<KeyAliasResult> Invoke(KeyAliasInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<KeyAliasResult>("tencentcloud:Audit/keyAlias:KeyAlias", args ?? new KeyAliasInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<KeyAliasResult>("tctest:Audit/keyAlias:KeyAlias", args ?? new KeyAliasInvokeArgs(), options.WithDefaults());
     }
 
 

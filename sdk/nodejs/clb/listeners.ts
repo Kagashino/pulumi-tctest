@@ -11,7 +11,7 @@ export function listeners(args: ListenersArgs, opts?: pulumi.InvokeOptions): Pro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/listeners:Listeners", {
+    return pulumi.runtime.invoke("tctest:Clb/listeners:Listeners", {
         "clbId": args.clbId,
         "listenerId": args.listenerId,
         "port": args.port,

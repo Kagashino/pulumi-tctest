@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Sqlserver
+namespace Pulumi.Tctest.Sqlserver
 {
-    [TencentcloudResourceType("tencentcloud:Sqlserver/publishSubscribe:PublishSubscribe")]
+    [TctestResourceType("tctest:Sqlserver/publishSubscribe:PublishSubscribe")]
     public partial class PublishSubscribe : Pulumi.CustomResource
     {
         /// <summary>
@@ -53,12 +53,12 @@ namespace Pulumi.Tencentcloud.Sqlserver
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public PublishSubscribe(string name, PublishSubscribeArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/publishSubscribe:PublishSubscribe", name, args ?? new PublishSubscribeArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Sqlserver/publishSubscribe:PublishSubscribe", name, args ?? new PublishSubscribeArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private PublishSubscribe(string name, Input<string> id, PublishSubscribeState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Sqlserver/publishSubscribe:PublishSubscribe", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Sqlserver/publishSubscribe:PublishSubscribe", name, state, MakeResourceOptions(options, id))
         {
         }
 

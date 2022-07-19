@@ -23,20 +23,20 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Ckafka/acl:Acl":
+            case "tctest:Ckafka/acl:Acl":
                 return new Acl(name, <any>undefined, { urn })
-            case "tencentcloud:Ckafka/instance:Instance":
+            case "tctest:Ckafka/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Ckafka/topic:Topic":
+            case "tctest:Ckafka/topic:Topic":
                 return new Topic(name, <any>undefined, { urn })
-            case "tencentcloud:Ckafka/user:User":
+            case "tctest:Ckafka/user:User":
                 return new User(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Ckafka/acl", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ckafka/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ckafka/topic", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ckafka/user", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ckafka/acl", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ckafka/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ckafka/topic", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ckafka/user", _module)

@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dcx/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Dcx/instances:Instances", {
         "dcxId": args.dcxId,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

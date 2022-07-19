@@ -19,7 +19,7 @@ export class GatewayInstance extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dc/gatewayInstance:GatewayInstance';
+    public static readonly __pulumiType = 'tctest:Dc/gatewayInstance:GatewayInstance';
 
     /**
      * Returns true if the given object is an instance of GatewayInstance.  This is designed to work even

@@ -19,7 +19,7 @@ export class Layer7Listener extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/layer7Listener:Layer7Listener';
+    public static readonly __pulumiType = 'tctest:Gaap/layer7Listener:Layer7Listener';
 
     /**
      * Returns true if the given object is an instance of Layer7Listener.  This is designed to work even

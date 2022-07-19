@@ -20,7 +20,7 @@ export class MachineGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cls/machineGroup:MachineGroup';
+    public static readonly __pulumiType = 'tctest:Cls/machineGroup:MachineGroup';
 
     /**
      * Returns true if the given object is an instance of MachineGroup.  This is designed to work even

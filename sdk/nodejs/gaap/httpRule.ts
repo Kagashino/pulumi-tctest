@@ -20,7 +20,7 @@ export class HttpRule extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/httpRule:HttpRule';
+    public static readonly __pulumiType = 'tctest:Gaap/httpRule:HttpRule';
 
     /**
      * Returns true if the given object is an instance of HttpRule.  This is designed to work even

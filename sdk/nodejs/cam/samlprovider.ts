@@ -19,7 +19,7 @@ export class SAMLProvider extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/sAMLProvider:SAMLProvider';
+    public static readonly __pulumiType = 'tctest:Cam/sAMLProvider:SAMLProvider';
 
     /**
      * Returns true if the given object is an instance of SAMLProvider.  This is designed to work even

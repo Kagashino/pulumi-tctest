@@ -12,7 +12,7 @@ export function roles(args?: RolesArgs, opts?: pulumi.InvokeOptions): Promise<Ro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/roles:Roles", {
+    return pulumi.runtime.invoke("tctest:Cam/roles:Roles", {
         "description": args.description,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

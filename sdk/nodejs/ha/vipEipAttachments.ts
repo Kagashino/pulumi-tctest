@@ -11,7 +11,7 @@ export function vipEipAttachments(args: VipEipAttachmentsArgs, opts?: pulumi.Inv
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ha/vipEipAttachments:VipEipAttachments", {
+    return pulumi.runtime.invoke("tctest:Ha/vipEipAttachments:VipEipAttachments", {
         "addressIp": args.addressIp,
         "havipId": args.havipId,
         "resultOutputFile": args.resultOutputFile,

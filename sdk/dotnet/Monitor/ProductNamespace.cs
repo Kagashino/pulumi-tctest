@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
     public static class ProductNamespace
     {
         public static Task<ProductNamespaceResult> InvokeAsync(ProductNamespaceArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ProductNamespaceResult>("tencentcloud:Monitor/productNamespace:ProductNamespace", args ?? new ProductNamespaceArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ProductNamespaceResult>("tctest:Monitor/productNamespace:ProductNamespace", args ?? new ProductNamespaceArgs(), options.WithDefaults());
 
         public static Output<ProductNamespaceResult> Invoke(ProductNamespaceInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ProductNamespaceResult>("tencentcloud:Monitor/productNamespace:ProductNamespace", args ?? new ProductNamespaceInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ProductNamespaceResult>("tctest:Monitor/productNamespace:ProductNamespace", args ?? new ProductNamespaceInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/securityRule:SecurityRule")]
+    [TctestResourceType("tctest:Gaap/securityRule:SecurityRule")]
     public partial class SecurityRule : Pulumi.CustomResource
     {
         /// <summary>
@@ -57,12 +57,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SecurityRule(string name, SecurityRuleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/securityRule:SecurityRule", name, args ?? new SecurityRuleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/securityRule:SecurityRule", name, args ?? new SecurityRuleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SecurityRule(string name, Input<string> id, SecurityRuleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/securityRule:SecurityRule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/securityRule:SecurityRule", name, state, MakeResourceOptions(options, id))
         {
         }
 

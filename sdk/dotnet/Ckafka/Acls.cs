@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ckafka
+namespace Pulumi.Tctest.Ckafka
 {
     public static class Acls
     {
         public static Task<AclsResult> InvokeAsync(AclsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<AclsResult>("tencentcloud:Ckafka/acls:Acls", args ?? new AclsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<AclsResult>("tctest:Ckafka/acls:Acls", args ?? new AclsArgs(), options.WithDefaults());
 
         public static Output<AclsResult> Invoke(AclsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<AclsResult>("tencentcloud:Ckafka/acls:Acls", args ?? new AclsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<AclsResult>("tctest:Ckafka/acls:Acls", args ?? new AclsInvokeArgs(), options.WithDefaults());
     }
 
 

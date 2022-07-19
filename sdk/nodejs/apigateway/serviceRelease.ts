@@ -19,7 +19,7 @@ export class ServiceRelease extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:APIGateway/serviceRelease:ServiceRelease';
+    public static readonly __pulumiType = 'tctest:APIGateway/serviceRelease:ServiceRelease';
 
     /**
      * Returns true if the given object is an instance of ServiceRelease.  This is designed to work even

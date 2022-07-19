@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Address
+namespace Pulumi.Tctest.Address
 {
-    [TencentcloudResourceType("tencentcloud:Address/templateGroup:TemplateGroup")]
+    [TctestResourceType("tctest:Address/templateGroup:TemplateGroup")]
     public partial class TemplateGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Address
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public TemplateGroup(string name, TemplateGroupArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Address/templateGroup:TemplateGroup", name, args ?? new TemplateGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Address/templateGroup:TemplateGroup", name, args ?? new TemplateGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private TemplateGroup(string name, Input<string> id, TemplateGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Address/templateGroup:TemplateGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Address/templateGroup:TemplateGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

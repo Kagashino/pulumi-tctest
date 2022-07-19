@@ -12,7 +12,7 @@ export function proxies(args?: ProxiesArgs, opts?: pulumi.InvokeOptions): Promis
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/proxies:Proxies", {
+    return pulumi.runtime.invoke("tctest:Gaap/proxies:Proxies", {
         "accessRegion": args.accessRegion,
         "ids": args.ids,
         "projectId": args.projectId,

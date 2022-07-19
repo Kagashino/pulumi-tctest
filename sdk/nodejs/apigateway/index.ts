@@ -32,38 +32,38 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:APIGateway/aPI:API":
+            case "tctest:APIGateway/aPI:API":
                 return new API(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/aPIKey:APIKey":
+            case "tctest:APIGateway/aPIKey:APIKey":
                 return new APIKey(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/aPIKeyAttachment:APIKeyAttachment":
+            case "tctest:APIGateway/aPIKeyAttachment:APIKeyAttachment":
                 return new APIKeyAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/customDomain:CustomDomain":
+            case "tctest:APIGateway/customDomain:CustomDomain":
                 return new CustomDomain(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/iPStrategy:IPStrategy":
+            case "tctest:APIGateway/iPStrategy:IPStrategy":
                 return new IPStrategy(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/service:Service":
+            case "tctest:APIGateway/service:Service":
                 return new Service(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/serviceRelease:ServiceRelease":
+            case "tctest:APIGateway/serviceRelease:ServiceRelease":
                 return new ServiceRelease(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/strategyAttachment:StrategyAttachment":
+            case "tctest:APIGateway/strategyAttachment:StrategyAttachment":
                 return new StrategyAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/usagePlan:UsagePlan":
+            case "tctest:APIGateway/usagePlan:UsagePlan":
                 return new UsagePlan(name, <any>undefined, { urn })
-            case "tencentcloud:APIGateway/usagePlanAttachment:UsagePlanAttachment":
+            case "tctest:APIGateway/usagePlanAttachment:UsagePlanAttachment":
                 return new UsagePlanAttachment(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/aPI", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/aPIKey", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/aPIKeyAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/customDomain", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/iPStrategy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/service", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/serviceRelease", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/strategyAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/usagePlan", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "APIGateway/usagePlanAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/aPI", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/aPIKey", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/aPIKeyAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/customDomain", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/iPStrategy", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/service", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/serviceRelease", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/strategyAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/usagePlan", _module)
+pulumi.runtime.registerResourceModule("tctest", "APIGateway/usagePlanAttachment", _module)

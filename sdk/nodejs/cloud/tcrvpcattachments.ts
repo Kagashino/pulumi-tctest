@@ -11,7 +11,7 @@ export function tcrvpcattachments(args: TcrvpcattachmentsArgs, opts?: pulumi.Inv
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/tCRVPCAttachments:TCRVPCAttachments", {
+    return pulumi.runtime.invoke("tctest:Cloud/tCRVPCAttachments:TCRVPCAttachments", {
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,
         "subnetId": args.subnetId,

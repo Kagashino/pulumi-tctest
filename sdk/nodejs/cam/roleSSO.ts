@@ -19,7 +19,7 @@ export class RoleSSO extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cam/roleSSO:RoleSSO';
+    public static readonly __pulumiType = 'tctest:Cam/roleSSO:RoleSSO';
 
     /**
      * Returns true if the given object is an instance of RoleSSO.  This is designed to work even

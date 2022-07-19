@@ -29,26 +29,26 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Mysql/account:Account":
+            case "tctest:Mysql/account:Account":
                 return new Account(name, <any>undefined, { urn })
-            case "tencentcloud:Mysql/accountPrivilege:AccountPrivilege":
+            case "tctest:Mysql/accountPrivilege:AccountPrivilege":
                 return new AccountPrivilege(name, <any>undefined, { urn })
-            case "tencentcloud:Mysql/backupPolicy:BackupPolicy":
+            case "tctest:Mysql/backupPolicy:BackupPolicy":
                 return new BackupPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Mysql/instance:Instance":
+            case "tctest:Mysql/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Mysql/privilege:Privilege":
+            case "tctest:Mysql/privilege:Privilege":
                 return new Privilege(name, <any>undefined, { urn })
-            case "tencentcloud:Mysql/readonlyInstance:ReadonlyInstance":
+            case "tctest:Mysql/readonlyInstance:ReadonlyInstance":
                 return new ReadonlyInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/account", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/accountPrivilege", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/backupPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/privilege", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mysql/readonlyInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/account", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/accountPrivilege", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/backupPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/privilege", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mysql/readonlyInstance", _module)

@@ -19,7 +19,7 @@ export class TcrToken extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tcr/tcrToken:TcrToken';
+    public static readonly __pulumiType = 'tctest:Tcr/tcrToken:TcrToken';
 
     /**
      * Returns true if the given object is an instance of TcrToken.  This is designed to work even

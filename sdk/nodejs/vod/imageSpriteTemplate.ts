@@ -19,7 +19,7 @@ export class ImageSpriteTemplate extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/imageSpriteTemplate:ImageSpriteTemplate';
+    public static readonly __pulumiType = 'tctest:Vod/imageSpriteTemplate:ImageSpriteTemplate';
 
     /**
      * Returns true if the given object is an instance of ImageSpriteTemplate.  This is designed to work even

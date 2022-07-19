@@ -28,23 +28,23 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Monitor/alarmPolicy:AlarmPolicy":
+            case "tctest:Monitor/alarmPolicy:AlarmPolicy":
                 return new AlarmPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Monitor/bindingAlarmReceiver:BindingAlarmReceiver":
+            case "tctest:Monitor/bindingAlarmReceiver:BindingAlarmReceiver":
                 return new BindingAlarmReceiver(name, <any>undefined, { urn })
-            case "tencentcloud:Monitor/bindingObject:BindingObject":
+            case "tctest:Monitor/bindingObject:BindingObject":
                 return new BindingObject(name, <any>undefined, { urn })
-            case "tencentcloud:Monitor/policyBindingObject:PolicyBindingObject":
+            case "tctest:Monitor/policyBindingObject:PolicyBindingObject":
                 return new PolicyBindingObject(name, <any>undefined, { urn })
-            case "tencentcloud:Monitor/policyGroup:PolicyGroup":
+            case "tctest:Monitor/policyGroup:PolicyGroup":
                 return new PolicyGroup(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Monitor/alarmPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Monitor/bindingAlarmReceiver", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Monitor/bindingObject", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Monitor/policyBindingObject", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Monitor/policyGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Monitor/alarmPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Monitor/bindingAlarmReceiver", _module)
+pulumi.runtime.registerResourceModule("tctest", "Monitor/bindingObject", _module)
+pulumi.runtime.registerResourceModule("tctest", "Monitor/policyBindingObject", _module)
+pulumi.runtime.registerResourceModule("tctest", "Monitor/policyGroup", _module)

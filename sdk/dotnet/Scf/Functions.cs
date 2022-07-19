@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Scf
+namespace Pulumi.Tctest.Scf
 {
     public static class Functions
     {
         public static Task<FunctionsResult> InvokeAsync(FunctionsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<FunctionsResult>("tencentcloud:Scf/functions:Functions", args ?? new FunctionsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<FunctionsResult>("tctest:Scf/functions:Functions", args ?? new FunctionsArgs(), options.WithDefaults());
 
         public static Output<FunctionsResult> Invoke(FunctionsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<FunctionsResult>("tencentcloud:Scf/functions:Functions", args ?? new FunctionsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<FunctionsResult>("tctest:Scf/functions:Functions", args ?? new FunctionsInvokeArgs(), options.WithDefaults());
     }
 
 

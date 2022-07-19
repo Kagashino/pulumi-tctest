@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate")]
+    [TctestResourceType("tctest:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate")]
     public partial class SnapshotByTimeOffsetTemplate : Pulumi.CustomResource
     {
         /// <summary>
@@ -96,12 +96,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public SnapshotByTimeOffsetTemplate(string name, SnapshotByTimeOffsetTemplateArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate", name, args ?? new SnapshotByTimeOffsetTemplateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate", name, args ?? new SnapshotByTimeOffsetTemplateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private SnapshotByTimeOffsetTemplate(string name, Input<string> id, SnapshotByTimeOffsetTemplateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate", name, state, MakeResourceOptions(options, id))
         {
         }
 

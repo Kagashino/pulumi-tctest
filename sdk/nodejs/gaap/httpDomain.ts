@@ -19,7 +19,7 @@ export class HttpDomain extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Gaap/httpDomain:HttpDomain';
+    public static readonly __pulumiType = 'tctest:Gaap/httpDomain:HttpDomain';
 
     /**
      * Returns true if the given object is an instance of HttpDomain.  This is designed to work even

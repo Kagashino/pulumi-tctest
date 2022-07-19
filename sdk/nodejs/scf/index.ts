@@ -21,17 +21,17 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Scf/function:Function":
+            case "tctest:Scf/function:Function":
                 return new Function(name, <any>undefined, { urn })
-            case "tencentcloud:Scf/layer:Layer":
+            case "tctest:Scf/layer:Layer":
                 return new Layer(name, <any>undefined, { urn })
-            case "tencentcloud:Scf/scfNamespace:ScfNamespace":
+            case "tctest:Scf/scfNamespace:ScfNamespace":
                 return new ScfNamespace(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Scf/function", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Scf/layer", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Scf/scfNamespace", _module)
+pulumi.runtime.registerResourceModule("tctest", "Scf/function", _module)
+pulumi.runtime.registerResourceModule("tctest", "Scf/layer", _module)
+pulumi.runtime.registerResourceModule("tctest", "Scf/scfNamespace", _module)

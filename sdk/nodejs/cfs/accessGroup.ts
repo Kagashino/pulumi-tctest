@@ -19,7 +19,7 @@ export class AccessGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Cfs/accessGroup:AccessGroup';
+    public static readonly __pulumiType = 'tctest:Cfs/accessGroup:AccessGroup';
 
     /**
      * Returns true if the given object is an instance of AccessGroup.  This is designed to work even

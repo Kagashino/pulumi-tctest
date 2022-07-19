@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Postgresql
+namespace Pulumi.Tctest.Postgresql
 {
-    [TencentcloudResourceType("tencentcloud:Postgresql/readonlyAttachment:ReadonlyAttachment")]
+    [TctestResourceType("tctest:Postgresql/readonlyAttachment:ReadonlyAttachment")]
     public partial class ReadonlyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -33,12 +33,12 @@ namespace Pulumi.Tencentcloud.Postgresql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ReadonlyAttachment(string name, ReadonlyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Postgresql/readonlyAttachment:ReadonlyAttachment", name, args ?? new ReadonlyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Postgresql/readonlyAttachment:ReadonlyAttachment", name, args ?? new ReadonlyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ReadonlyAttachment(string name, Input<string> id, ReadonlyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Postgresql/readonlyAttachment:ReadonlyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Postgresql/readonlyAttachment:ReadonlyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

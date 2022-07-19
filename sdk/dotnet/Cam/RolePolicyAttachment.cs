@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/rolePolicyAttachment:RolePolicyAttachment")]
+    [TctestResourceType("tctest:Cam/rolePolicyAttachment:RolePolicyAttachment")]
     public partial class RolePolicyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -58,12 +58,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public RolePolicyAttachment(string name, RolePolicyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/rolePolicyAttachment:RolePolicyAttachment", name, args ?? new RolePolicyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/rolePolicyAttachment:RolePolicyAttachment", name, args ?? new RolePolicyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private RolePolicyAttachment(string name, Input<string> id, RolePolicyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/rolePolicyAttachment:RolePolicyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/rolePolicyAttachment:RolePolicyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

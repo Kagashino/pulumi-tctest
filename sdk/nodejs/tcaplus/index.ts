@@ -24,20 +24,20 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Tcaplus/cluster:Cluster":
+            case "tctest:Tcaplus/cluster:Cluster":
                 return new Cluster(name, <any>undefined, { urn })
-            case "tencentcloud:Tcaplus/idl:Idl":
+            case "tctest:Tcaplus/idl:Idl":
                 return new Idl(name, <any>undefined, { urn })
-            case "tencentcloud:Tcaplus/table:Table":
+            case "tctest:Tcaplus/table:Table":
                 return new Table(name, <any>undefined, { urn })
-            case "tencentcloud:Tcaplus/tableGroup:TableGroup":
+            case "tctest:Tcaplus/tableGroup:TableGroup":
                 return new TableGroup(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcaplus/cluster", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcaplus/idl", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcaplus/table", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcaplus/tableGroup", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcaplus/cluster", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcaplus/idl", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcaplus/table", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcaplus/tableGroup", _module)

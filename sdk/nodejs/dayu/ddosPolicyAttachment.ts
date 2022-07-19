@@ -19,7 +19,7 @@ export class DdosPolicyAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dayu/ddosPolicyAttachment:DdosPolicyAttachment';
+    public static readonly __pulumiType = 'tctest:Dayu/ddosPolicyAttachment:DdosPolicyAttachment';
 
     /**
      * Returns true if the given object is an instance of DdosPolicyAttachment.  This is designed to work even

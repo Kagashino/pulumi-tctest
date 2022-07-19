@@ -19,14 +19,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Cvm/instance:Instance":
+            case "tctest:Cvm/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Cvm/reservedInstance:ReservedInstance":
+            case "tctest:Cvm/reservedInstance:ReservedInstance":
                 return new ReservedInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Cvm/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cvm/reservedInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cvm/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cvm/reservedInstance", _module)

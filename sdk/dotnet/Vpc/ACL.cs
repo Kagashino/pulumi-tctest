@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc
+namespace Pulumi.Tctest.Vpc
 {
-    [TencentcloudResourceType("tencentcloud:Vpc/aCL:ACL")]
+    [TctestResourceType("tctest:Vpc/aCL:ACL")]
     public partial class ACL : Pulumi.CustomResource
     {
         /// <summary>
@@ -57,12 +57,12 @@ namespace Pulumi.Tencentcloud.Vpc
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ACL(string name, ACLArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/aCL:ACL", name, args ?? new ACLArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vpc/aCL:ACL", name, args ?? new ACLArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ACL(string name, Input<string> id, ACLState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vpc/aCL:ACL", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vpc/aCL:ACL", name, state, MakeResourceOptions(options, id))
         {
         }
 

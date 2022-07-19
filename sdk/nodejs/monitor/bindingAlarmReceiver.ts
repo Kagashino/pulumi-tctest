@@ -20,7 +20,7 @@ export class BindingAlarmReceiver extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Monitor/bindingAlarmReceiver:BindingAlarmReceiver';
+    public static readonly __pulumiType = 'tctest:Monitor/bindingAlarmReceiver:BindingAlarmReceiver';
 
     /**
      * Returns true if the given object is an instance of BindingAlarmReceiver.  This is designed to work even

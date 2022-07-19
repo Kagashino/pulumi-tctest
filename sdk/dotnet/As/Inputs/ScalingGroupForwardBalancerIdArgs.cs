@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As.Inputs
+namespace Pulumi.Tctest.As.Inputs
 {
 
     public sealed class ScalingGroupForwardBalancerIdArgs : Pulumi.ResourceArgs

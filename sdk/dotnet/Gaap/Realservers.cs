@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class Realservers
     {
         public static Task<RealserversResult> InvokeAsync(RealserversArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<RealserversResult>("tencentcloud:Gaap/realservers:Realservers", args ?? new RealserversArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<RealserversResult>("tctest:Gaap/realservers:Realservers", args ?? new RealserversArgs(), options.WithDefaults());
 
         public static Output<RealserversResult> Invoke(RealserversInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<RealserversResult>("tencentcloud:Gaap/realservers:Realservers", args ?? new RealserversInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<RealserversResult>("tctest:Gaap/realservers:Realservers", args ?? new RealserversInvokeArgs(), options.WithDefaults());
     }
 
 

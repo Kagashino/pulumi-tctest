@@ -12,7 +12,7 @@ export function policyGroups(args?: PolicyGroupsArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Monitor/policyGroups:PolicyGroups", {
+    return pulumi.runtime.invoke("tctest:Monitor/policyGroups:PolicyGroups", {
         "name": args.name,
         "policyViewNames": args.policyViewNames,
         "resultOutputFile": args.resultOutputFile,

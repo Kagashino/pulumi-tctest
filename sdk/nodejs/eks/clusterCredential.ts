@@ -11,7 +11,7 @@ export function clusterCredential(args: ClusterCredentialArgs, opts?: pulumi.Inv
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Eks/clusterCredential:ClusterCredential", {
+    return pulumi.runtime.invoke("tctest:Eks/clusterCredential:ClusterCredential", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

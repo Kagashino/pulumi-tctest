@@ -20,7 +20,7 @@ export class L4RuleV2 extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Dayu/l4RuleV2:L4RuleV2';
+    public static readonly __pulumiType = 'tctest:Dayu/l4RuleV2:L4RuleV2';
 
     /**
      * Returns true if the given object is an instance of L4RuleV2.  This is designed to work even

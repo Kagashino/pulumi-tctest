@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Postgresql
+namespace Pulumi.Tctest.Postgresql
 {
-    [TencentcloudResourceType("tencentcloud:Postgresql/readonlyInstance:ReadonlyInstance")]
+    [TctestResourceType("tctest:Postgresql/readonlyInstance:ReadonlyInstance")]
     public partial class ReadonlyInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -106,12 +106,12 @@ namespace Pulumi.Tencentcloud.Postgresql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ReadonlyInstance(string name, ReadonlyInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Postgresql/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Postgresql/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ReadonlyInstance(string name, Input<string> id, ReadonlyInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Postgresql/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Postgresql/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

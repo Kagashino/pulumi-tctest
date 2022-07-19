@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
-    [TencentcloudResourceType("tencentcloud:Mysql/readonlyInstance:ReadonlyInstance")]
+    [TctestResourceType("tctest:Mysql/readonlyInstance:ReadonlyInstance")]
     public partial class ReadonlyInstance : Pulumi.CustomResource
     {
         /// <summary>
@@ -173,12 +173,12 @@ namespace Pulumi.Tencentcloud.Mysql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ReadonlyInstance(string name, ReadonlyInstanceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mysql/readonlyInstance:ReadonlyInstance", name, args ?? new ReadonlyInstanceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ReadonlyInstance(string name, Input<string> id, ReadonlyInstanceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mysql/readonlyInstance:ReadonlyInstance", name, state, MakeResourceOptions(options, id))
         {
         }
 

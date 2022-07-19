@@ -12,7 +12,7 @@ export function groupMemberships(args?: GroupMembershipsArgs, opts?: pulumi.Invo
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/groupMemberships:GroupMemberships", {
+    return pulumi.runtime.invoke("tctest:Cam/groupMemberships:GroupMemberships", {
         "groupId": args.groupId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

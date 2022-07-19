@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
     public static class SnapshotByTimeOffsetTemplates
     {
         public static Task<SnapshotByTimeOffsetTemplatesResult> InvokeAsync(SnapshotByTimeOffsetTemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotByTimeOffsetTemplatesResult>("tencentcloud:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", args ?? new SnapshotByTimeOffsetTemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotByTimeOffsetTemplatesResult>("tctest:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", args ?? new SnapshotByTimeOffsetTemplatesArgs(), options.WithDefaults());
 
         public static Output<SnapshotByTimeOffsetTemplatesResult> Invoke(SnapshotByTimeOffsetTemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SnapshotByTimeOffsetTemplatesResult>("tencentcloud:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", args ?? new SnapshotByTimeOffsetTemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SnapshotByTimeOffsetTemplatesResult>("tctest:Vod/snapshotByTimeOffsetTemplates:SnapshotByTimeOffsetTemplates", args ?? new SnapshotByTimeOffsetTemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

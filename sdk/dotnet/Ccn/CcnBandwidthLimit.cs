@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ccn
+namespace Pulumi.Tctest.Ccn
 {
-    [TencentcloudResourceType("tencentcloud:Ccn/ccnBandwidthLimit:CcnBandwidthLimit")]
+    [TctestResourceType("tctest:Ccn/ccnBandwidthLimit:CcnBandwidthLimit")]
     public partial class CcnBandwidthLimit : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.Ccn
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CcnBandwidthLimit(string name, CcnBandwidthLimitArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ccn/ccnBandwidthLimit:CcnBandwidthLimit", name, args ?? new CcnBandwidthLimitArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ccn/ccnBandwidthLimit:CcnBandwidthLimit", name, args ?? new CcnBandwidthLimitArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CcnBandwidthLimit(string name, Input<string> id, CcnBandwidthLimitState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ccn/ccnBandwidthLimit:CcnBandwidthLimit", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ccn/ccnBandwidthLimit:CcnBandwidthLimit", name, state, MakeResourceOptions(options, id))
         {
         }
 

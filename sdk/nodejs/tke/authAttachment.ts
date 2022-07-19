@@ -19,7 +19,7 @@ export class AuthAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tke/authAttachment:AuthAttachment';
+    public static readonly __pulumiType = 'tctest:Tke/authAttachment:AuthAttachment';
 
     /**
      * Returns true if the given object is an instance of AuthAttachment.  This is designed to work even

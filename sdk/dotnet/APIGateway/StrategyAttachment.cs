@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.APIGateway
+namespace Pulumi.Tctest.APIGateway
 {
-    [TencentcloudResourceType("tencentcloud:APIGateway/strategyAttachment:StrategyAttachment")]
+    [TctestResourceType("tctest:APIGateway/strategyAttachment:StrategyAttachment")]
     public partial class StrategyAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -45,12 +45,12 @@ namespace Pulumi.Tencentcloud.APIGateway
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public StrategyAttachment(string name, StrategyAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/strategyAttachment:StrategyAttachment", name, args ?? new StrategyAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:APIGateway/strategyAttachment:StrategyAttachment", name, args ?? new StrategyAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private StrategyAttachment(string name, Input<string> id, StrategyAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/strategyAttachment:StrategyAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:APIGateway/strategyAttachment:StrategyAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

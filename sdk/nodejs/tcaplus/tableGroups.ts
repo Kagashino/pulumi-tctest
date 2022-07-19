@@ -11,7 +11,7 @@ export function tableGroups(args: TableGroupsArgs, opts?: pulumi.InvokeOptions):
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tcaplus/tableGroups:TableGroups", {
+    return pulumi.runtime.invoke("tctest:Tcaplus/tableGroups:TableGroups", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
         "tablegroupId": args.tablegroupId,

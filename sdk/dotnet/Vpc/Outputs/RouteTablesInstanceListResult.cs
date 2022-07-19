@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vpc.Outputs
+namespace Pulumi.Tctest.Vpc.Outputs
 {
 
     [OutputType]

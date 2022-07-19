@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/dayuEipEip:DayuEipEip")]
+    [TctestResourceType("tctest:Dayu/dayuEipEip:DayuEipEip")]
     public partial class DayuEipEip : Pulumi.CustomResource
     {
         /// <summary>
@@ -105,12 +105,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public DayuEipEip(string name, DayuEipEipArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/dayuEipEip:DayuEipEip", name, args ?? new DayuEipEipArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/dayuEipEip:DayuEipEip", name, args ?? new DayuEipEipArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private DayuEipEip(string name, Input<string> id, DayuEipEipState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/dayuEipEip:DayuEipEip", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/dayuEipEip:DayuEipEip", name, state, MakeResourceOptions(options, id))
         {
         }
 

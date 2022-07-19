@@ -11,7 +11,7 @@ export function domainErrorPageInfoList(args: DomainErrorPageInfoListArgs, opts?
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", {
+    return pulumi.runtime.invoke("tctest:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", {
         "domain": args.domain,
         "ids": args.ids,
         "listenerId": args.listenerId,

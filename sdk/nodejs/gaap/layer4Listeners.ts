@@ -11,7 +11,7 @@ export function layer4Listeners(args: Layer4ListenersArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/layer4Listeners:Layer4Listeners", {
+    return pulumi.runtime.invoke("tctest:Gaap/layer4Listeners:Layer4Listeners", {
         "listenerId": args.listenerId,
         "listenerName": args.listenerName,
         "port": args.port,

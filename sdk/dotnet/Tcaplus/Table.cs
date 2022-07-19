@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcaplus
+namespace Pulumi.Tctest.Tcaplus
 {
-    [TencentcloudResourceType("tencentcloud:Tcaplus/table:Table")]
+    [TctestResourceType("tctest:Tcaplus/table:Table")]
     public partial class Table : Pulumi.CustomResource
     {
         /// <summary>
@@ -105,12 +105,12 @@ namespace Pulumi.Tencentcloud.Tcaplus
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Table(string name, TableArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcaplus/table:Table", name, args ?? new TableArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tcaplus/table:Table", name, args ?? new TableArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Table(string name, Input<string> id, TableState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcaplus/table:Table", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tcaplus/table:Table", name, state, MakeResourceOptions(options, id))
         {
         }
 

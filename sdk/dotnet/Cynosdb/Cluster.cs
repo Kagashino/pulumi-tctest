@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cynosdb
+namespace Pulumi.Tctest.Cynosdb
 {
-    [TencentcloudResourceType("tencentcloud:Cynosdb/cluster:Cluster")]
+    [TctestResourceType("tctest:Cynosdb/cluster:Cluster")]
     public partial class Cluster : Pulumi.CustomResource
     {
         /// <summary>
@@ -251,12 +251,12 @@ namespace Pulumi.Tencentcloud.Cynosdb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Cluster(string name, ClusterArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cynosdb/cluster:Cluster", name, args ?? new ClusterArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cynosdb/cluster:Cluster", name, args ?? new ClusterArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Cluster(string name, Input<string> id, ClusterState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cynosdb/cluster:Cluster", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cynosdb/cluster:Cluster", name, state, MakeResourceOptions(options, id))
         {
         }
 

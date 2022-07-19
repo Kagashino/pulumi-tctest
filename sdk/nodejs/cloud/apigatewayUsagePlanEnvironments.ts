@@ -11,7 +11,7 @@ export function apigatewayUsagePlanEnvironments(args: ApigatewayUsagePlanEnviron
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayUsagePlanEnvironments:APIGatewayUsagePlanEnvironments", {
         "bindType": args.bindType,
         "resultOutputFile": args.resultOutputFile,
         "usagePlanId": args.usagePlanId,

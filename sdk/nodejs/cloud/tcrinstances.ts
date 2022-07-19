@@ -12,7 +12,7 @@ export function tcrinstances(args?: TcrinstancesArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/tCRInstances:TCRInstances", {
+    return pulumi.runtime.invoke("tctest:Cloud/tCRInstances:TCRInstances", {
         "instanceId": args.instanceId,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

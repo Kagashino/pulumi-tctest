@@ -10,7 +10,7 @@ export function instances(args: InstancesArgs, opts?: pulumi.InvokeOptions): Pro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Subnet/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Subnet/instances:Instances", {
         "subnetId": args.subnetId,
         "vpcId": args.vpcId,
     }, opts);

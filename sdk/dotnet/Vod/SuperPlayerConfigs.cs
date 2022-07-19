@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
     public static class SuperPlayerConfigs
     {
         public static Task<SuperPlayerConfigsResult> InvokeAsync(SuperPlayerConfigsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SuperPlayerConfigsResult>("tencentcloud:Vod/superPlayerConfigs:SuperPlayerConfigs", args ?? new SuperPlayerConfigsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SuperPlayerConfigsResult>("tctest:Vod/superPlayerConfigs:SuperPlayerConfigs", args ?? new SuperPlayerConfigsArgs(), options.WithDefaults());
 
         public static Output<SuperPlayerConfigsResult> Invoke(SuperPlayerConfigsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SuperPlayerConfigsResult>("tencentcloud:Vod/superPlayerConfigs:SuperPlayerConfigs", args ?? new SuperPlayerConfigsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SuperPlayerConfigsResult>("tctest:Vod/superPlayerConfigs:SuperPlayerConfigs", args ?? new SuperPlayerConfigsInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -11,7 +11,7 @@ export function clusterInstances(args: ClusterInstancesArgs, opts?: pulumi.Invok
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Container/clusterInstances:ClusterInstances", {
+    return pulumi.runtime.invoke("tctest:Container/clusterInstances:ClusterInstances", {
         "clusterId": args.clusterId,
         "limit": args.limit,
     }, opts);

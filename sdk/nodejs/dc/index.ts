@@ -19,14 +19,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance":
+            case "tctest:Dc/gatewayCcnRouteInstance:GatewayCcnRouteInstance":
                 return new GatewayCcnRouteInstance(name, <any>undefined, { urn })
-            case "tencentcloud:Dc/gatewayInstance:GatewayInstance":
+            case "tctest:Dc/gatewayInstance:GatewayInstance":
                 return new GatewayInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Dc/gatewayCcnRouteInstance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dc/gatewayInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dc/gatewayCcnRouteInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dc/gatewayInstance", _module)

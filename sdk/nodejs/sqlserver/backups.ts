@@ -11,7 +11,7 @@ export function backups(args: BackupsArgs, opts?: pulumi.InvokeOptions): Promise
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Sqlserver/backups:Backups", {
+    return pulumi.runtime.invoke("tctest:Sqlserver/backups:Backups", {
         "endTime": args.endTime,
         "instanceId": args.instanceId,
         "resultOutputFile": args.resultOutputFile,

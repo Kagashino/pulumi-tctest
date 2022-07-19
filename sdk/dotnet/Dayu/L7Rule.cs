@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Dayu
+namespace Pulumi.Tctest.Dayu
 {
-    [TencentcloudResourceType("tencentcloud:Dayu/l7Rule:L7Rule")]
+    [TctestResourceType("tctest:Dayu/l7Rule:L7Rule")]
     public partial class L7Rule : Pulumi.CustomResource
     {
         /// <summary>
@@ -136,12 +136,12 @@ namespace Pulumi.Tencentcloud.Dayu
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public L7Rule(string name, L7RuleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/l7Rule:L7Rule", name, args ?? new L7RuleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Dayu/l7Rule:L7Rule", name, args ?? new L7RuleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private L7Rule(string name, Input<string> id, L7RuleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Dayu/l7Rule:L7Rule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Dayu/l7Rule:L7Rule", name, state, MakeResourceOptions(options, id))
         {
         }
 

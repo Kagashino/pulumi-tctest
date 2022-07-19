@@ -20,7 +20,7 @@ export class SuperPlayerConfig extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/superPlayerConfig:SuperPlayerConfig';
+    public static readonly __pulumiType = 'tctest:Vod/superPlayerConfig:SuperPlayerConfig';
 
     /**
      * Returns true if the given object is an instance of SuperPlayerConfig.  This is designed to work even

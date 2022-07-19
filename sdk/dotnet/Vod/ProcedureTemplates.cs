@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
     public static class ProcedureTemplates
     {
         public static Task<ProcedureTemplatesResult> InvokeAsync(ProcedureTemplatesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ProcedureTemplatesResult>("tencentcloud:Vod/procedureTemplates:ProcedureTemplates", args ?? new ProcedureTemplatesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ProcedureTemplatesResult>("tctest:Vod/procedureTemplates:ProcedureTemplates", args ?? new ProcedureTemplatesArgs(), options.WithDefaults());
 
         public static Output<ProcedureTemplatesResult> Invoke(ProcedureTemplatesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ProcedureTemplatesResult>("tencentcloud:Vod/procedureTemplates:ProcedureTemplates", args ?? new ProcedureTemplatesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ProcedureTemplatesResult>("tctest:Vod/procedureTemplates:ProcedureTemplates", args ?? new ProcedureTemplatesInvokeArgs(), options.WithDefaults());
     }
 
 

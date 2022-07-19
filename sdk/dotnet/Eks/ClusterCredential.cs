@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Eks
+namespace Pulumi.Tctest.Eks
 {
     public static class ClusterCredential
     {
         public static Task<ClusterCredentialResult> InvokeAsync(ClusterCredentialArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ClusterCredentialResult>("tencentcloud:Eks/clusterCredential:ClusterCredential", args ?? new ClusterCredentialArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ClusterCredentialResult>("tctest:Eks/clusterCredential:ClusterCredential", args ?? new ClusterCredentialArgs(), options.WithDefaults());
 
         public static Output<ClusterCredentialResult> Invoke(ClusterCredentialInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ClusterCredentialResult>("tencentcloud:Eks/clusterCredential:ClusterCredential", args ?? new ClusterCredentialInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ClusterCredentialResult>("tctest:Eks/clusterCredential:ClusterCredential", args ?? new ClusterCredentialInvokeArgs(), options.WithDefaults());
     }
 
 

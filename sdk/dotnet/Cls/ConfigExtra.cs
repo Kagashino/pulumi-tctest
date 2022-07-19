@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cls
+namespace Pulumi.Tctest.Cls
 {
-    [TencentcloudResourceType("tencentcloud:Cls/configExtra:ConfigExtra")]
+    [TctestResourceType("tctest:Cls/configExtra:ConfigExtra")]
     public partial class ConfigExtra : Pulumi.CustomResource
     {
         /// <summary>
@@ -119,12 +119,12 @@ namespace Pulumi.Tencentcloud.Cls
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ConfigExtra(string name, ConfigExtraArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/configExtra:ConfigExtra", name, args ?? new ConfigExtraArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cls/configExtra:ConfigExtra", name, args ?? new ConfigExtraArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ConfigExtra(string name, Input<string> id, ConfigExtraState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cls/configExtra:ConfigExtra", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cls/configExtra:ConfigExtra", name, state, MakeResourceOptions(options, id))
         {
         }
 

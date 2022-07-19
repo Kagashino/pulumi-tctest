@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
     public static class Data
     {
         public static Task<DataResult> InvokeAsync(DataArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DataResult>("tencentcloud:Monitor/data:Data", args ?? new DataArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<DataResult>("tctest:Monitor/data:Data", args ?? new DataArgs(), options.WithDefaults());
 
         public static Output<DataResult> Invoke(DataInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DataResult>("tencentcloud:Monitor/data:Data", args ?? new DataInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<DataResult>("tctest:Monitor/data:Data", args ?? new DataInvokeArgs(), options.WithDefaults());
     }
 
 

@@ -18,14 +18,14 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Ssm/secret:Secret":
+            case "tctest:Ssm/secret:Secret":
                 return new Secret(name, <any>undefined, { urn })
-            case "tencentcloud:Ssm/secretVersion:SecretVersion":
+            case "tctest:Ssm/secretVersion:SecretVersion":
                 return new SecretVersion(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Ssm/secret", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Ssm/secretVersion", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ssm/secret", _module)
+pulumi.runtime.registerResourceModule("tctest", "Ssm/secretVersion", _module)

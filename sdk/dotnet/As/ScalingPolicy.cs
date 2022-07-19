@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.As
+namespace Pulumi.Tctest.As
 {
-    [TencentcloudResourceType("tencentcloud:As/scalingPolicy:ScalingPolicy")]
+    [TctestResourceType("tctest:As/scalingPolicy:ScalingPolicy")]
     public partial class ScalingPolicy : Pulumi.CustomResource
     {
         /// <summary>
@@ -98,12 +98,12 @@ namespace Pulumi.Tencentcloud.As
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ScalingPolicy(string name, ScalingPolicyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/scalingPolicy:ScalingPolicy", name, args ?? new ScalingPolicyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:As/scalingPolicy:ScalingPolicy", name, args ?? new ScalingPolicyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ScalingPolicy(string name, Input<string> id, ScalingPolicyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:As/scalingPolicy:ScalingPolicy", name, state, MakeResourceOptions(options, id))
+            : base("tctest:As/scalingPolicy:ScalingPolicy", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Mysql
+namespace Pulumi.Tctest.Mysql
 {
-    [TencentcloudResourceType("tencentcloud:Mysql/account:Account")]
+    [TctestResourceType("tctest:Mysql/account:Account")]
     public partial class Account : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Mysql
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Account(string name, AccountArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/account:Account", name, args ?? new AccountArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Mysql/account:Account", name, args ?? new AccountArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Account(string name, Input<string> id, AccountState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Mysql/account:Account", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Mysql/account:Account", name, state, MakeResourceOptions(options, id))
         {
         }
 

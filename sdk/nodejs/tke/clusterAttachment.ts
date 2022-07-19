@@ -20,7 +20,7 @@ export class ClusterAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tke/clusterAttachment:ClusterAttachment';
+    public static readonly __pulumiType = 'tctest:Tke/clusterAttachment:ClusterAttachment';
 
     /**
      * Returns true if the given object is an instance of ClusterAttachment.  This is designed to work even

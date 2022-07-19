@@ -19,7 +19,7 @@ export class Topic extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tdmq/topic:Topic';
+    public static readonly __pulumiType = 'tctest:Tdmq/topic:Topic';
 
     /**
      * Returns true if the given object is an instance of Topic.  This is designed to work even

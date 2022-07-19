@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
-    [TencentcloudResourceType("tencentcloud:Gaap/httpRule:HttpRule")]
+    [TctestResourceType("tctest:Gaap/httpRule:HttpRule")]
     public partial class HttpRule : Pulumi.CustomResource
     {
         /// <summary>
@@ -111,12 +111,12 @@ namespace Pulumi.Tencentcloud.Gaap
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public HttpRule(string name, HttpRuleArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/httpRule:HttpRule", name, args ?? new HttpRuleArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Gaap/httpRule:HttpRule", name, args ?? new HttpRuleArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private HttpRule(string name, Input<string> id, HttpRuleState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Gaap/httpRule:HttpRule", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Gaap/httpRule:HttpRule", name, state, MakeResourceOptions(options, id))
         {
         }
 

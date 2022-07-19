@@ -12,7 +12,7 @@ export function policies(args?: PoliciesArgs, opts?: pulumi.InvokeOptions): Prom
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/policies:Policies", {
+    return pulumi.runtime.invoke("tctest:Cam/policies:Policies", {
         "createMode": args.createMode,
         "description": args.description,
         "name": args.name,

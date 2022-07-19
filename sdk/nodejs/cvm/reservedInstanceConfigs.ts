@@ -12,7 +12,7 @@ export function reservedInstanceConfigs(args?: ReservedInstanceConfigsArgs, opts
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", {
+    return pulumi.runtime.invoke("tctest:Cvm/reservedInstanceConfigs:ReservedInstanceConfigs", {
         "availabilityZone": args.availabilityZone,
         "duration": args.duration,
         "instanceType": args.instanceType,

@@ -20,17 +20,17 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Mongodb/instance:Instance":
+            case "tctest:Mongodb/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Mongodb/shardingInstance:ShardingInstance":
+            case "tctest:Mongodb/shardingInstance:ShardingInstance":
                 return new ShardingInstance(name, <any>undefined, { urn })
-            case "tencentcloud:Mongodb/standbyInstance:StandbyInstance":
+            case "tctest:Mongodb/standbyInstance:StandbyInstance":
                 return new StandbyInstance(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Mongodb/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mongodb/shardingInstance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Mongodb/standbyInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mongodb/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mongodb/shardingInstance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Mongodb/standbyInstance", _module)

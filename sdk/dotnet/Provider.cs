@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud
+namespace Pulumi.Tctest
 {
     /// <summary>
-    /// The provider type for the tencentcloud package. By default, resources use package-wide configuration
+    /// The provider type for the tctest package. By default, resources use package-wide configuration
     /// settings, however an explicit `Provider` instance may be created and passed during resource
     /// construction to achieve fine-grained programmatic control over provider settings. See the
     /// [documentation](https://www.pulumi.com/docs/reference/programming-model/#providers) for more information.
     /// </summary>
-    [TencentcloudResourceType("pulumi:providers:tencentcloud")]
+    [TctestResourceType("pulumi:providers:tctest")]
     public partial class Provider : Pulumi.ProviderResource
     {
         /// <summary>
@@ -68,7 +68,7 @@ namespace Pulumi.Tencentcloud
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Provider(string name, ProviderArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud", name, args ?? new ProviderArgs(), MakeResourceOptions(options, ""))
+            : base("tctest", name, args ?? new ProviderArgs(), MakeResourceOptions(options, ""))
         {
         }
 

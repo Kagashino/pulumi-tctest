@@ -12,7 +12,7 @@ export function pairs(args?: PairsArgs, opts?: pulumi.InvokeOptions): Promise<Pa
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Key/pairs:Pairs", {
+    return pulumi.runtime.invoke("tctest:Key/pairs:Pairs", {
         "keyId": args.keyId,
         "keyName": args.keyName,
         "projectId": args.projectId,

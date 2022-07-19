@@ -12,7 +12,7 @@ export function clusterLevels(args?: ClusterLevelsArgs, opts?: pulumi.InvokeOpti
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Tke/clusterLevels:ClusterLevels", {
+    return pulumi.runtime.invoke("tctest:Tke/clusterLevels:ClusterLevels", {
         "clusterId": args.clusterId,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

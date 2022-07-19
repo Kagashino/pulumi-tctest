@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Tcr
+namespace Pulumi.Tctest.Tcr
 {
-    [TencentcloudResourceType("tencentcloud:Tcr/namespace:Namespace")]
+    [TctestResourceType("tctest:Tcr/namespace:Namespace")]
     public partial class Namespace : Pulumi.CustomResource
     {
         /// <summary>
@@ -40,12 +40,12 @@ namespace Pulumi.Tencentcloud.Tcr
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Namespace(string name, NamespaceArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/namespace:Namespace", name, args ?? new NamespaceArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Tcr/namespace:Namespace", name, args ?? new NamespaceArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Namespace(string name, Input<string> id, NamespaceState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Tcr/namespace:Namespace", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Tcr/namespace:Namespace", name, state, MakeResourceOptions(options, id))
         {
         }
 

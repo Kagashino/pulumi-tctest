@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Kms
+namespace Pulumi.Tctest.Kms
 {
-    [TencentcloudResourceType("tencentcloud:Kms/externalKey:ExternalKey")]
+    [TctestResourceType("tctest:Kms/externalKey:ExternalKey")]
     public partial class ExternalKey : Pulumi.CustomResource
     {
         /// <summary>
@@ -89,12 +89,12 @@ namespace Pulumi.Tencentcloud.Kms
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ExternalKey(string name, ExternalKeyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Kms/externalKey:ExternalKey", name, args ?? new ExternalKeyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Kms/externalKey:ExternalKey", name, args ?? new ExternalKeyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ExternalKey(string name, Input<string> id, ExternalKeyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Kms/externalKey:ExternalKey", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Kms/externalKey:ExternalKey", name, state, MakeResourceOptions(options, id))
         {
         }
 

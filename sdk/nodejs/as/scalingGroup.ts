@@ -20,7 +20,7 @@ export class ScalingGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:As/scalingGroup:ScalingGroup';
+    public static readonly __pulumiType = 'tctest:As/scalingGroup:ScalingGroup';
 
     /**
      * Returns true if the given object is an instance of ScalingGroup.  This is designed to work even

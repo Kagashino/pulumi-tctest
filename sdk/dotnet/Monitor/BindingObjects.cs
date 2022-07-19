@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
     public static class BindingObjects
     {
         public static Task<BindingObjectsResult> InvokeAsync(BindingObjectsArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<BindingObjectsResult>("tencentcloud:Monitor/bindingObjects:BindingObjects", args ?? new BindingObjectsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<BindingObjectsResult>("tctest:Monitor/bindingObjects:BindingObjects", args ?? new BindingObjectsArgs(), options.WithDefaults());
 
         public static Output<BindingObjectsResult> Invoke(BindingObjectsInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<BindingObjectsResult>("tencentcloud:Monitor/bindingObjects:BindingObjects", args ?? new BindingObjectsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<BindingObjectsResult>("tctest:Monitor/bindingObjects:BindingObjects", args ?? new BindingObjectsInvokeArgs(), options.WithDefaults());
     }
 
 

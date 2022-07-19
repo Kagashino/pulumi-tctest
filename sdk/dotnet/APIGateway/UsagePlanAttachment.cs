@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.APIGateway
+namespace Pulumi.Tctest.APIGateway
 {
-    [TencentcloudResourceType("tencentcloud:APIGateway/usagePlanAttachment:UsagePlanAttachment")]
+    [TctestResourceType("tctest:APIGateway/usagePlanAttachment:UsagePlanAttachment")]
     public partial class UsagePlanAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.APIGateway
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public UsagePlanAttachment(string name, UsagePlanAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/usagePlanAttachment:UsagePlanAttachment", name, args ?? new UsagePlanAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:APIGateway/usagePlanAttachment:UsagePlanAttachment", name, args ?? new UsagePlanAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private UsagePlanAttachment(string name, Input<string> id, UsagePlanAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:APIGateway/usagePlanAttachment:UsagePlanAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:APIGateway/usagePlanAttachment:UsagePlanAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

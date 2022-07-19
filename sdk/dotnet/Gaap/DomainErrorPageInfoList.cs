@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Gaap
+namespace Pulumi.Tctest.Gaap
 {
     public static class DomainErrorPageInfoList
     {
         public static Task<DomainErrorPageInfoListResult> InvokeAsync(DomainErrorPageInfoListArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DomainErrorPageInfoListResult>("tencentcloud:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", args ?? new DomainErrorPageInfoListArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<DomainErrorPageInfoListResult>("tctest:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", args ?? new DomainErrorPageInfoListArgs(), options.WithDefaults());
 
         public static Output<DomainErrorPageInfoListResult> Invoke(DomainErrorPageInfoListInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DomainErrorPageInfoListResult>("tencentcloud:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", args ?? new DomainErrorPageInfoListInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<DomainErrorPageInfoListResult>("tctest:Gaap/domainErrorPageInfoList:DomainErrorPageInfoList", args ?? new DomainErrorPageInfoListInvokeArgs(), options.WithDefaults());
     }
 
 

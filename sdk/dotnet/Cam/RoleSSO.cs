@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/roleSSO:RoleSSO")]
+    [TctestResourceType("tctest:Cam/roleSSO:RoleSSO")]
     public partial class RoleSSO : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public RoleSSO(string name, RoleSSOArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/roleSSO:RoleSSO", name, args ?? new RoleSSOArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/roleSSO:RoleSSO", name, args ?? new RoleSSOArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private RoleSSO(string name, Input<string> id, RoleSSOState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/roleSSO:RoleSSO", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/roleSSO:RoleSSO", name, state, MakeResourceOptions(options, id))
         {
         }
 

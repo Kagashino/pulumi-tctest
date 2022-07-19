@@ -12,7 +12,7 @@ export function keys(args?: KeysArgs, opts?: pulumi.InvokeOptions): Promise<Keys
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Kms/keys:Keys", {
+    return pulumi.runtime.invoke("tctest:Kms/keys:Keys", {
         "keyState": args.keyState,
         "keyUsage": args.keyUsage,
         "orderType": args.orderType,

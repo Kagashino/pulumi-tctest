@@ -19,7 +19,7 @@ export class ACL extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vpc/aCL:ACL';
+    public static readonly __pulumiType = 'tctest:Vpc/aCL:ACL';
 
     /**
      * Returns true if the given object is an instance of ACL.  This is designed to work even

@@ -12,7 +12,7 @@ export function certificates(args?: CertificatesArgs, opts?: pulumi.InvokeOption
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/certificates:Certificates", {
+    return pulumi.runtime.invoke("tctest:Gaap/certificates:Certificates", {
         "id": args.id,
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,

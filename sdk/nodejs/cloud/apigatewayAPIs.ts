@@ -11,7 +11,7 @@ export function apigatewayAPIs(args: ApigatewayAPIsArgs, opts?: pulumi.InvokeOpt
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayAPIs:APIGatewayAPIs", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayAPIs:APIGatewayAPIs", {
         "apiId": args.apiId,
         "apiName": args.apiName,
         "resultOutputFile": args.resultOutputFile,

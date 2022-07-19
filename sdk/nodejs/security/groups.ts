@@ -12,7 +12,7 @@ export function groups(args?: GroupsArgs, opts?: pulumi.InvokeOptions): Promise<
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Security/groups:Groups", {
+    return pulumi.runtime.invoke("tctest:Security/groups:Groups", {
         "name": args.name,
         "projectId": args.projectId,
         "resultOutputFile": args.resultOutputFile,

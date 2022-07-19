@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Ckafka
+namespace Pulumi.Tctest.Ckafka
 {
-    [TencentcloudResourceType("tencentcloud:Ckafka/user:User")]
+    [TctestResourceType("tctest:Ckafka/user:User")]
     public partial class User : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Ckafka
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public User(string name, UserArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ckafka/user:User", name, args ?? new UserArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Ckafka/user:User", name, args ?? new UserArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private User(string name, Input<string> id, UserState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Ckafka/user:User", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Ckafka/user:User", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Protocol
+namespace Pulumi.Tctest.Protocol
 {
-    [TencentcloudResourceType("tencentcloud:Protocol/template:Template")]
+    [TctestResourceType("tctest:Protocol/template:Template")]
     public partial class Template : Pulumi.CustomResource
     {
         /// <summary>
@@ -34,12 +34,12 @@ namespace Pulumi.Tencentcloud.Protocol
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Template(string name, TemplateArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Protocol/template:Template", name, args ?? new TemplateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Protocol/template:Template", name, args ?? new TemplateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Template(string name, Input<string> id, TemplateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Protocol/template:Template", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Protocol/template:Template", name, state, MakeResourceOptions(options, id))
         {
         }
 

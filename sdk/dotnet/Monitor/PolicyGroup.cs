@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Monitor
+namespace Pulumi.Tctest.Monitor
 {
-    [TencentcloudResourceType("tencentcloud:Monitor/policyGroup:PolicyGroup")]
+    [TctestResourceType("tctest:Monitor/policyGroup:PolicyGroup")]
     public partial class PolicyGroup : Pulumi.CustomResource
     {
         /// <summary>
@@ -101,12 +101,12 @@ namespace Pulumi.Tencentcloud.Monitor
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public PolicyGroup(string name, PolicyGroupArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/policyGroup:PolicyGroup", name, args ?? new PolicyGroupArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Monitor/policyGroup:PolicyGroup", name, args ?? new PolicyGroupArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private PolicyGroup(string name, Input<string> id, PolicyGroupState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Monitor/policyGroup:PolicyGroup", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Monitor/policyGroup:PolicyGroup", name, state, MakeResourceOptions(options, id))
         {
         }
 

@@ -11,7 +11,7 @@ export function specinfos(args: SpecinfosArgs, opts?: pulumi.InvokeOptions): Pro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Postgresql/specinfos:Specinfos", {
+    return pulumi.runtime.invoke("tctest:Postgresql/specinfos:Specinfos", {
         "availabilityZone": args.availabilityZone,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

@@ -19,7 +19,7 @@ export class SnapshotByTimeOffsetTemplate extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate';
+    public static readonly __pulumiType = 'tctest:Vod/snapshotByTimeOffsetTemplate:SnapshotByTimeOffsetTemplate';
 
     /**
      * Returns true if the given object is an instance of SnapshotByTimeOffsetTemplate.  This is designed to work even

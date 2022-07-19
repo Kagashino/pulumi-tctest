@@ -12,7 +12,7 @@ export function parameterList(args?: ParameterListArgs, opts?: pulumi.InvokeOpti
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Mysql/parameterList:ParameterList", {
+    return pulumi.runtime.invoke("tctest:Mysql/parameterList:ParameterList", {
         "engineVersion": args.engineVersion,
         "mysqlId": args.mysqlId,
         "resultOutputFile": args.resultOutputFile,

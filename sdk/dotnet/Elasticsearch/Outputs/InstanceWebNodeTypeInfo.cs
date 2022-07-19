@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Elasticsearch.Outputs
+namespace Pulumi.Tctest.Elasticsearch.Outputs
 {
 
     [OutputType]

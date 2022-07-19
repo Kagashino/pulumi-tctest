@@ -11,7 +11,7 @@ export function httpRules(args: HttpRulesArgs, opts?: pulumi.InvokeOptions): Pro
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/httpRules:HttpRules", {
+    return pulumi.runtime.invoke("tctest:Gaap/httpRules:HttpRules", {
         "domain": args.domain,
         "forwardHost": args.forwardHost,
         "listenerId": args.listenerId,

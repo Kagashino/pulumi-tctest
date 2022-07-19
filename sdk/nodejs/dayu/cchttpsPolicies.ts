@@ -11,7 +11,7 @@ export function cchttpsPolicies(args: CchttpsPoliciesArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dayu/cCHttpsPolicies:CCHttpsPolicies", {
+    return pulumi.runtime.invoke("tctest:Dayu/cCHttpsPolicies:CCHttpsPolicies", {
         "name": args.name,
         "policyId": args.policyId,
         "resourceId": args.resourceId,

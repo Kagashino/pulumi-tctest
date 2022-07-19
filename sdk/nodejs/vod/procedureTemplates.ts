@@ -12,7 +12,7 @@ export function procedureTemplates(args?: ProcedureTemplatesArgs, opts?: pulumi.
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Vod/procedureTemplates:ProcedureTemplates", {
+    return pulumi.runtime.invoke("tctest:Vod/procedureTemplates:ProcedureTemplates", {
         "name": args.name,
         "resultOutputFile": args.resultOutputFile,
         "subAppId": args.subAppId,

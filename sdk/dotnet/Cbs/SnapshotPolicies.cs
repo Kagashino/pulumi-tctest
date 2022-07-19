@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
     public static class SnapshotPolicies
     {
         public static Task<SnapshotPoliciesResult> InvokeAsync(SnapshotPoliciesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotPoliciesResult>("tencentcloud:Cbs/snapshotPolicies:SnapshotPolicies", args ?? new SnapshotPoliciesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<SnapshotPoliciesResult>("tctest:Cbs/snapshotPolicies:SnapshotPolicies", args ?? new SnapshotPoliciesArgs(), options.WithDefaults());
 
         public static Output<SnapshotPoliciesResult> Invoke(SnapshotPoliciesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<SnapshotPoliciesResult>("tencentcloud:Cbs/snapshotPolicies:SnapshotPolicies", args ?? new SnapshotPoliciesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<SnapshotPoliciesResult>("tctest:Cbs/snapshotPolicies:SnapshotPolicies", args ?? new SnapshotPoliciesInvokeArgs(), options.WithDefaults());
     }
 
 

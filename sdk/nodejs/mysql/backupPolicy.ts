@@ -19,7 +19,7 @@ export class BackupPolicy extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Mysql/backupPolicy:BackupPolicy';
+    public static readonly __pulumiType = 'tctest:Mysql/backupPolicy:BackupPolicy';
 
     /**
      * Returns true if the given object is an instance of BackupPolicy.  This is designed to work even

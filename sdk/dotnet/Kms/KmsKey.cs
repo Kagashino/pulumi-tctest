@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Kms
+namespace Pulumi.Tctest.Kms
 {
-    [TencentcloudResourceType("tencentcloud:Kms/kmsKey:KmsKey")]
+    [TctestResourceType("tctest:Kms/kmsKey:KmsKey")]
     public partial class KmsKey : Pulumi.CustomResource
     {
         /// <summary>
@@ -81,12 +81,12 @@ namespace Pulumi.Tencentcloud.Kms
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public KmsKey(string name, KmsKeyArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Kms/kmsKey:KmsKey", name, args ?? new KmsKeyArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Kms/kmsKey:KmsKey", name, args ?? new KmsKeyArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private KmsKey(string name, Input<string> id, KmsKeyState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Kms/kmsKey:KmsKey", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Kms/kmsKey:KmsKey", name, state, MakeResourceOptions(options, id))
         {
         }
 

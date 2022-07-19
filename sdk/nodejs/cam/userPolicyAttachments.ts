@@ -12,7 +12,7 @@ export function userPolicyAttachments(args?: UserPolicyAttachmentsArgs, opts?: p
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cam/userPolicyAttachments:UserPolicyAttachments", {
+    return pulumi.runtime.invoke("tctest:Cam/userPolicyAttachments:UserPolicyAttachments", {
         "createMode": args.createMode,
         "policyId": args.policyId,
         "policyType": args.policyType,

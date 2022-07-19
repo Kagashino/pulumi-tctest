@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/serverAttachment:ServerAttachment")]
+    [TctestResourceType("tctest:Clb/serverAttachment:ServerAttachment")]
     public partial class ServerAttachment : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ServerAttachment(string name, ServerAttachmentArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/serverAttachment:ServerAttachment", name, args ?? new ServerAttachmentArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/serverAttachment:ServerAttachment", name, args ?? new ServerAttachmentArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ServerAttachment(string name, Input<string> id, ServerAttachmentState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/serverAttachment:ServerAttachment", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/serverAttachment:ServerAttachment", name, state, MakeResourceOptions(options, id))
         {
         }
 

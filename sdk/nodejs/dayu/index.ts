@@ -45,44 +45,44 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Dayu/cCHttpPolicy:CCHttpPolicy":
+            case "tctest:Dayu/cCHttpPolicy:CCHttpPolicy":
                 return new CCHttpPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/cCHttpsPolicy:CCHttpsPolicy":
+            case "tctest:Dayu/cCHttpsPolicy:CCHttpsPolicy":
                 return new CCHttpsPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/cCPolicyV2:CCPolicyV2":
+            case "tctest:Dayu/cCPolicyV2:CCPolicyV2":
                 return new CCPolicyV2(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/dayuEipEip:DayuEipEip":
+            case "tctest:Dayu/dayuEipEip:DayuEipEip":
                 return new DayuEipEip(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/ddosPolicy:DdosPolicy":
+            case "tctest:Dayu/ddosPolicy:DdosPolicy":
                 return new DdosPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/ddosPolicyAttachment:DdosPolicyAttachment":
+            case "tctest:Dayu/ddosPolicyAttachment:DdosPolicyAttachment":
                 return new DdosPolicyAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/ddosPolicyCase:DdosPolicyCase":
+            case "tctest:Dayu/ddosPolicyCase:DdosPolicyCase":
                 return new DdosPolicyCase(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/ddosPolicyV2:DdosPolicyV2":
+            case "tctest:Dayu/ddosPolicyV2:DdosPolicyV2":
                 return new DdosPolicyV2(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/l4Rule:L4Rule":
+            case "tctest:Dayu/l4Rule:L4Rule":
                 return new L4Rule(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/l4RuleV2:L4RuleV2":
+            case "tctest:Dayu/l4RuleV2:L4RuleV2":
                 return new L4RuleV2(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/l7Rule:L7Rule":
+            case "tctest:Dayu/l7Rule:L7Rule":
                 return new L7Rule(name, <any>undefined, { urn })
-            case "tencentcloud:Dayu/l7RuleV2:L7RuleV2":
+            case "tctest:Dayu/l7RuleV2:L7RuleV2":
                 return new L7RuleV2(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/cCHttpPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/cCHttpsPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/cCPolicyV2", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/dayuEipEip", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/ddosPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/ddosPolicyAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/ddosPolicyCase", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/ddosPolicyV2", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/l4Rule", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/l4RuleV2", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/l7Rule", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Dayu/l7RuleV2", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/cCHttpPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/cCHttpsPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/cCPolicyV2", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/dayuEipEip", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/ddosPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/ddosPolicyAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/ddosPolicyCase", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/ddosPolicyV2", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/l4Rule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/l4RuleV2", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/l7Rule", _module)
+pulumi.runtime.registerResourceModule("tctest", "Dayu/l7RuleV2", _module)

@@ -11,7 +11,7 @@ export function apigatewayCustomerDomains(args: ApigatewayCustomerDomainsArgs, o
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", {
+    return pulumi.runtime.invoke("tctest:Cloud/aPIGatewayCustomerDomains:APIGatewayCustomerDomains", {
         "resultOutputFile": args.resultOutputFile,
         "serviceId": args.serviceId,
     }, opts);

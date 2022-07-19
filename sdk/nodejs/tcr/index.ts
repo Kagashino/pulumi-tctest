@@ -22,23 +22,23 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Tcr/instance:Instance":
+            case "tctest:Tcr/instance:Instance":
                 return new Instance(name, <any>undefined, { urn })
-            case "tencentcloud:Tcr/namespace:Namespace":
+            case "tctest:Tcr/namespace:Namespace":
                 return new Namespace(name, <any>undefined, { urn })
-            case "tencentcloud:Tcr/repository:Repository":
+            case "tctest:Tcr/repository:Repository":
                 return new Repository(name, <any>undefined, { urn })
-            case "tencentcloud:Tcr/tcrToken:TcrToken":
+            case "tctest:Tcr/tcrToken:TcrToken":
                 return new TcrToken(name, <any>undefined, { urn })
-            case "tencentcloud:Tcr/vpcAttachment:VpcAttachment":
+            case "tctest:Tcr/vpcAttachment:VpcAttachment":
                 return new VpcAttachment(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcr/instance", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcr/namespace", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcr/repository", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcr/tcrToken", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Tcr/vpcAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcr/instance", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcr/namespace", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcr/repository", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcr/tcrToken", _module)
+pulumi.runtime.registerResourceModule("tctest", "Tcr/vpcAttachment", _module)

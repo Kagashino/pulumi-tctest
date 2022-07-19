@@ -20,7 +20,7 @@ export class Privilege extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Mysql/privilege:Privilege';
+    public static readonly __pulumiType = 'tctest:Mysql/privilege:Privilege';
 
     /**
      * Returns true if the given object is an instance of Privilege.  This is designed to work even

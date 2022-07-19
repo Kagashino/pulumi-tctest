@@ -19,7 +19,7 @@ export class ReadonlyGroup extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Postgresql/readonlyGroup:ReadonlyGroup';
+    public static readonly __pulumiType = 'tctest:Postgresql/readonlyGroup:ReadonlyGroup';
 
     /**
      * Returns true if the given object is an instance of ReadonlyGroup.  This is designed to work even

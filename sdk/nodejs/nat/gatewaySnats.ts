@@ -11,7 +11,7 @@ export function gatewaySnats(args: GatewaySnatsArgs, opts?: pulumi.InvokeOptions
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Nat/gatewaySnats:GatewaySnats", {
+    return pulumi.runtime.invoke("tctest:Nat/gatewaySnats:GatewaySnats", {
         "description": args.description,
         "instanceId": args.instanceId,
         "natGatewayId": args.natGatewayId,

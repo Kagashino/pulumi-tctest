@@ -19,7 +19,7 @@ export class DB extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Sqlserver/dB:DB';
+    public static readonly __pulumiType = 'tctest:Sqlserver/dB:DB';
 
     /**
      * Returns true if the given object is an instance of DB.  This is designed to work even

@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cloud
+namespace Pulumi.Tctest.Cloud
 {
     public static class TCRInstances
     {
         public static Task<TCRInstancesResult> InvokeAsync(TCRInstancesArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<TCRInstancesResult>("tencentcloud:Cloud/tCRInstances:TCRInstances", args ?? new TCRInstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<TCRInstancesResult>("tctest:Cloud/tCRInstances:TCRInstances", args ?? new TCRInstancesArgs(), options.WithDefaults());
 
         public static Output<TCRInstancesResult> Invoke(TCRInstancesInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<TCRInstancesResult>("tencentcloud:Cloud/tCRInstances:TCRInstances", args ?? new TCRInstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<TCRInstancesResult>("tctest:Cloud/tCRInstances:TCRInstances", args ?? new TCRInstancesInvokeArgs(), options.WithDefaults());
     }
 
 

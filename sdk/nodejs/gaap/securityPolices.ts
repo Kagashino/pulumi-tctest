@@ -10,7 +10,7 @@ export function securityPolices(args: SecurityPolicesArgs, opts?: pulumi.InvokeO
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/securityPolices:SecurityPolices", {
+    return pulumi.runtime.invoke("tctest:Gaap/securityPolices:SecurityPolices", {
         "id": args.id,
         "resultOutputFile": args.resultOutputFile,
     }, opts);

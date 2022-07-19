@@ -20,7 +20,7 @@ export class Idl extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Tcaplus/idl:Idl';
+    public static readonly __pulumiType = 'tctest:Tcaplus/idl:Idl';
 
     /**
      * Returns true if the given object is an instance of Idl.  This is designed to work even

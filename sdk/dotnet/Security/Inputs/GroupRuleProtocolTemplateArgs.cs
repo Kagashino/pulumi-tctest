@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Security.Inputs
+namespace Pulumi.Tctest.Security.Inputs
 {
 
     public sealed class GroupRuleProtocolTemplateArgs : Pulumi.ResourceArgs

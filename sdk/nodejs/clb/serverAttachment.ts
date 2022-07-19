@@ -20,7 +20,7 @@ export class ServerAttachment extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Clb/serverAttachment:ServerAttachment';
+    public static readonly __pulumiType = 'tctest:Clb/serverAttachment:ServerAttachment';
 
     /**
      * Returns true if the given object is an instance of ServerAttachment.  This is designed to work even

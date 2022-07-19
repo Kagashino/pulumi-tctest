@@ -19,7 +19,7 @@ export class ScfNamespace extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Scf/scfNamespace:ScfNamespace';
+    public static readonly __pulumiType = 'tctest:Scf/scfNamespace:ScfNamespace';
 
     /**
      * Returns true if the given object is an instance of ScfNamespace.  This is designed to work even

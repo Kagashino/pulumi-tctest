@@ -25,23 +25,23 @@ const _module = {
     version: utilities.getVersion(),
     construct: (name: string, type: string, urn: string): pulumi.Resource => {
         switch (type) {
-            case "tencentcloud:Cbs/snapshot:Snapshot":
+            case "tctest:Cbs/snapshot:Snapshot":
                 return new Snapshot(name, <any>undefined, { urn })
-            case "tencentcloud:Cbs/snapshotPolicy:SnapshotPolicy":
+            case "tctest:Cbs/snapshotPolicy:SnapshotPolicy":
                 return new SnapshotPolicy(name, <any>undefined, { urn })
-            case "tencentcloud:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment":
+            case "tctest:Cbs/snapshotPolicyAttachment:SnapshotPolicyAttachment":
                 return new SnapshotPolicyAttachment(name, <any>undefined, { urn })
-            case "tencentcloud:Cbs/storage:Storage":
+            case "tctest:Cbs/storage:Storage":
                 return new Storage(name, <any>undefined, { urn })
-            case "tencentcloud:Cbs/storageAttachment:StorageAttachment":
+            case "tctest:Cbs/storageAttachment:StorageAttachment":
                 return new StorageAttachment(name, <any>undefined, { urn })
             default:
                 throw new Error(`unknown resource type ${type}`);
         }
     },
 };
-pulumi.runtime.registerResourceModule("tencentcloud", "Cbs/snapshot", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cbs/snapshotPolicy", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cbs/snapshotPolicyAttachment", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cbs/storage", _module)
-pulumi.runtime.registerResourceModule("tencentcloud", "Cbs/storageAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cbs/snapshot", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cbs/snapshotPolicy", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cbs/snapshotPolicyAttachment", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cbs/storage", _module)
+pulumi.runtime.registerResourceModule("tctest", "Cbs/storageAttachment", _module)

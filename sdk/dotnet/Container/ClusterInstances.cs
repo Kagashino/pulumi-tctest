@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Container
+namespace Pulumi.Tctest.Container
 {
     public static class ClusterInstances
     {
         public static Task<ClusterInstancesResult> InvokeAsync(ClusterInstancesArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ClusterInstancesResult>("tencentcloud:Container/clusterInstances:ClusterInstances", args ?? new ClusterInstancesArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ClusterInstancesResult>("tctest:Container/clusterInstances:ClusterInstances", args ?? new ClusterInstancesArgs(), options.WithDefaults());
 
         public static Output<ClusterInstancesResult> Invoke(ClusterInstancesInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ClusterInstancesResult>("tencentcloud:Container/clusterInstances:ClusterInstances", args ?? new ClusterInstancesInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ClusterInstancesResult>("tctest:Container/clusterInstances:ClusterInstances", args ?? new ClusterInstancesInvokeArgs(), options.WithDefaults());
     }
 
 

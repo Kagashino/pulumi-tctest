@@ -12,7 +12,7 @@ export function secrets(args?: SecretsArgs, opts?: pulumi.InvokeOptions): Promis
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Ssm/secrets:Secrets", {
+    return pulumi.runtime.invoke("tctest:Ssm/secrets:Secrets", {
         "orderType": args.orderType,
         "resultOutputFile": args.resultOutputFile,
         "secretName": args.secretName,

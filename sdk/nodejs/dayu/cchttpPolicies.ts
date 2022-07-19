@@ -11,7 +11,7 @@ export function cchttpPolicies(args: CchttpPoliciesArgs, opts?: pulumi.InvokeOpt
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Dayu/cCHttpPolicies:CCHttpPolicies", {
+    return pulumi.runtime.invoke("tctest:Dayu/cCHttpPolicies:CCHttpPolicies", {
         "name": args.name,
         "policyId": args.policyId,
         "resourceId": args.resourceId,

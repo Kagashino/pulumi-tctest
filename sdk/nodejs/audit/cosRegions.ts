@@ -12,7 +12,7 @@ export function cosRegions(args?: CosRegionsArgs, opts?: pulumi.InvokeOptions): 
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Audit/cosRegions:CosRegions", {
+    return pulumi.runtime.invoke("tctest:Audit/cosRegions:CosRegions", {
         "resultOutputFile": args.resultOutputFile,
     }, opts);
 }

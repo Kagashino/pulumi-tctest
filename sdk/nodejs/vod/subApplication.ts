@@ -19,7 +19,7 @@ export class SubApplication extends pulumi.CustomResource {
     }
 
     /** @internal */
-    public static readonly __pulumiType = 'tencentcloud:Vod/subApplication:SubApplication';
+    public static readonly __pulumiType = 'tctest:Vod/subApplication:SubApplication';
 
     /**
      * Returns true if the given object is an instance of SubApplication.  This is designed to work even

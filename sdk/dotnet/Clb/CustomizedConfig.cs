@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
-    [TencentcloudResourceType("tencentcloud:Clb/customizedConfig:CustomizedConfig")]
+    [TctestResourceType("tctest:Clb/customizedConfig:CustomizedConfig")]
     public partial class CustomizedConfig : Pulumi.CustomResource
     {
         /// <summary>
@@ -51,12 +51,12 @@ namespace Pulumi.Tencentcloud.Clb
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public CustomizedConfig(string name, CustomizedConfigArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/customizedConfig:CustomizedConfig", name, args ?? new CustomizedConfigArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Clb/customizedConfig:CustomizedConfig", name, args ?? new CustomizedConfigArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private CustomizedConfig(string name, Input<string> id, CustomizedConfigState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Clb/customizedConfig:CustomizedConfig", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Clb/customizedConfig:CustomizedConfig", name, state, MakeResourceOptions(options, id))
         {
         }
 

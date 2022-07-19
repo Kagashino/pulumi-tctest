@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cfs
+namespace Pulumi.Tctest.Cfs
 {
     public static class FileSystems
     {
         public static Task<FileSystemsResult> InvokeAsync(FileSystemsArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<FileSystemsResult>("tencentcloud:Cfs/fileSystems:FileSystems", args ?? new FileSystemsArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<FileSystemsResult>("tctest:Cfs/fileSystems:FileSystems", args ?? new FileSystemsArgs(), options.WithDefaults());
 
         public static Output<FileSystemsResult> Invoke(FileSystemsInvokeArgs? args = null, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<FileSystemsResult>("tencentcloud:Cfs/fileSystems:FileSystems", args ?? new FileSystemsInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<FileSystemsResult>("tctest:Cfs/fileSystems:FileSystems", args ?? new FileSystemsInvokeArgs(), options.WithDefaults());
     }
 
 

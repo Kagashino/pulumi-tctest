@@ -59,14 +59,6 @@ export namespace APIGateway {
 export namespace Address {
 }
 
-export namespace Alb {
-    export interface ServerAttachmentBackend {
-        instanceId: pulumi.Input<string>;
-        port: pulumi.Input<number>;
-        weight?: pulumi.Input<number>;
-    }
-}
-
 export namespace Api {
 }
 

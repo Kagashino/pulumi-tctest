@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cbs
+namespace Pulumi.Tctest.Cbs
 {
-    [TencentcloudResourceType("tencentcloud:Cbs/snapshot:Snapshot")]
+    [TctestResourceType("tctest:Cbs/snapshot:Snapshot")]
     public partial class Snapshot : Pulumi.CustomResource
     {
         /// <summary>
@@ -63,12 +63,12 @@ namespace Pulumi.Tencentcloud.Cbs
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public Snapshot(string name, SnapshotArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshot:Snapshot", name, args ?? new SnapshotArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cbs/snapshot:Snapshot", name, args ?? new SnapshotArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private Snapshot(string name, Input<string> id, SnapshotState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cbs/snapshot:Snapshot", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cbs/snapshot:Snapshot", name, state, MakeResourceOptions(options, id))
         {
         }
 

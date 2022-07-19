@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Cam
+namespace Pulumi.Tctest.Cam
 {
-    [TencentcloudResourceType("tencentcloud:Cam/groupMembership:GroupMembership")]
+    [TctestResourceType("tctest:Cam/groupMembership:GroupMembership")]
     public partial class GroupMembership : Pulumi.CustomResource
     {
         /// <summary>
@@ -39,12 +39,12 @@ namespace Pulumi.Tencentcloud.Cam
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public GroupMembership(string name, GroupMembershipArgs args, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/groupMembership:GroupMembership", name, args ?? new GroupMembershipArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Cam/groupMembership:GroupMembership", name, args ?? new GroupMembershipArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private GroupMembership(string name, Input<string> id, GroupMembershipState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Cam/groupMembership:GroupMembership", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Cam/groupMembership:GroupMembership", name, state, MakeResourceOptions(options, id))
         {
         }
 

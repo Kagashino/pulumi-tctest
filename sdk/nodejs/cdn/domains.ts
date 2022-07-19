@@ -12,7 +12,7 @@ export function domains(args?: DomainsArgs, opts?: pulumi.InvokeOptions): Promis
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Cdn/domains:Domains", {
+    return pulumi.runtime.invoke("tctest:Cdn/domains:Domains", {
         "domain": args.domain,
         "fullUrlCache": args.fullUrlCache,
         "httpsSwitch": args.httpsSwitch,

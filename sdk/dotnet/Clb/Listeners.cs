@@ -7,15 +7,15 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Clb
+namespace Pulumi.Tctest.Clb
 {
     public static class Listeners
     {
         public static Task<ListenersResult> InvokeAsync(ListenersArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<ListenersResult>("tencentcloud:Clb/listeners:Listeners", args ?? new ListenersArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.InvokeAsync<ListenersResult>("tctest:Clb/listeners:Listeners", args ?? new ListenersArgs(), options.WithDefaults());
 
         public static Output<ListenersResult> Invoke(ListenersInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<ListenersResult>("tencentcloud:Clb/listeners:Listeners", args ?? new ListenersInvokeArgs(), options.WithDefaults());
+            => Pulumi.Deployment.Instance.Invoke<ListenersResult>("tctest:Clb/listeners:Listeners", args ?? new ListenersInvokeArgs(), options.WithDefaults());
     }
 
 

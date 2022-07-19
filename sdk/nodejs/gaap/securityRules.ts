@@ -11,7 +11,7 @@ export function securityRules(args: SecurityRulesArgs, opts?: pulumi.InvokeOptio
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Gaap/securityRules:SecurityRules", {
+    return pulumi.runtime.invoke("tctest:Gaap/securityRules:SecurityRules", {
         "action": args.action,
         "cidrIp": args.cidrIp,
         "name": args.name,

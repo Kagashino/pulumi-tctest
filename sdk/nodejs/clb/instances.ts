@@ -12,7 +12,7 @@ export function instances(args?: InstancesArgs, opts?: pulumi.InvokeOptions): Pr
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Clb/instances:Instances", {
+    return pulumi.runtime.invoke("tctest:Clb/instances:Instances", {
         "clbId": args.clbId,
         "clbName": args.clbName,
         "masterZone": args.masterZone,

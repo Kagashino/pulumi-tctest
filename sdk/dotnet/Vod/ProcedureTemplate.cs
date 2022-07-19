@@ -7,9 +7,9 @@ using System.Collections.Immutable;
 using System.Threading.Tasks;
 using Pulumi.Serialization;
 
-namespace Pulumi.Tencentcloud.Vod
+namespace Pulumi.Tctest.Vod
 {
-    [TencentcloudResourceType("tencentcloud:Vod/procedureTemplate:ProcedureTemplate")]
+    [TctestResourceType("tctest:Vod/procedureTemplate:ProcedureTemplate")]
     public partial class ProcedureTemplate : Pulumi.CustomResource
     {
         /// <summary>
@@ -58,12 +58,12 @@ namespace Pulumi.Tencentcloud.Vod
         /// <param name="args">The arguments used to populate this resource's properties</param>
         /// <param name="options">A bag of options that control this resource's behavior</param>
         public ProcedureTemplate(string name, ProcedureTemplateArgs? args = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/procedureTemplate:ProcedureTemplate", name, args ?? new ProcedureTemplateArgs(), MakeResourceOptions(options, ""))
+            : base("tctest:Vod/procedureTemplate:ProcedureTemplate", name, args ?? new ProcedureTemplateArgs(), MakeResourceOptions(options, ""))
         {
         }
 
         private ProcedureTemplate(string name, Input<string> id, ProcedureTemplateState? state = null, CustomResourceOptions? options = null)
-            : base("tencentcloud:Vod/procedureTemplate:ProcedureTemplate", name, state, MakeResourceOptions(options, id))
+            : base("tctest:Vod/procedureTemplate:ProcedureTemplate", name, state, MakeResourceOptions(options, id))
         {
         }
 

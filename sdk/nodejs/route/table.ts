@@ -11,7 +11,7 @@ export function table(args: TableArgs, opts?: pulumi.InvokeOptions): Promise<Tab
     }
 
     opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
-    return pulumi.runtime.invoke("tencentcloud:Route/table:Table", {
+    return pulumi.runtime.invoke("tctest:Route/table:Table", {
         "name": args.name,
         "routeTableId": args.routeTableId,
     }, opts);
