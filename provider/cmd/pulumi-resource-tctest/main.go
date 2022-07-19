@@ -17,8 +17,8 @@
 package main
 
 import (
-	tctest "github.com/Kagashino/tctest/provider"
-	"github.com/Kagashino/tctest/provider/pkg/version"
+	tctest "github.com/Kagashino/pulumi-tctest/provider"
+	"github.com/Kagashino/pulumi-tctest/provider/pkg/version"
 	"github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
 )
 

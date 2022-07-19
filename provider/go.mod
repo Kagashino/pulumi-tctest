@@ -1,4 +1,4 @@
-module github.com/Kagashino/tctest/provider
+module github.com/Kagashino/pulumi-tctest/provider
 
 go 1.18
 
